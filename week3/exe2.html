@@ -10,18 +10,38 @@
             justify-content: space-between;
             align-items: center;
             background-color: #2d65bc;
-            padding: 10px 20px;
+            padding: 20px 20px;
         }
+
 
         #nav-buttons {
             display: flex;
             gap: 20px;
             color: white;
             cursor: pointer;
+            align-items: center;
         }
 
         #nav-buttons div:hover {
             color: black;
+        }
+
+
+        button.callnow {
+            background-color: white;
+            color: #9fa1a1;
+            border: 1px solid #9fa1a1;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-right: 20px;
         }
     </style>
 </head>
@@ -29,8 +49,7 @@
 <body>
     <header>
         <div class="flex-container">
-            <div><img src="photofile/coffelogo.png" width="50" alt="kiki"></div>
-
+            <div class="logo">BizBud</div>
             <div id="nav-buttons">
                 <div>Home</div>
                 <div>Services</div>
@@ -38,9 +57,11 @@
                 <div>Testimonials</div>
                 <div>Clients</div>
                 <div>Contact</div>
+                <button class="callnow">Call Now</button>
             </div>
         </div>
     </header>
+
 
 </body>
 
