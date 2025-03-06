@@ -1,4 +1,47 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+
+    <title>Navigation Bar</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2d65bc;
+            padding: 10px 20px;
+        }
+
+        #nav-buttons {
+            display: flex;
+            gap: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #nav-buttons div:hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <div><img src="photofile/coffelogo.png" width="50" alt="kiki"></div>
+
+            <div id="nav-buttons">
+                <div>Home</div>
+                <div>Services</div>
+                <div>About</div>
+                <div>Testimonials</div>
+                <div>Clients</div>
+                <div>Contact</div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
 </html>
