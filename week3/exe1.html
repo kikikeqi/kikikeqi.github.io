@@ -2,29 +2,40 @@
 <html>
 
 <head>
+
     <title>Navigation Bar</title>
     <style>
         .flex-container {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #2d65bc;
-            padding: 20px;
+            padding: 10px 20px;
         }
 
-        .flex-container>div {
+        #nav-buttons {
+            display: flex;
+            gap: 20px;
             color: white;
-            width: 50%
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <div class="flex-container">
-        <div>Home</div>
-        <div>About</div>
-        <div>Services</div>
-        <div>Team</div>
-        <div>Contact</div>
-    </div>
+    <header>
+        <div class="flex-container">
+            <div><img src="photofile/coffelogo.png" width="50" alt="kiki"></div>
+
+            <div id="nav-buttons">
+                <div>Home</div>
+                <div>About</div>
+                <div>Services</div>
+                <div>Team</div>
+                <div>Contact</div>
+            </div>
+        </div>
+    </header>
 
 </body>
 
