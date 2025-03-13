@@ -10,11 +10,15 @@
         rel="stylesheet">
 
     <style>
-        h1,
+        h1 {
+            font-size: 24px;
+            font-family: "Crimson Text", serif;
+        }
+
         h2 {
 
-            font-family: "Crimson Text",
-                serif;
+            font-family: "Crimson Text", serif;
+            font-size: 36px;
 
         }
 
@@ -24,6 +28,30 @@
             font-style: normal;
         }
 
+        h3 {
+            font-family: "work sans", serif;
+            font-size: small;
+            color: #74c19d;
+            letter-spacing: 8px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: -30px;
+        }
+
+        h4 {
+            font-size: 36px;
+            text-align: center;
+            font-family: "Crimson Text";
+        }
+
+        h5 {
+            color: black;
+            text-align: center;
+            font-family: "Work Sans", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            margin-top: -30px;
+        }
 
 
         #container {
@@ -35,22 +63,53 @@
         #nav {
             display: flex;
             justify-content: space-between;
+            padding: 32px 120px;
+        }
+
+        #nav div {
+            display: flex;
+            gap: 40px;
+            color: white;
+        }
+
+
+        #nav-buttons div:hover {
+            color: black;
+
         }
 
         #banner {
             display: flex;
+            align-items: center;
+            background-color: #74c19d;
+            padding: 50px;
+
         }
 
         #banner-text {
-            width: 55%;
-            background-color: #74c19d;
+            width: 50%;
             display: flex;
             Align-items: center;
+            color: white;
+            padding-right: 20px;
         }
 
         #banner-image {
-            width: 60%;
+            width: 50%;
+            text-align: center;
             background-color: #74c19d;
+        }
+
+
+        button {
+            background-color: white;
+            color: #74c19d;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 
@@ -60,9 +119,16 @@
     <div id="container">
 
         <div id="nav">
-            <div> <img src="imagefile/logo.png" width="30"> </div>
-            <div>Menu</div>
+            <div><img src="imagefile/logo.png" width="30"></div>
+            <div id="nav-buttons">
+                <div>Home</div>
+                <div>Portfolio</div>
+                <div>Services</div>
+                <div>Contact</div>
+            </div>
         </div>
+
+
 
         <div id="banner">
             <div id="banner-text">
@@ -70,7 +136,8 @@
                 <div class="banner-container">
                     <h1>WELCOME</h1>
                     <h2>Lorem ipsum dolor sit amet consectetur</h2>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab,
+                        dolor
                         aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste? </p>
                     <button> Read more</button>
                 </div>
@@ -78,10 +145,24 @@
             </div>
 
 
-            <div id="banner-image"> <img src="imagefile/group1.png" width="500"> </div>
+            <div id="banner-image">
+                <img src="imagefile/group1.png" width="500">
+            </div>
         </div>
-
     </div>
+
+    <h3>PARTNERS</h3>
+    <h4>Lorem Ipsum Dolor</h4>
+    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+
+    <div class="image-logo">
+        <h6><img src="imagefile/google.png" width="100"> </h6>
+        <h7><img src="imagefile/microsoft.png" width="100"></h7>
+        <h8><img src="imagefile/airbnb.png" width="100"> </h8>
+        <h9><img src="imagefile/facebook.png" width="100"> </h9>
+        <h10><img src="imagefile/spotify.png" width="100"> </h10>
+    </div>
+
 </body>
 
 </html>
