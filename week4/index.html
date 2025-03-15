@@ -18,15 +18,16 @@
         h2 {
 
             font-family: "Crimson Text", serif;
-            font-size: 36px;
-
+            font-size: 28px;
+            margin-bottom: 50px;
         }
 
         p {
             font-family: "Work Sans", sans-serif;
-            font-weight: 400;
             font-style: normal;
+            font-weight: 400;
         }
+
 
         h3 {
             font-family: "work sans", serif;
@@ -44,7 +45,7 @@
             font-family: "Crimson Text";
         }
 
-        h5 {
+        p {
             color: black;
             text-align: center;
             font-family: "Work Sans", sans-serif;
@@ -87,8 +88,9 @@
         }
 
         #banner-text {
-            width: 50%;
+            width: 60%;
             display: flex;
+            flex-direction: column;
             Align-items: center;
             color: white;
             padding-right: 20px;
@@ -101,7 +103,7 @@
         }
 
 
-        button {
+        button.explore {
             background-color: white;
             color: #74c19d;
             border: none;
@@ -110,6 +112,41 @@
             font-weight: 600;
             border-radius: 5px;
             cursor: pointer;
+        }
+
+        button.explore:hover {
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+
+        .image-logo {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+            margin: 30px;
+        }
+
+        .learnmore-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button.learnmore {
+            padding: 10px 20px;
+            color: white;
+            background-color: black;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.learnmore:hover {
+            background-color: #74c19d;
+            color: rgb(255, 255, 255);
         }
     </style>
 
@@ -137,9 +174,10 @@
                     <h1>WELCOME</h1>
                     <h2>Lorem ipsum dolor sit amet consectetur</h2>
                     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab,
-                        dolor
-                        aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste? </p>
-                    <button> Read more</button>
+                        dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste? </p>
+
+                    <button class="explore">Explore</button>
+
                 </div>
 
             </div>
@@ -153,15 +191,20 @@
 
     <h3>PARTNERS</h3>
     <h4>Lorem Ipsum Dolor</h4>
-    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
     <div class="image-logo">
-        <h6><img src="imagefile/google.png" width="100"> </h6>
-        <h7><img src="imagefile/microsoft.png" width="100"></h7>
-        <h8><img src="imagefile/airbnb.png" width="100"> </h8>
-        <h9><img src="imagefile/facebook.png" width="100"> </h9>
-        <h10><img src="imagefile/spotify.png" width="100"> </h10>
+        <img src="imagefile/google.png" width="100" alth="Google">
+        <img src="imagefile/microsoft.png" width="100" alth="Microsoft">
+        <img src="imagefile/airbnb.png" width="100" alth="Airbnb">
+        <img src="imagefile/facebook.png" width="100" alth="Facebook">
+        <img src="imagefile/spotify.png" width="100" alth="Spotify">
     </div>
+    <div class="learnmore-container">
+        <button class="learnmore">Learn More</button>
+    </div>
+
+
 
 </body>
 
