@@ -16,16 +16,15 @@
         }
 
         h2 {
-
             font-family: "Crimson Text", serif;
             font-size: 28px;
             margin-bottom: 50px;
+
         }
 
         p {
             font-family: "Work Sans", sans-serif;
-            font-style: normal;
-            font-weight: 400;
+            text-align: left;
         }
 
 
@@ -54,6 +53,17 @@
             margin-top: -30px;
         }
 
+        h5 {
+            font-family: "Crimson Text", serif;
+            font-size: 28px;
+            margin-bottom: 50px;
+        }
+
+
+
+
+
+
         #container {
             max-width: 1280px;
             margin: auto;
@@ -75,15 +85,20 @@
 
         #nav-buttons div:hover {
             color: black;
-
         }
+
+
+
+
+
 
         #banner {
             display: flex;
             align-items: center;
+            text-align: left;
             background-color: #74c19d;
             padding: 50px;
-
+            margin: auto;
         }
 
         #banner-text {
@@ -91,6 +106,7 @@
             display: flex;
             flex-direction: column;
             Align-items: center;
+            text-align: left;
             color: white;
             padding-right: 20px;
         }
@@ -117,6 +133,11 @@
             background-color: black;
             color: rgb(255, 255, 255);
         }
+
+
+
+
+
 
         .image-logo {
             text-align: center;
@@ -155,30 +176,33 @@
             display: flex;
             max-width: 1280px;
             margin: auto;
-            background-color: #74c19d;
             align-items: center;
-            padding: 50px;
+            margin-top: 40px;
+            padding: 30px;
         }
 
         #page-image {
             width: 50%;
             text-align: center;
-            background-color: #74c19d;
         }
 
         #page-text {
-            width: 60%;
             display: flex;
+            align-items: right;
+            padding: 50px;
+            margin: auto;
+        }
+
+        .page-container {
             flex-direction: column;
-            Align-items: center;
-            color: white;
-            padding-right: 20px;
+            Align-items: right;
+            color: rgb(5, 4, 4);
         }
 
 
         button.learnmore2 {
-            background-color: white;
-            color: #74c19d;
+            background-color: black;
+            color: white;
             border: none;
             padding: 10px 20px;
             font-size: 16px;
@@ -188,8 +212,43 @@
         }
 
         button.learnmore2:hover {
-            background-color: black;
+            background-color: #74c19d;
             color: rgb(255, 255, 255);
+        }
+
+
+
+
+        /* Banner Section */
+        #banner {
+            display: flex;
+            padding: 80px 120px;
+            background: #74C69D;
+            color: white;
+            gap: 60px;
+        }
+
+        #banner-text {
+            flex: 1;
+        }
+
+        #banner-text h1 {
+            font-size: 40px;
+            letter-spacing: 10px;
+            margin-bottom: 20px;
+        }
+
+        #banner-text p {
+            margin: 20px 0;
+        }
+
+        #banner-image {
+            flex: 1;
+        }
+
+        #banner-image img {
+            width: 100%;
+            height: auto;
         }
     </style>
 
@@ -226,6 +285,7 @@
             </div>
 
 
+
             <div id="banner-image">
                 <img src="imagefile/group1.png" width="500">
             </div>
@@ -258,15 +318,35 @@
 
         <div id="page-text">
             <div class="page-container">
-                <h1>Lorem ipsum dolor sit amet consectetur </h1>
+                <h5>Lorem ipsum dolor sit amet consectetur </h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam
                     nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
                 <button class="learnmore2">Learn More</button>
             </div>
         </div>
+
+
+        <div id="layer">
+            <div id="layer-text">
+
+                <div class="layer-container">
+                    <h6>Lorem ipsum dolor sit amet consectetur </h6>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab,
+                        dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste? </p>
+                    <button class="learnmore3">Learn More</button>
+                </div>
+            </div>
+
+            <div id="layer-image">
+                <img src="imagefile/group1.png" width="500">
+            </div>
+
+
+
+
+
+        </div>
     </div>
-
-
 </body>
 
 </html>
