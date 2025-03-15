@@ -60,6 +60,16 @@
         }
 
 
+        h6 {
+            font-size: 28px;
+            margin-bottom: 50px;
+        }
+
+
+        h7 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
 
 
 
@@ -90,8 +100,6 @@
 
 
 
-
-
         #banner {
             display: flex;
             align-items: center;
@@ -103,7 +111,6 @@
 
         #banner-text {
             width: 60%;
-            display: flex;
             flex-direction: column;
             Align-items: center;
             text-align: left;
@@ -162,6 +169,7 @@
             font-weight: 600;
             border-radius: 5px;
             cursor: pointer;
+            display: block;
         }
 
         button.learnmore:hover {
@@ -209,6 +217,7 @@
             font-weight: 600;
             border-radius: 5px;
             cursor: pointer;
+            display: block;
         }
 
         button.learnmore2:hover {
@@ -219,36 +228,44 @@
 
 
 
-        /* Banner Section */
-        #banner {
+
+
+        #layer {
             display: flex;
-            padding: 80px 120px;
-            background: #74C69D;
+            margin: auto;
+            align-items: center;
+            margin-top: 40px;
+            max-width: 1280px;
+            padding: 30px;
+        }
+
+        #layer-image {
+            width: 50%;
+            text-align: center;
+        }
+
+        .layer-container {
+            flex-direction: column;
+            Align-items: right;
+            color: rgb(5, 4, 4);
+        }
+
+        button.learnmore3 {
+            background-color: black;
             color: white;
-            gap: 60px;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-top: 20px;
         }
 
-        #banner-text {
-            flex: 1;
-        }
-
-        #banner-text h1 {
-            font-size: 40px;
-            letter-spacing: 10px;
-            margin-bottom: 20px;
-        }
-
-        #banner-text p {
-            margin: 20px 0;
-        }
-
-        #banner-image {
-            flex: 1;
-        }
-
-        #banner-image img {
-            width: 100%;
-            height: auto;
+        button.learnmore3:hover {
+            background-color: #74c19d;
+            color: rgb(255, 255, 255);
         }
     </style>
 
@@ -292,9 +309,13 @@
         </div>
     </div>
 
+
+
     <h3>PARTNERS</h3>
     <h4>Lorem Ipsum Dolor</h4>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+
 
     <div class="image-logo">
         <img src="imagefile/google.png" width="100" alth="Google">
@@ -309,12 +330,12 @@
 
 
 
+
     <div id="page">
 
         <div id="page-image">
             <img src="imagefile/group2.png" width="500">
         </div>
-
 
         <div id="page-text">
             <div class="page-container">
@@ -324,28 +345,33 @@
                 <button class="learnmore2">Learn More</button>
             </div>
         </div>
+    </div>
 
 
-        <div id="layer">
-            <div id="layer-text">
 
-                <div class="layer-container">
-                    <h6>Lorem ipsum dolor sit amet consectetur </h6>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab,
-                        dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste? </p>
-                    <button class="learnmore3">Learn More</button>
-                </div>
+    <div id="layer">
+        <div id="layer-text">
+
+            <div class="layer-container">
+                <h6>Lorem ipsum dolor sit amet consectetur </h6>
+                <h7> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab,
+                    dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste? </h7>
+                <button class="learnmore3">Learn More</button>
             </div>
-
-            <div id="layer-image">
-                <img src="imagefile/group1.png" width="500">
-            </div>
-
-
-
-
-
         </div>
+
+        <div id="layer-image">
+            <img src="imagefile/group3.png" width="500">
+        </div>
+
+        <section id="team">
+            <h8>TEAM</h8>
+            <h3>Our Talents</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur
+                Suscipit nemo hic quos, ab,</p>
+
+
+
     </div>
 </body>
 
