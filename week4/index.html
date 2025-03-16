@@ -315,16 +315,6 @@
             /* 文字颜色 */
         }
 
-        font-size: 24px;
-        margin-bottom: 40px;
-
-        .team-section p {
-            font-size: 16px;
-            color: rgba(255, 255, 255, 0.8);
-            /* 浅色文字 */
-            margin-bottom: 60px;
-        }
-
         #team-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -347,6 +337,27 @@
             border-radius: 50%;
             /* 圆形头像 */
             margin-bottom: 20px;
+        }
+
+
+
+
+
+        .view-team-button {
+            display: inline-block;
+            margin-top: 40px;
+            background: rgb(44, 19, 19);
+            color: #74C69D;
+            border: none;
+            padding: 12px 48px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .view-team-button:hover {
+            background: #f0f0f0;
         }
     </style>
 
@@ -477,9 +488,9 @@
             <h10>Janet Bray</h10>
             <p>DEVELOPER</p>
         </div>
-
-
     </div>
+
+    <button class="view-team-button">View Team</button>
 
 
 </body>
