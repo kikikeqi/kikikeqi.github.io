@@ -313,6 +313,8 @@
 
         #team-grid {
             display: grid;
+            max-width: 1280px;
+            margin: auto;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             justify-content: center;
@@ -346,7 +348,7 @@
             display: inline-block;
             align-items: center;
             margin-top: 10px;
-            background: #74C69d;
+            background: black;
             color: white;
             border: none;
             padding: 12px 48px;
@@ -356,7 +358,17 @@
         }
 
         .view-team-button:hover {
-            background: black;
+            background: #74C69d;
+            color: white;
+        }
+
+        footer {
+            max-width: 1280px;
+            margin: auto;
+            padding: 50px;
+            text-align: center;
+            margin-top: 30px;
+            background: #74C69d;
             color: white;
         }
     </style>
@@ -491,10 +503,17 @@
         </div>
     </div>
 
+
     <div class="learnmore-container">
         <button class="view-team-button">View Team</button>
     </div>
 
+
+    <div>
+        <footer>
+            <p>© Start, 2022. All rights reserved.</p>
+        </footer>
+    </div>
 
 </body>
 
