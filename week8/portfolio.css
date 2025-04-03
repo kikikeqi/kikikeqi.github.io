@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+h1 {
+    font-size: 35px;
+    font-family: "Unna", serif;
+    font-style: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Unna", serif;
+    font-style: bold;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Unna", serif;
+    font-style: normal;
+}
