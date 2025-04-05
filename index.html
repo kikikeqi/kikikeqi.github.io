@@ -53,6 +53,7 @@
         color: whitesmoke;
         padding: 30px;
 
+
     }
 
     .weekscard {
@@ -61,6 +62,7 @@
         justify-content: center;
         gap: 20px;
         padding: 20px;
+
     }
 
 
@@ -74,7 +76,6 @@
         border-radius: 16px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         padding: 30px;
-
     }
 
 
@@ -83,21 +84,34 @@
     h5,
     h6,
     p2 {
-        font-size: 20px;
+        font-size: 25px;
         font-family: "Unna", serif;
         font-style: bold;
-        display: flex;
-        align-items: center;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #2a1f1f;
     }
 
 
+    #logo {
+        background-color: #a0c9f3;
+
+    }
+
+    .logo-group2 {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
     footer {
         text-align: center;
-        margin-top: 40px;
-        color: #7f8c8d;
-        font-size: 0.9em;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 20px;
     }
 </style>
 
@@ -176,9 +190,24 @@
         </div>
     </div>
 
-    <footer>
-        © 2024 [Your Name]. All rights reserved.
-    </footer>
+    <div id="logo">
+        <div class="logo-group2">
+            <a href="https://wa.link/6fjt65" target="_blank">
+                <img src="photo/whatsapp.png" width="40" alt="logo">
+            </a>
+
+            <a href="https://www.instagram.com/kikikeqi__/" target="_blank">
+                <img src="photo/instagram.png" width="40" alt="logo">
+            </a>
+
+            <a href="https://github.com/kikikeqi" target="_blank">
+                <img src="photo/github.png" width="40" alt="logo">
+            </a>
+        </div>
+        <footer>
+            © 2024 Chai Ke Qi. All rights reserved.
+        </footer>
+    </div>
 
 </body>
 
