@@ -30,7 +30,6 @@
 #search {
     color: white;
     background-color: blueviolet;
-    padding: 4px;
     border: 15px;
     border-radius: 12px;
 }
@@ -42,4 +41,21 @@
 
 .nav-buttons div:hover {
     color: white;
+}
+
+button.learnmore {
+    background-color: #6FCDB9;
+    color: white;
+    font-size: 15px;
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button.learnmore:hover {
+    background-color: black;
+    color: #6FCDB9;
 }

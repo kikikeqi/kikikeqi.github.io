@@ -36,7 +36,6 @@
         justify-content: center;
         align-items: center;
         gap: 40px;
-        /* 每个图标之间的间距 */
         padding: 40px;
         text-align: center;
         flex-wrap: wrap;
@@ -51,7 +50,6 @@
         object-fit: contain;
         /* 避免图片被拉伸压缩 */
         border-radius: 50%;
-        /* 圆形图标 */
         display: block;
         margin: 0 auto;
     }
@@ -125,21 +123,26 @@
         color: #333;
     }
 
-    button.learnmore {
-        background-color: #6FCDB9;
-        color: white;
-        font-size: 15px;
-        font-family: "poppins", sans-serif;
-        font-style: normal;
-        border: none;
-        padding: 10px 50px;
-        border-radius: 30px;
-        cursor: pointer;
+
+
+
+    #layer2 {
+        background-color: #FEE273;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
     }
 
-    button.learnmore:hover {
-        background-color: black;
-        color: #6FCDB9;
+    .layer-photo2 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .layer-text2 {
+        flex-direction: column;
+        Align-items: right;
+        color: rgb(5, 4, 4);
     }
 </style>
 
@@ -206,9 +209,21 @@
                 helping students develop good hygiene habits for life.</p>
             <button class="learnmore">Learn More</button>
         </div>
-
     </div>
 
+
+    <div id="layer2">
+        <div class="layer-text2">
+            <h4>What We Offer</h4>
+            <p1>We offer oral health education for children and recommend trusted hospitals for quality care.</p1>
+            <button class="learnmore">Learn More</button>
+        </div>
+
+
+        <div class="layer-photo2">
+            <img src="image file/photo4.png" width="500">
+        </div>
+    </div>
 
 
 
