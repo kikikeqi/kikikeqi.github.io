@@ -19,7 +19,13 @@
     .main-photo {
         background-color: #FEE273;
         text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
     }
+
+
+
 
     #contact1 {
         background-color: #FAA5CA;
@@ -28,9 +34,7 @@
     .contact1-group {
         display: flex;
         justify-content: center;
-        /* 水平居中 */
         align-items: center;
-        /* 垂直居中 */
         gap: 40px;
         /* 每个图标之间的间距 */
         padding: 40px;
@@ -50,6 +54,92 @@
         /* 圆形图标 */
         display: block;
         margin: 0 auto;
+    }
+
+    #welcome2 {
+        background-color: #FEE273;
+        background-image: url('image file/sticker1.png');
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        display: block;
+        padding: 100px;
+    }
+
+    .photo-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        display: block;
+        font-size: 50px;
+        font-family: cherry Bomb One;
+        text-align: center;
+        color: #F96D4A;
+        margin-bottom: 30px;
+    }
+
+    #welcome3 {
+        background-color: #FEE273;
+        background-image: url('image file/sticker2.png');
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        display: block;
+        padding: 70px;
+    }
+
+
+
+    #layer1 {
+        background-color: #FEE273;
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .layer-text {
+        width: 50%;
+        flex: 1;
+        padding: 20px;
+    }
+
+
+    h3 {
+        font-size: 60px;
+        font-family: cherry Bomb One;
+        color: #F96D4A;
+    }
+
+    p {
+        font-size: 24px;
+        font-family: "poppins", sans-serif;
+        font-style: normal;
+        color: #333;
+    }
+
+    button.learnmore {
+        background-color: #6FCDB9;
+        color: white;
+        font-size: 15px;
+        font-family: "poppins", sans-serif;
+        font-style: normal;
+        border: none;
+        padding: 10px 50px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    button.learnmore:hover {
+        background-color: black;
+        color: #6FCDB9;
     }
 </style>
 
@@ -95,9 +185,30 @@
         </div>
     </div>
 
-    <div>
+
+    <div id="welcome2">
+        <div class="photo-group">
+            <h2>Learning about Dental Care here is both fun and safe!</h2>
+            <img src="image file/photo2.png" alt="sticker photo" width="70%" height="auto">
+        </div>
+        <div id="welcome3"></div>
+    </div>
+
+
+    <div id="layer1">
+        <div class="layer-photo">
+            <img src="image file/photo3.png" alt="label photo" width="100%" height="auto">
+        </div>
+
+        <div class="layer-text">
+            <h3>School Partnerships</h3>
+            <p>We work with schools in Kuala Lumpur to provide oral health education, talks, and hands-on activities,
+                helping students develop good hygiene habits for life.</p>
+            <button class="learnmore">Learn More</button>
+        </div>
 
     </div>
+
 
 
 
