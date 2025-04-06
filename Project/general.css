@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 /* navigation bar */
 #flex-container {
     background-color: #FEE273;
@@ -18,7 +19,15 @@
     color: rgb(108, 42, 170);
     font-size: 24px;
     font-family: cherry Bomb One;
-    margin-right: 20px;
+    margin-right: 10px;
+}
+
+#search {
+    color: white;
+    background-color: blueviolet;
+    padding: 4px;
+    border: 15px;
+    border-radius: 12px;
 }
 
 .nav-buttons div {

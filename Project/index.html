@@ -8,7 +8,49 @@
 
 
 <style>
+    h1 {
+        font-size: 80px;
+        font-family: cherry Bomb One;
+        text-align: center;
+        color: #F96D4A;
+        margin-bottom: 30px;
+    }
 
+    .main-photo {
+        background-color: #FEE273;
+        text-align: center;
+    }
+
+    #contact1 {
+        background-color: #FAA5CA;
+    }
+
+    .contact1-group {
+        display: flex;
+        justify-content: center;
+        /* 水平居中 */
+        align-items: center;
+        /* 垂直居中 */
+        gap: 40px;
+        /* 每个图标之间的间距 */
+        padding: 40px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .contact1-group1,
+    .contact1-group2,
+    .contact1-group3,
+    .contact1-group4,
+    .contact1-group5 {
+        text-align: center;
+        object-fit: contain;
+        /* 避免图片被拉伸压缩 */
+        border-radius: 50%;
+        /* 圆形图标 */
+        display: block;
+        margin: 0 auto;
+    }
 </style>
 
 
@@ -24,11 +66,38 @@
                 <div>Book Now</div>
                 <div>Contact</div>
                 <div>FAQ</div>
+                <input id="search" type="text" placeholder="Search" autocomplete="off">
             </div>
+        </div>
 
+        <div class="main-photo">
+            <h1>The Little Dentist's Amazing Journey</h1>
+            <img src="image file/mainphoto1.png" alt="main photo" width="50%" height="auto">
         </div>
     </div>
 
+    <div id="contact1">
+        <div class="contact1-group">
+            <div class="contact1-group1"><img src="image file/brush.png" alt="label photo" width="100%" height="auto">
+            </div>
+
+            <div class="contact1-group2"><img src="image file/floss.png" alt="label photo" width="100%" height="auto">
+            </div>
+
+            <div class="contact1-group3"><img src="image file/swish.png" alt="label photo" width="100%" height="auto">
+            </div>
+
+            <div class="contact1-group4"><img src="image file/check.png" alt="label photo" width="100%" height="auto">
+            </div>
+
+            <div class="contact1-group5"><img src="image file/smile.png" alt="label photo" width="100%" height="auto">
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
 
 
 
