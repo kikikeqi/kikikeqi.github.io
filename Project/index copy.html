@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Little Dental Hub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .contact-section {
+            padding: 60px 20px 100px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            margin-bottom: 50px;
+            color: #666;
+        }
+
+        .contact-cards {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-card {
+            width: 250px;
+            height: 200px;
+            background-color: #6ed2c5;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #f26c47;
+            color: white;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .footer-left img {
+            width: 60px;
+        }
+
+        .footer-left p {
+            font-size: 14px;
+            max-width: 300px;
+        }
+
+        .footer-contact {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .footer-contact span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            flex-wrap: wrap;
+        }
+
+        .footer-rights {
+            text-align: right;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-rights {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact-section">
+        <img src="tooth-weightlift.png" alt="Tooth Mascot" width="80" />
+        <h2>Have questions?</h2>
+        <p>Contact us anytime!</p>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <img src="call-24.png" alt="24hr Call" />
+            </div>
+            <div class="contact-card">
+                <img src="customer-service.png" alt="Customer Service" />
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <img src="tooth-icon.png" alt="Tooth Logo" />
+            <div>
+                <p>Let’s grow healthy teeth and healthy habits, one smile at a time!</p>
+                <div class="footer-contact">
+                    <span>📞 +60172610512</span>
+                    <span>📧 littledentalhub@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footer-links">
+                <span>About</span>
+                <span>Services</span>
+                <span>Contact</span>
+                <span>Book Now</span>
+                <span>FAQ</span>
+            </div>
+            <div class="footer-rights">© 2025 Little Dental Hub. All rights reserved.</div>
+            <div class="footer-social">
+                <img src="facebook-icon.png" alt="Facebook" />
+                <img src="instagram-icon.png" alt="Instagram" />
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

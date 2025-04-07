@@ -209,31 +209,39 @@
 
 
 
+
     #feedback-layer {
-        padding: 0px 60px;
+        padding: 20px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #6B51B1;
+        text-align: center;
+        gap: 20px;
     }
 
     h5 {
-        font-size: 50px;
-        font-family: cherry Bomb One;
+        font-size: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: "Cherry Bomb One", cursive;
         text-align: center;
         color: #FEE273;
-        margin-bottom: 40px;
     }
 
     #feedback-group {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 40px;
         width: 100%;
+        position: relative;
+        margin-bottom: 10%;
     }
 
-
-    .arrow1 {
+    .left-arrow,
+    .right-arrow {
+        position: relative;
         background-color: #4fe0c2;
         color: white;
         border: none;
@@ -247,6 +255,15 @@
         cursor: pointer;
     }
 
+    .images {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
 
     .testimonial {
         background: white;
@@ -256,18 +273,92 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        align-items: center;
+    }
 
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .user-role {
+        font-size: 13px;
+        color: #666;
+    }
+
+    .user-info img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .username {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    p2 {
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        color: #333;
+        line-height: 1.6;
     }
 
 
-    .images {
-        background: white;
-        border-radius: 16px;
+
+    #welcome5 {
+        background-color: white;
+        background-image: url('image file/sticker4.png');
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        display: block;
+        padding: 60px;
+    }
+
+    .Contact {
+        padding: 10px 20px 50px;
+        text-align: center;
+    }
+
+    h6 {
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #F96D4A;
+        font-family: "Cherry Bomb One", cursive;
+        text-align: center;
+    }
+
+    p3 {
+        font-size: 18px;
+        margin-bottom: 50px;
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        text-align: center;
+    }
+
+
+    .contact-card-group {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
         padding: 20px;
+    }
+
+    .contact-card1,
+    .contact-card2 {
+        background-color: #6ed2c5;
+        border-radius: 16px;
         display: flex;
         align-items: center;
-        gap: 16px;
+        justify-content: center;
+        width: 300px;
+        height: 250px;
+        padding: 20px;
     }
 </style>
 
@@ -376,9 +467,7 @@
     <div id="feedback-layer">
         <h5>Smiles & Stories</h5>
         <div id="feedback-group">
-            <div class="arrow1">
-                <button class="arrow left-arrow"><img src="image file/arrow_left.png" alt=""></button>
-            </div>
+            <button class="left-arrow">←</button>
 
             <div class="images">
                 <img src="image file/feedback.png" alt="Girl's Face" width="80%" height="auto">
@@ -392,21 +481,60 @@
                         <div class="user-role">(mother of a 4-year-old)</div>
                     </div>
                 </div>
-                <p>
-                    My child used to hate brushing his teeth, and I had to remind him multiple times every day.
+                <p2> My child used to hate brushing his teeth, and I had to remind him multiple times every day.
                     But after visiting this website, he was so attracted to the cute illustrations and fun stories
                     that he started brushing on his own! Now, he has developed a habit of brushing his teeth every
                     morning and night. He even reminds me to use dental floss! I'm really grateful for the educational
                     content on this website!
-                </p>
+                </p2>
             </div>
 
-            <div class="arrows2">
-                <button class="arrow right-arrow"></button>
-            </div>
-
+            <button class="right-arrow">→</button>
         </div>
     </div>
+
+    <div id="welcome5"></div>
+
+    <div class="Contact">
+        <h6>Have questions?</h6>
+        <p3>Contact us anytime!</p3>
+        <div class="contact-card-group">
+            <div class="contact-card1">
+                <img src="image file/24call.png" alt="24hr Call" width="50%" height="auto" />
+            </div>
+            <div class="contact-card2">
+                <img src="image file/customerservices.png" alt="Customer Service" width="50%" height="auto" />
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <img src="tooth-icon.png" alt="Tooth Logo" />
+            <div>
+                <p>Let’s grow healthy teeth and healthy habits, one smile at a time!</p>
+                <div class="footer-contact">
+                    <span>📞 +60172610512</span>
+                    <span>📧 littledentalhub@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footer-links">
+                <span>About</span>
+                <span>Services</span>
+                <span>Contact</span>
+                <span>Book Now</span>
+                <span>FAQ</span>
+            </div>
+            <div class="footer-rights">© 2025 Little Dental Hub. All rights reserved.</div>
+            <div class="footer-social">
+                <img src="facebook-icon.png" alt="Facebook" />
+                <img src="instagram-icon.png" alt="Instagram" />
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
