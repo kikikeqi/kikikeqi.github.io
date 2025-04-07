@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 30px;
 }
 
 .nav-buttons {
@@ -53,6 +54,7 @@ button.learnmore {
     padding: 10px 50px;
     border-radius: 30px;
     cursor: pointer;
+    align-self: flex-start;
 }
 
 button.learnmore:hover {

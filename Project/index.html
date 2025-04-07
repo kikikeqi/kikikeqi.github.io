@@ -54,6 +54,8 @@
         margin: 0 auto;
     }
 
+
+
     #welcome2 {
         background-color: #FEE273;
         background-image: url('image file/sticker1.png');
@@ -97,10 +99,10 @@
         background-color: #FEE273;
         display: flex;
         align-items: center;
-        padding: 50px;
         gap: 30px;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 50px 50px;
     }
 
     .layer-text {
@@ -126,22 +128,34 @@
 
 
 
+
+
     #layer2 {
         background-color: #FEE273;
         display: flex;
         align-items: center;
+        gap: 30px;
         justify-content: center;
-        padding: 30px;
-    }
-
-    .layer-photo2 {
-        width: 50%;
-        text-align: center;
+        padding: 50px 50px;
+        margin: auto;
+        flex-wrap: wrap;
     }
 
     .layer-text2 {
+        width: 50%;
+        flex: 1;
+        padding: 20px;
+        display: flex;
         flex-direction: column;
-        color: rgb(5, 4, 4);
+        align-items: flex-start;
+        gap: 20px;
+
+    }
+
+    .layer-photo2 {
+        display: flex;
+        flex: 1;
+        padding: 20px;
     }
 
     h4 {
@@ -155,6 +169,32 @@
         font-family: "poppins", sans-serif;
         font-style: normal;
         color: #333;
+    }
+
+    #contact2 {
+        background-color: #FAA5CA;
+    }
+
+    .contact2-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .contact2-group1,
+    .contact2-group2,
+    .contact2-group3,
+    .contact2-group4,
+    .contact2-group5 {
+        text-align: center;
+        object-fit: contain;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
     }
 </style>
 
@@ -231,14 +271,32 @@
             <button class="learnmore">Learn More</button>
         </div>
 
-
         <div class="layer-photo2">
-            <img src="image file/photo4.png" width="500">
+            <img src="image file/photo4.png" width="100%" height="auto">
         </div>
     </div>
 
 
+    <div id="contact2">
+        <div class="contact2-group">
+            <div class="contact2-group1"><img src="image file/label.photo1.png" alt="label photo" width="100%"
+                    height="auto">
+            </div>
 
+            <div class="contact2-group2"><img src="image file/label.photo2.png" alt="label photo" width="100%"
+                    height="auto">
+            </div>
+
+            <div class="contact2-group3"><img src="image file/label.photo3.png" alt="label photo" width="100%"
+                    height="auto">
+            </div>
+
+            <div class="contact2-group4"><img src="image file/label.photo4.png" alt="label photo" width="100%"
+                    height="auto">
+            </div>
+
+        </div>
+    </div>
 
 
 </body>
