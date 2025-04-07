@@ -196,6 +196,79 @@
         display: block;
         margin: 0 auto;
     }
+
+    #welcome4 {
+        background-color: #6B51B1;
+        background-image: url('image file/sticker3.png');
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        display: block;
+        padding: 80px;
+    }
+
+
+
+    #feedback-layer {
+        padding: 0px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #6B51B1;
+    }
+
+    h5 {
+        font-size: 50px;
+        font-family: cherry Bomb One;
+        text-align: center;
+        color: #FEE273;
+        margin-bottom: 40px;
+    }
+
+    #feedback-group {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+
+    .arrow1 {
+        background-color: #4fe0c2;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+
+    .testimonial {
+        background: white;
+        border-radius: 16px;
+        padding: 30px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+
+    }
+
+
+    .images {
+        background: white;
+        border-radius: 16px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
 </style>
 
 
@@ -298,7 +371,42 @@
         </div>
     </div>
 
+    <div id="welcome4"> </div>
 
+    <div id="feedback-layer">
+        <h5>Smiles & Stories</h5>
+        <div id="feedback-group">
+            <div class="arrow1">
+                <button class="arrow left-arrow"><img src="image file/arrow_left.png" alt=""></button>
+            </div>
+
+            <div class="images">
+                <img src="image file/feedback.png" alt="Girl's Face" width="80%" height="auto">
+            </div>
+
+            <div class="testimonial">
+                <div class="user-info">
+                    <img src="image file/parents.png" alt="Amy Avatar" />
+                    <div>
+                        <div class="username">Amy</div>
+                        <div class="user-role">(mother of a 4-year-old)</div>
+                    </div>
+                </div>
+                <p>
+                    My child used to hate brushing his teeth, and I had to remind him multiple times every day.
+                    But after visiting this website, he was so attracted to the cute illustrations and fun stories
+                    that he started brushing on his own! Now, he has developed a habit of brushing his teeth every
+                    morning and night. He even reminds me to use dental floss! I'm really grateful for the educational
+                    content on this website!
+                </p>
+            </div>
+
+            <div class="arrows2">
+                <button class="arrow right-arrow"></button>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>

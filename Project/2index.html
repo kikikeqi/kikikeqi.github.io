@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smiles & Stories</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #7b4ed9;
+            color: #333;
+        }
+
+        .container {
+            padding: 40px 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ffd75f;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px #4a3190;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .images {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            position: relative;
+        }
+
+        .images img {
+            border-radius: 12px;
+            object-fit: cover;
+            height: 300px;
+        }
+
+        .before-after {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .before-after img {
+            width: 150px;
+            height: 140px;
+        }
+
+        .label {
+            position: absolute;
+            background: #00a4a6;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            left: 180px;
+        }
+
+        .before-label {
+            top: 60px;
+        }
+
+        .after-label {
+            top: 220px;
+        }
+
+        .testimonial {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-info img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        .username {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .user-role {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .testimonial p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .arrow {
+            background-color: #4fe0c2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .left-arrow {
+            position: absolute;
+            left: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .right-arrow {
+            position: absolute;
+            right: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .arrows-wrapper {
+            position: relative;
+        }
+
+        @media (max-width: 900px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .arrows-wrapper {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Smiles & Stories</h1>
+        <div class="content">
+            <div class="arrows-wrapper">
+                <button class="arrow left-arrow">←</button>
+            </div>
+            <div class="images">
+                <img src="girl-face.jpg" alt="Girl's Face">
+                <div class="before-after">
+                    <div style="position: relative;">
+                        <span class="label before-label">Before</span>
+                        <img src="before.jpg" alt="Before Smile" />
+                    </div>
+                    <div style="position: relative;">
+                        <span class="label after-label">After</span>
+                        <img src="after.jpg" alt="After Smile" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="user-info">
+                    <img src="amy-avatar.jpg" alt="Amy Avatar" />
+                    <div>
+                        <div class="username">Amy</div>
+                        <div class="user-role">(mother of a 4-year-old)</div>
+                    </div>
+                </div>
+                <p>
+                    My child used to hate brushing his teeth, and I had to remind him multiple times every day. But
+                    after visiting this website, he was so attracted to the cute illustrations and fun stories that he
+                    started brushing on his own! Now, he has developed a habit of brushing his teeth every morning and
+                    night. He even reminds me to use dental floss! I’m really grateful for the educational content on
+                    this website!
+                </p>
+            </div>
+            <div class="arrows-wrapper">
+                <button class="arrow right-arrow">→</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
