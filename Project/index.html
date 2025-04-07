@@ -327,22 +327,27 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .footer-left {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 5px;
         flex: 1;
     }
 
     .footer-left img {
-        width: 60px;
+        margin-bottom: auto;
+        align-items: center;
     }
 
-    .footer-left p {
-        font-size: 14px;
-        max-width: 300px;
+    p4 {
+        font-size: 20px;
+        font-style: bold;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        align-items: center;
     }
 
     .footer-contact {
@@ -350,40 +355,52 @@
         gap: 20px;
         align-items: center;
         font-size: 14px;
-        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    .footer-contact span {
+    .footer-contact div {
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        color: white;
         display: flex;
         align-items: center;
         gap: 6px;
+        margin-top: 2%;
     }
 
     .footer-links {
         display: flex;
         gap: 25px;
-        font-size: 16px;
-        font-weight: 600;
+        padding: 10px 20px;
+        font-size: 30px;
+        font-family: cherry Bomb One;
         flex-wrap: wrap;
+        margin-bottom: 15%;
     }
 
     .footer-rights {
         text-align: right;
-        font-size: 12px;
-        margin-top: 10px;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        color: white;
     }
 
     .footer-social {
         display: flex;
-        gap: 12px;
-        margin-top: 10px;
-        position: absolute;
-        right: 30px;
+        align-items: center;
+        justify-content: end;
+        gap: 15px;
+        margin-bottom: 10px;
     }
 
     .footer-social img {
-        width: 24px;
-        height: 24px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
     }
 </style>
 
@@ -536,12 +553,12 @@
 
     <footer>
         <div class="footer-left">
-            <img src="image file/logo.png" alt="Tooth Logo" />
+            <img src="image file/logo.png" alt="Tooth Logo" width="10%" height="auto" />
             <div>
-                <p>Let's grow healthy teeth and healthy habits, one smile at a time!</p>
+                <p4>Let's grow healthy teeth and healthy habits, one smile at a time!</p4>
                 <div class="footer-contact">
-                    <span>📞 +60172610512</span>
-                    <span>📧 littledentalhub@gmail.com</span>
+                    <div>📞 +60172610512</div>
+                    <div>📧 littledentalhub@gmail.com</div>
                 </div>
             </div>
         </div>
@@ -556,11 +573,13 @@
                 <div>FAQ</div>
             </div>
 
-            <div class="footer-rights">© 2025 Little Dental Hub. All rights reserved.</div>
             <div class="footer-social">
                 <img src="image file/facebook_5968764.png" alt="Facebook" />
                 <img src="image file/instagram_5968776.png" alt="Instagram" />
             </div>
+
+            <div class="footer-rights">© 2025 Little Dental Hub. All rights reserved.</div>
+
         </div>
     </footer>
 
