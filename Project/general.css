@@ -35,6 +35,12 @@
     border-radius: 12px;
 }
 
+
+input::placeholder {
+    color: white;
+    padding: 6px;
+}
+
 .nav-buttons div {
     position: relative;
     cursor: pointer;
