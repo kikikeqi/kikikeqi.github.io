@@ -23,7 +23,7 @@
 #menu {
     display: flex;
     color: rgb(108, 42, 170);
-    font-size: 35px;
+    font-size: 30px;
     font-family: "Cherry Bomb One", cursive;
     align-items: center;
     gap: 80px;
@@ -34,7 +34,6 @@
     text-decoration: none;
     /* 移除下划线 */
     color: rgb(108, 42, 170);
-    /* 保持原色 */
     display: flex;
     align-items: center;
     gap: 8px;
@@ -159,90 +158,52 @@ p3 {
 
 
 
-footer {
-    background-color: #f26c47;
-    color: white;
-    padding: 20px 20px;
+.footer {
+    background-color: #F96D4A;
+    padding: 40px 20px;
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.footer-left {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    flex: 1;
-}
-
-.footer-left img {
-    margin-bottom: auto;
-    align-items: center;
-}
-
-p4 {
-    font-size: 20px;
-    font-style: bold;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    align-items: center;
-}
-
-.footer-contact {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.footer-contact div {
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 2%;
-}
-
-.footer-links {
-    display: flex;
-    gap: 30px;
-    padding: 10px 20px;
-    font-size: 30px;
-    font-family: cherry Bomb One;
-    flex-wrap: wrap;
-    margin-bottom: 15%;
-}
-
-.footer-links div:hover {
+.footer-nav a {
     color: #FEE273;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Cherry Bomb One', cursive;
 }
 
-
-.footer-rights {
-    text-align: right;
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    color: white;
-}
-
-.footer-social {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 15px;
+.footer-logo {
+    width: 80px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.footer-social img {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    margin: 0;
-    padding: 0;
+.footer p {
+    color: #fff8dc;
+    font-size: 14px;
+    margin: 0%;
+}
+
+.social-icons {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
 }
