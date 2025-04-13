@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Little Dental Hub for kid in Mont Kiara,Kuala Lumpur</title>
+    <title>ABOUT US/Little Dental Hub for kid in Mont Kiara,Kuala Lumpur</title>
     <link rel="stylesheet" href="general.css">
 </head>
 
@@ -11,60 +11,465 @@
     body {
         margin: 0;
         padding: 0;
+    }
+
+    h1 {
+        color: #F96D4A;
+        font-family: "Cherry Bomb One", cursive;
+        text-align: center;
+        font-size: 50px;
+        margin: 10px 5px 0px 5px;
+    }
+
+    .stickerboy {
+        display: block;
+        background-color: #6B51B1;
+        background-image: url('imagefile.aboutpage/sticker-boy1.png');
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding: 75px;
+    }
+
+
+    .mission-text {
+        position: absolute;
+        top: 170px;
+        left: 80px;
+        font-size: 35px;
+        color: #fff04c;
+        font-family: "Cherry Bomb One", cursive;
+        text-shadow: 2px 5px #00000033;
+    }
+
+    .doctor-section {
+        background-color: #6B51B1;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+
+    .doctor-image-wrapper {
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .doctor-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .doctor-text-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45%;
+        height: 100%;
+        background-color: white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .doctor-text-box p {
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+
+
+    .triangle-section {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .philosophy-text1 {
+        position: absolute;
+        top: 680px;
+        left: 80px;
+        font-size: 35px;
+        color: #fff04c;
+        font-family: "Cherry Bomb One", cursive;
+        text-shadow: 2px 5px #00000033;
+    }
+
+    .philosophy-section {
+        display: flex;
+        align-items: center;
+        background-color: #6B51B1;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .triangle-image img {
+        display: block;
+        width: 650px;
+        /* 根据你的图片大小调 */
+        height: auto;
+    }
+
+
+    .philosophy-text {
+        width: 60%;
+        min-width: 300px;
+    }
+
+    .block {
+        margin-bottom: 50px;
+    }
+
+    .orange {
+        font-family: "Poppins", sans-serif;
+        color: #f4661b;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        margin: 10px 0 5px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+
+    p {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+
+
+
+
+
+
+    .how-we-help-section {
+        background: #FAA5CA;
+        text-align: center;
+    }
+
+    .title-wrapper {
+        padding-top: 40px;
+    }
+
+    .title-line1 {
+        font-family: "Cherry Bomb One", cursive;
+        font-size: 45px;
+        color: white;
+        margin: 0;
+        padding-top: 10px;
+        padding-right: 20%;
+    }
+
+    .title-line2 {
+        font-family: "Cherry Bomb One", cursive;
+        font-size: 45px;
+        color: white;
+        margin-top: -15px;
+        padding-left: 30%;
+    }
+
+    .card-section {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        background: linear-gradient(to bottom, #FAA5CA 80%, #6B51B1 20%);
+    }
+
+    .card {
+        position: relative;
+        width: 320px;
+        height: 460px;
+        border-radius: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card .hover-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .card:hover .default-img {
+        opacity: 0;
+    }
+
+    .card:hover .hover-img {
+        opacity: 1;
+    }
+
+    .card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: auto;
+        height: 90%;
+        background: rgba(0, 0, 0, 0.87);
+        color: white;
+        padding: 30px 25px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .card:hover .card-overlay {
+        opacity: 1;
+    }
+
+    .card-overlay h3 {
+        font-family: "Poppins", sans-serif, bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card-overlay h4 {
+        font-family: "Poppins", sans-serif, Semibold;
+        font-size: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    .card-overlay p {
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+    }
+
+
+
+
+
+
+
+
+    .team-section {
+        background: #6B51B1;
+        padding: 50px 20px;
+    }
+
+    .section-title {
+        font-size: 48px;
+        font-weight: 800;
+        color: #ffe066;
+        text-align: left;
+        margin-bottom: 40px;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .team-card {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
+    .team-img {
+        width: 280px;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        left: 70px;
+        bottom: 80px;
+        z-index: 2;
+        margin-right: 30px;
+        flex-shrink: 0;
+    }
+
+    .team-info {
+        background-color: #ffaecf;
+        border-radius: 10px;
+        padding: 20px 30px 20px 80px;
+        color: #fff;
+        max-width: 600px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+        width: 550px;
+        right: 20px;
+    }
+
+    .team-info h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #fff;
+    }
+
+    .position {
+        color: #f94c10;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .position span {
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .team-info ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .team-info li {
+        list-style-type: disc;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+
+
+
+    /*laptopL*/
+    @media (max-width: 1280px) {
+        .philosophy-section {
+            flex-direction: column;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .triangle-image img {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: -40px;
+        }
+
+        .philosophy-text {
+            margin: 0%;
+        }
+
+
+        h4 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .mission-text {
+            margin: 20px 0;
+            text-align: center;
+        }
 
         .doctor-section {
-            width: 100%;
-            background-color: #6B51B1;
-            padding: 50px;
-            display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+            padding-bottom: 90px;
         }
 
         .doctor-image-wrapper {
-            position: relative;
-            max-width: 1000px;
-            width: 100%;
-            overflow: hidden;
+            width: 600px;
+            height: auto;
             border-radius: 20px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
 
         .doctor-image {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 20px;
+            border-radius: 20px 20px 0 0;
             object-fit: cover;
         }
 
         .doctor-text-box {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 45%;
-            height: 100%;
+            position: relative;
+            width: 60%;
+            padding: 25px 20px;
+            border-radius: 0 0 20px 20px;
             background-color: white;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            padding: 40px 30px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: left;
+            text-align: center;
+            margin-left: 125px;
         }
 
         .doctor-text-box p {
-            font-size: 16px;
-            font-family: "Poppins", sans-serif;
+            font-size: 14px;
             color: #333;
-            margin-bottom: 20px;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
 
+        .philosophy-text1 {
+            position: absolute;
+            top: 910px;
+            left: 80px;
+            font-size: 35px;
+            color: #fff04c;
+            font-family: "Cherry Bomb One", cursive;
+            text-shadow: 2px 5px #00000033;
+        }
+
+
+        .card-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .card-section {
+            background: linear-gradient(to bottom, #FAA5CA 100%);
+            padding-bottom: 60px;
+            gap: 40px;
+        }
     }
 </style>
 
 <body>
+    <h1>ABOUT US</h1>
+
+    <div class="stickerboy"></div>
+
     <div class="doctor-section">
+        <div class="mission-text">Mission statement</div>
+
         <div class="doctor-image-wrapper">
             <img src="imagefile.aboutpage/doctor-image.png" alt="Doctors" class="doctor-image">
             <div class="doctor-text-box">
@@ -80,6 +485,192 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="triangle-section">
+        <div class="philosophy-text1">Philosophy</div>
+
+        <div class="philosophy-section">
+            <div class="triangle-image">
+                <img src="imagefile.aboutpage/triangle.png" alt="Triangle Graphic">
+            </div>
+
+
+            <div class="philosophy-text">
+                <div class="block">
+                    <h3 class="title orange">Purpose</h3>
+                    <h4>Why Does Little Dental Hub Exist?</h4>
+                    <p>We want to help people take better care of their teeth. A healthy mouth leads to a healthy body
+                        and a
+                        happier life. Our goal is to make oral care simple and easy to understand so that everyone can
+                        enjoy
+                        a bright and confident smile.</p>
+                </div>
+
+                <div class="block">
+                    <h3 class="title orange">Vision</h3>
+                    <h4>The Future We Strive For</h4>
+                    <p>We want to change how people see dental care in Malaysia. Our goal is to make visiting the
+                        dentist
+                        feel comfortable and welcoming, just like a peaceful garden. We believe dental care should bring
+                        value to both people and society.</p>
+                </div>
+
+                <div class="block">
+                    <h3 class="title orange">Mission</h3>
+                    <h4>Our Role</h4>
+                    <p>At Little Dental Hub, we believe dental care should be easy to access and stress-free. With
+                        creative
+                        ideas and a fresh approach, we aim to make dental visits simple and enjoyable for everyone. We
+                        will
+                        always be here to help people smile with confidence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="how-we-help-section">
+        <div class="title-wrapper">
+            <h2 class="title-line1">Your Smile Your Health</h2>
+            <h2 class="title-line2">How We Can Help</h2>
+        </div>
+
+        <section class="card-section">
+            <div class="card">
+                <img src="imagefile.aboutpage/card1-howtohelp.png" class="default-img" alt="Default 1" />
+                <img src="imagefile.aboutpage/card1-hover.png" class="hover-img" alt="Hover 1" />
+
+                <div class="card-overlay">
+                    <h3>Community Engagement</h3>
+                    <h4>Giving back through education</h4>
+                    <p>
+                        We actively reach out to local communities and schools to educate children on the importance of
+                        oral hygiene in a fun and engaging way—because healthy habits start young.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagefile.aboutpage/card2-howtohelp.png" class="default-img" alt="Default 2" />
+                <img src="imagefile.aboutpage/card2-hover.png" class="hover-img" alt="Hover 2" />
+
+                <div class="card-overlay">
+                    <h3>Creative Dental Education</h3>
+                    <h4>Fun and Interactive</h4>
+                    <p>
+                        We bring dental care to life with fun visuals and interactive tools to help kids learn how to
+                        care for their teeth through positive and playful experiences.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagefile.aboutpage/card3-howtohelp.png" class="default-img" alt="Default 3" />
+                <img src="imagefile.aboutpage/card3-hover.png" class="hover-img" alt="Hover 3" />
+
+                <div class="card-overlay">
+                    <h3>Healthy Habits</h3>
+                    <h4>Start from Young</h4>
+                    <p>
+                        We teach children how small daily actions, like brushing and flossing, make a big difference.
+                        Forming good habits early sets the foundation for lifelong dental health.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div class="team-section">
+        <h2 class="section-title">Our Team</h2>
+
+        <div class="team-card">
+            <img src="imagefile.aboutpage/team1-member.png" alt="Dr. Beh Wee Ren" class="team-img" />
+            <div class="team-info">
+                <h3>Dr. Beh Wee Ren</h3>
+                <p class="position">DDS (Hons.)<br><span>Founder & Director</span></p>
+                <ul>
+                    <li>Founder and Director of Little Dental Hub</li>
+                    <li>Official Invisalign Speaker and Trainer</li>
+                    <li>Key Opinion Leader of Straumann Dental Implant System (Switzerland)</li>
+                    <li>President of Malaysian Oral Implantology Association (MOIA)</li>
+                    <li>Treasurer of Malaysian Association of Aesthetic Dentistry (MAAD)</li>
+                    <li>Fellow of Asia Pacific Academy of Implant Dentistry (APAID)</li>
+                    <li>Member of International Association of Orthodontics and Implantologist (IAOI)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <img src="imagefile.aboutpage/team2-member.png" alt="Janice Tan Shuqin" class="team-img" />
+            <div class="team-info">
+                <h3>Janice Tan Shuqin</h3>
+                <p class="position">DDS<br><span>Project Manager</span></p>
+                <ul>
+                    <li>Member of Little Dental Hub</li>
+                    <li>Member of Malaysian Association of Aesthetic Dentistry (MAAD)</li>
+                    <li>Member of Malaysian Orthodontic Practitioners Association (MOPA)</li>
+                    <li>Progressive Orthodontic Seminars (POS)</li>
+                    <li>Oversees the entire project, making sure everything is planned, organized, and completed on
+                        time.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <img src="imagefile.aboutpage/team3-member.png" alt="Jenny Khoo Chia Ni" class="team-img" />
+            <div class="team-info">
+                <h3>Jenny Khoo Chia Ni</h3>
+                <p class="position">BDS (SEGi)<br><span>Community Liaison</span></p>
+                <ul>
+                    <li>Member of Little Dental Hub</li>
+                    <li>Certified Invisalign Provider</li>
+                    <li>Member of Malaysian Oral Implant Association</li>
+                    <li>Member of Malaysian Endodontic Society</li>
+                    <li>Member of Malaysian Association of Aesthetic Dentistry</li>
+                    <li>Works with schools, parents, and local groups to promote the project and encourage
+                        participation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <img src="imagefile.aboutpage/team4-member.png" alt="Andy Ooi Yet Lee" class="team-img" />
+            <div class="team-info">
+                <h3>Andy Ooi Yet Lee</h3>
+                <p class="position">BDS<br><span>Educational Content Developer</span></p>
+                <ul>
+                    <li>Member of Little Dental Hub</li>
+                    <li>Member of Malaysian Association of Aesthetic Dentistry (MAAD)</li>
+                    <li>Creates fun and easy-to-understand learning materials about oral health for kids.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <img src="imagefile.aboutpage/team5-member.png" alt="Teo Xin Yi" class="team-img" />
+            <div class="team-info">
+                <h3>Teo Xin Yi</h3>
+                <p class="position">PGDip Ortho (UK)<br><span>Dental Surgeon<br>Financial Specialist</span></p>
+                <ul>
+                    <li>Member of Little Dental Hub</li>
+                    <li>Member of Malaysian Dental Association (MDA)</li>
+                    <li>Member of Malaysian Endodontic Society (MES)</li>
+                    <li>Manages the budget and ensures donations and funds are used wisely.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Copy and change info for other members -->
+    </div>
+
+
+
+
 
 </body>
 
