@@ -11,10 +11,75 @@
     body {
         margin: 0;
         padding: 0;
+
+        .doctor-section {
+            width: 100%;
+            background-color: #6B51B1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .doctor-image-wrapper {
+            position: relative;
+            max-width: 1000px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .doctor-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .doctor-text-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100%;
+            background-color: white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .doctor-text-box p {
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
     }
 </style>
 
 <body>
+    <div class="doctor-section">
+        <div class="doctor-image-wrapper">
+            <img src="imagefile.aboutpage/doctor-image.png" alt="Doctors" class="doctor-image">
+            <div class="doctor-text-box">
+                <p>
+                    We serve with sincerity, striving every day to establish, maintain, and improve the health of as
+                    many patients as possible while also working to prevent diseases and abnormalities.
+                </p>
+                <p>
+                    We are committed to combining the growth of our clinic with the well-being of our employees,
+                    fostering their skills, and enhancing their personal development. We also extend our gratitude to
+                    our business partners and other indirect collaborators.
+                </p>
+            </div>
+        </div>
+    </div>
 
 </body>
 
