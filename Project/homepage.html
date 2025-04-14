@@ -22,6 +22,7 @@
         color: #F96D4A;
         margin: 0%;
         margin-top: 60px;
+        text-shadow: 2px 4px #00000033;
     }
 
     .main-photo {
@@ -49,6 +50,10 @@
         flex-wrap: wrap;
     }
 
+    .contact1-group>div {
+        max-width: 290px;
+    }
+
     .contact1-group1,
     .contact1-group2,
     .contact1-group3,
@@ -64,42 +69,52 @@
 
 
 
-    #welcome2 {
+
+    #learnaboutpart {
         background-color: #FEE273;
+        padding: 30px 30px;
+    }
+
+
+    #welcome2 {
         background-image: url('image file/sticker1.png');
         background-size: 150px;
         background-repeat: no-repeat;
         background-position: left top;
         display: block;
-        padding: 100px;
-    }
-
-    .photo-group {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-
-    h2 {
-        display: block;
-        font-size: 50px;
-        font-family: cherry Bomb One;
-        text-align: center;
-        color: #F96D4A;
-        margin-bottom: 30px;
+        padding: 15px 15px 85px 15px;
+        min-height: 50px;
     }
 
     #welcome3 {
-        background-color: #FEE273;
         background-image: url('image file/sticker2.png');
-        background-size: 200px;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: right top;
         display: block;
-        padding: 70px;
+        padding: 15px 15px 85px 15px;
+        min-height: 50px;
     }
+
+
+    .photo-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 45px;
+        font-family: 'Cherry Bomb One', cursive;
+        color: #F96D4A;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 1.5;
+        text-shadow: 2px 3px #00000033;
+    }
+
 
 
 
@@ -107,79 +122,61 @@
         background-color: #FEE273;
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 50px 50px;
+        padding: 0px 50px 60px 50px;
     }
-
-    .layer-text {
-        width: 50%;
-        flex: 1;
-        padding: 20px;
-    }
-
-
-    h3 {
-        font-size: 50px;
-        font-family: cherry Bomb One;
-        color: #F96D4A;
-        margin: 0%;
-
-    }
-
-    p {
-        font-size: 14px;
-        font-family: "poppins", sans-serif;
-        font-style: normal;
-        color: #333;
-    }
-
-
-
 
     #layer2 {
         background-color: #FEE273;
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 50px 50px;
+        padding: 40px 50px 80px 50px;
     }
 
 
-
-    .layer-text2 {
-        flex: 1;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .layer-photo2 {
-        display: flex;
-        flex: 1;
-        max-width: 500px;
+    .layer-photo img {
+        width: 400px;
+        max-width: 100%;
         height: auto;
         border-radius: 20px;
     }
 
-    h4 {
-        font-size: 60px;
-        font-family: cherry Bomb One;
+    .layer-photo {
+        flex: 0 0 500px;
+        /* 保持图片宽度统一，并为中心对齐提供固定参考宽度 */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .layer-text {
+        flex: 1;
+        padding: 20px 30px;
+        max-width: 550px;
+        /* 控制文字最大宽度，视觉上与图片对齐 */
+    }
+
+    h3 {
+        font-size: 40px;
+        font-family: 'Cherry Bomb One', cursive;
         color: #F96D4A;
         margin: 0%;
     }
 
-    p1 {
-        font-size: 24px;
-        font-family: "poppins", sans-serif;
+    p {
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
         font-style: normal;
         color: #333;
     }
+
+
+
+
 
     #contact2 {
         background-color: #FAA5CA;
@@ -207,6 +204,7 @@
         margin: 0 auto;
     }
 
+
     #welcome4 {
         background-color: #6B51B1;
         background-image: url('image file/sticker3.png');
@@ -216,7 +214,6 @@
         display: block;
         padding: 80px;
     }
-
 
 
 
@@ -237,6 +234,7 @@
         font-family: "Cherry Bomb One", cursive;
         text-align: center;
         color: #FEE273;
+        text-shadow: 2px 5px #00000033;
     }
 
     #feedback-group {
@@ -328,108 +326,142 @@
         padding: 60px;
     }
 
-    @media only screen and (max-width: 1280px) {
-        #flex-container {
-            background-color: #FEE273;
-            justify-content: space-between;
-            padding: 10px 20px;
-            top: 0;
-            z-index: 1000;
+
+
+    /*laptopL*/
+    @media (max-width: 1180px) {
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
 
-        .nav {}
+        /* 强制 logo（第一个 div）显示在最上面 */
+        .nav>div:first-child {
+            order: 0;
+        }
+
+        #search {
+            width: 20%;
+            margin-top: 10px;
+        }
+
+        #menu {
+            order: 0;
+            width: auto;
+            align-items: center;
+        }
+
+        .photo-group {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            white-space: pre-wrap;
+        }
+
     }
 
 
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 40px;
+
+    /*laptop*/
+    @media (max-width: 1100px) {
+        .contact2-group {
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        h2,
-        h3,
-        h4,
-        h5 {
-            font-size: 32px;
+        .contact2-group1,
+        .contact2-group2,
+        .contact2-group3,
+        .contact2-group4 {
+            width: 45%;
+            /* 每行两个 */
         }
 
-        p,
-        p1,
-        p2 {
-            font-size: 16px;
-        }
-
-        .main-photo img,
-        .photo-group img,
-        .layer-photo img,
-        .layer-photo2 img {
+        .contact2-group1 img,
+        .contact2-group2 img,
+        .contact2-group3 img,
+        .contact2-group4 img {
             width: 100%;
             height: auto;
+            border-radius: 50%;
+            max-width: 250px;
         }
 
-        .layer-text,
-        .layer-text2 {
-            width: 100%;
-            padding: 10px;
-            text-align: center;
+    }
+
+    /*mobile*/
+    @media (max-width: 968px) {
+        .nav {
+            flex-direction: column;
             align-items: center;
+            gap: 30px;
+        }
+
+        #menu {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .submenu {
+            position: static;
+            text-align: center;
+            box-shadow: none;
+            background-color: white;
+            margin-top: 5px;
+        }
+
+        .submenu a {
+            font-size: 22px;
+        }
+
+        #search {
+            width: 60%;
+            padding: 8px 12px;
+            font-size: 16px;
         }
 
         #layer1 {
             flex-direction: column;
-            gap: 20px;
+            text-align: center;
+            padding: 40px 20px;
         }
 
         #layer2 {
-            flex-direction: column-reverse;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .nav {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .nav-buttons {
-            flex-direction: column;
-            gap: 10px;
             text-align: center;
+            padding: 40px 20px;
+            justify-content: center;
+            flex-direction: column-reverse;
+
         }
 
-        #search {
-            width: 80%;
+        .layer-photo {
+            justify-content: center;
+            flex: none;
+            width: 100%;
         }
 
-        .contact1-group,
-        .contact2-group {
-            flex-direction: column;
-            gap: 20px;
+        .layer-photo img {
+            width: 100%;
+            max-width: 400px;
+            /* 限制最大宽度 */
+            height: auto;
+            border-radius: 20px;
         }
 
-        .testimonial {
-            padding: 20px;
+        .layer-text {
+            padding: 0;
+            max-width: 100%;
         }
 
-        #feedback-group {
-            flex-direction: column;
-        }
-
-        .images {
-            width: 90%;
-        }
-
-        .left-arrow,
-        .right-arrow {
-            display: none;
-        }
-
-        #welcome2,
-        #welcome3,
-        #welcome4,
-        #welcome5 {
-            padding: 40px;
-            background-size: 100px;
+        button.learnmore {
+            align-self: center;
+            margin-top: 20px;
         }
     }
 </style>
@@ -449,7 +481,7 @@
 
             <div id="menu">
                 <div class="menu-item">
-                    <a href="aboutpage.html">About <i class="fas fa-chevron-down down-icon"></i></a>
+                    <a href="aboutpage.html">ABOUT<i class="fas fa-chevron-down down-icon"></i></a>
                     <div class="submenu">
                         <a href="#">Mission</a>
                         <a href="#">Vision</a>
@@ -457,15 +489,15 @@
                 </div>
 
                 <div class="menu-item">
-                    <a href="serviespage.html">Services <i class="fas fa-chevron-down down-icon"></i></a>
+                    <a href="serviespage.html">SERVICES<i class="fas fa-chevron-down down-icon"></i></a>
                     <div class="submenu">
                         <a href="#">Web Development</a>
                         <a href="#">App Development</a>
                     </div>
                 </div>
 
-                <div class="menu-item"><a href="#">Book Now</a></div>
-                <div class="menu-item"><a href="#">Contact</a></div>
+                <div class="menu-item"><a href="#">BOOK NOW</a></div>
+                <div class="menu-item"><a href="#">CONTACT</a></div>
                 <div class="menu-item"><a href="#">FAQ</a></div>
             </div>
 
@@ -477,18 +509,11 @@
 
 
 
-
-
-
-
-
-
-
     <div class="main-photo">
         <h1>The Little Dentist's Amazing Journey</h1>
         <img src="image file/mainphoto1.png" alt="main photo" width="50%" height="auto">
     </div>
-    </div>
+
 
     <div id="contact1">
         <div class="contact1-group">
@@ -510,18 +535,21 @@
     </div>
 
 
-    <div id="welcome2">
+    <div id="learnaboutpart">
+        <div id="welcome2"></div>
+
         <div class="photo-group">
             <h2>Learning about Dental Care here is both fun and safe!</h2>
-            <img src="image file/photo2.png" alt="sticker photo" width="70%" height="auto">
+            <img src="image file/photo2.png" alt="sticker photo" width="50%" height="auto">
         </div>
+
         <div id="welcome3"></div>
     </div>
 
 
     <div id="layer1">
         <div class="layer-photo">
-            <img src="image file/photo3.png" alt="label photo" width="100%" height="auto">
+            <img src="image file/photo3.png" alt="label photo" width="50%" height="auto">
         </div>
 
         <div class="layer-text">
@@ -535,16 +563,17 @@
 
 
     <div id="layer2">
-        <div class="layer-text2">
-            <h4>What We Offer</h4>
-            <p1>We offer oral health education for children and recommend trusted hospitals for quality care.</p1>
+        <div class="layer-text">
+            <h3>What We Offer</h3>
+            <p>We offer oral health education for children and recommend trusted hospitals for quality care.</p>
             <button class="learnmore">Learn More</button>
         </div>
 
-        <div class="layer-photo2">
-            <img src="image file/photo4.png" width="100%" height="auto">
+        <div class="layer-photo">
+            <img src="image file/photo4.png" alt="boy photo">
         </div>
     </div>
+
 
 
     <div id="contact2">
@@ -564,9 +593,9 @@
             <div class="contact2-group4"><img src="image file/label.photo4.png" alt="label photo" width="100%"
                     height="auto">
             </div>
-
         </div>
     </div>
+
 
     <div id="welcome4"> </div>
 
@@ -616,37 +645,33 @@
     </div>
 
 
-    <footer>
-        <div class="footer-left">
-            <img src="image file/logo.png" alt="Tooth Logo" width="10%" height="auto" />
-            <div>
-                <p4>Let's grow healthy teeth and healthy habits, one smile at a time!</p4>
-                <div class="footer-contact">
-                    <div>📞 +60172610512</div>
-                    <div>📧 littledentalhub@gmail.com</div>
-                </div>
-            </div>
+
+    <footer class="footer">
+
+        <div class="footer-logo-wrapper">
+            <img src="image file/logo.png" alt="Tooth Logo" class="footer-logo">
         </div>
 
 
-        <div>
-            <div class="footer-links">
-                <div>About</div>
-                <div>Services</div>
-                <div>Contact</div>
-                <div>Book Now</div>
-                <div>FAQ</div>
-            </div>
+        <div class="footer-nav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Book Now</a>
+            <a href="#">FAQ</a>
+        </div>
 
-            <div class="footer-social">
-                <img src="image file/facebook_5968764.png" alt="Facebook" />
-                <img src="image file/instagram_5968776.png" alt="Instagram" />
-            </div>
 
-            <div class="footer-rights">© 2025 Little Dental Hub. All rights reserved.</div>
+        <p class="copyright">© 2025 Little Dental Hub. All rights reserved.</p>
 
+
+        <div class="social-icons">
+            <a href="#"><img src="image file/facebook_5968764.png" alt="Facebook"></a>
+            <a href="#"><img src="image file/instagram_5968776.png" alt="Instagram"></a>
         </div>
     </footer>
+
+
 
 </body>
 

@@ -381,6 +381,30 @@
 
     /*laptopL*/
     @media (max-width: 1150px) {
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* 2. 强制 logo（第一个 div）显示在最上面 */
+        .nav>div:first-child {
+            order: 0;
+        }
+
+        #search {
+            width: 20%;
+            margin-top: 10px;
+        }
+
+        #menu {
+            order: 0;
+            width: auto;
+            align-items: center;
+        }
+
         .philosophy-section {
             flex-direction: column;
             padding: 50px 20px;
@@ -407,9 +431,15 @@
         }
 
         .mission-text {
-            margin: 20px 0;
-            text-align: center;
+            position: absolute;
+            top: 580px;
+            left: 80px;
+            font-size: 35px;
+            color: #fff04c;
+            font-family: "Cherry Bomb One", cursive;
+            text-shadow: 2px 5px #00000033;
         }
+
 
         .doctor-section {
             flex-direction: column;
@@ -455,14 +485,13 @@
 
         .philosophy-text1 {
             position: absolute;
-            top: 910px;
+            top: 190%;
             left: 80px;
             font-size: 35px;
             color: #fff04c;
             font-family: "Cherry Bomb One", cursive;
             text-shadow: 2px 5px #00000033;
         }
-
 
         .card-section {
             flex-direction: column;
@@ -503,6 +532,64 @@
             margin-top: 0;
             z-index: 1;
         }
+
+        .nav {
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 10px;
+            gap: 20px;
+        }
+
+        #menu {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            width: 100%;
+            text-align: center;
+        }
+
+        .menu-item a {
+            justify-content: center;
+        }
+
+        .submenu {
+            position: static;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        #search {
+            width: 80%;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 25px;
+        }
+
+        .mission-text {
+            position: absolute;
+            top: 120%;
+            left: 80px;
+            font-size: 35px;
+            color: #fff04c;
+            font-family: "Cherry Bomb One", cursive;
+            text-shadow: 2px 5px #00000033;
+        }
+
+        .philosophy-text1 {
+            position: absolute;
+            top: 220%;
+            left: 80px;
+            font-size: 35px;
+            color: #fff04c;
+            font-family: "Cherry Bomb One", cursive;
+            text-shadow: 2px 5px #00000033;
+        }
+
     }
 
 
@@ -583,6 +670,26 @@
 
         .team-info li {
             font-size: 13px;
+        }
+
+        .mission-text {
+            position: absolute;
+            top: 137%;
+            left: 80px;
+            font-size: 35px;
+            color: #fff04c;
+            font-family: "Cherry Bomb One", cursive;
+            text-shadow: 2px 5px #00000033;
+        }
+
+        .philosophy-text1 {
+            position: absolute;
+            top: 240%;
+            left: 80px;
+            font-size: 35px;
+            color: #fff04c;
+            font-family: "Cherry Bomb One", cursive;
+            text-shadow: 2px 5px #00000033;
         }
     }
 </style>
@@ -832,6 +939,20 @@
         </div>
     </div>
 
+
+
+    <div class="Contact">
+        <h6>Have questions?</h6>
+        <p3>Contact us anytime!</p3>
+        <div class="contact-card-group">
+            <div class="contact-card1">
+                <img src="image file/24call.png" alt="24hr Call" width="50%" height="auto" />
+            </div>
+            <div class="contact-card2">
+                <img src="image file/customerservices.png" alt="Customer Service" width="50%" height="auto" />
+            </div>
+        </div>
+    </div>
 
 
     <footer class="footer">
