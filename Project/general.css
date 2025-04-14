@@ -3,7 +3,7 @@
 
 
 
-/* navigation bar */
+/* navigation bar - homepage*/
 #flex-container {
     background-color: #FEE273;
     justify-content: space-between;
@@ -24,7 +24,7 @@
 #menu {
     display: flex;
     color: rgb(108, 42, 170);
-    font-size: 30px;
+    font-size: 28px;
     font-family: "Cherry Bomb One", cursive;
     align-items: center;
     gap: 80px;
@@ -207,4 +207,25 @@ p3 {
 .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+
+
+/* --- booking button/servicespage --- */
+
+.book-btn {
+    background-color: #77DACA;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #000;
+    color: #fff;
 }
