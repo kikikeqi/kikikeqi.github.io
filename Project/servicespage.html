@@ -2,547 +2,14 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>services/Little Dental Hub for kid in Mont Kiara,Kuala Lumpur</title>
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/servicespage.css">
+
+
 </head>
 
-
-<style>
-    #flex-container {
-        background-color: white;
-        justify-content: space-between;
-        padding: 5px 20px 80px;
-        top: 0;
-        z-index: 1000;
-    }
-
-
-    h1 {
-        color: #FAA5CA;
-        font-family: "Cherry Bomb One", cursive;
-        text-align: center;
-        font-size: 100px;
-        margin: 10px 5px 0px 5px;
-    }
-
-    h2 {
-        padding: 30px 0px 20px 0px;
-        margin: 0%;
-    }
-
-    .location-section {
-        text-align: center;
-        padding: 0 50px 20px;
-        background-color: #6B51B1;
-    }
-
-    .location-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        color: white;
-        font-family: "Cherry Bomb One", cursive;
-        font-size: 25px;
-        text-shadow: 2px 5px #00000033;
-    }
-
-    .location-icon {
-        width: 30px;
-        height: 30px;
-    }
-
-    .map-container {
-        overflow: hidden;
-        border-radius: 20px;
-        margin-bottom: 20px;
-    }
-
-    .location-description {
-        font-size: 18px;
-        color: white;
-        font-family: "Poppins", sans-serif;
-    }
-
-
-    .sticker1 {
-        display: block;
-        background-color: #6B51B1;
-        background-image: url(imagefile.servicespage/sticker1.png);
-        background-repeat: no-repeat;
-        background-size: 150px;
-        background-repeat: no-repeat;
-        background-position: left top;
-        padding: 70px;
-        position: absolute;
-        left: 45px;
-    }
-
-
-
-
-
-    .referral-section {
-        background-color: #6B51B1;
-        padding: 50px 50px 80px;
-        text-align: center;
-    }
-
-    .referral-title {
-        font-family: "Cherry Bomb One", cursive;
-        color: #FEE273;
-        font-size: 45px;
-        text-shadow: 2px 5px #00000033;
-        padding: 50px 20px 20px;
-    }
-
-    .referral-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .referral-card {
-        background-color: #fff;
-        border-radius: 20px;
-        padding: 40px;
-        max-width: 900px;
-        width: 100%;
-        display: flex;
-        align-items: stretch;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    .referral-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        padding-bottom: 40px;
-        padding-top: 30px;
-        flex-wrap: wrap;
-    }
-
-
-
-    .clinic-logo {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 20px;
-    }
-
-    .clinic-info {
-        flex: 1;
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    .clinic-info h3 {
-        margin: 0;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-
-    .clinic-tag {
-        display: inline-block;
-        background: #000;
-        color: #fff;
-        font-size: 12px;
-        padding: 5px 10px;
-        border-radius: 20px;
-        margin: 10px 0;
-    }
-
-    .clinic-info p {
-        margin: 0;
-        font-size: 14px;
-        color: #555;
-
-    }
-
-    .nav-btn {
-        background-color: #6FCDB9;
-        border: none;
-        color: white;
-        font-size: 26px;
-        font-family: "Poppins", sans-serif;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .left-btn {
-        left: 70px;
-    }
-
-    .right-btn {
-        right: 70px;
-    }
-
-
-
-    .sticker2 {
-        display: block;
-        background-color: #FAA5CA;
-        background-image: url(imagefile.servicespage/sticker2.png);
-        background-repeat: no-repeat;
-        background-size: 200px;
-        background-repeat: no-repeat;
-        background-position: right top;
-        padding-bottom: 190px;
-    }
-
-
-
-
-    .fun-services {
-        background-color: #FAA5CA;
-        padding: 0px 40px 60px;
-        text-align: center;
-    }
-
-
-    .services-title {
-        font-family: "Cherry Bomb One", cursive;
-        font-size: 50px;
-        color: #ffffff;
-        text-shadow: 2px 4px #00000030;
-        margin: 0%;
-        padding: 0%;
-    }
-
-    .clinic-header {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin-bottom: 20px;
-    }
-
-    .clinic-logo {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .clinic-name {
-        font-size: 18px;
-        color: #fff;
-        font-family: "Poppins", sans-serif;
-    }
-
-
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 40px;
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-
-    .service-card {
-        background: #ffffff;
-        border-radius: 20px;
-        padding: 25px 20px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .service-card .label {
-        position: absolute;
-        top: 0.05px;
-        left: 0.05px;
-        background-color: #F96D4A;
-        font-family: "Poppins", sans-serif;
-        color: white;
-        font-size: 12px;
-        padding: 5px 15px 5px 15px;
-        border-radius: 50px 0px 15px 20px;
-    }
-
-    .card-icon {
-        object-fit: contain;
-        margin: 40px 0 20px;
-    }
-
-
-    .card-title {
-        font-size: 14px;
-        color: #000;
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        margin: 10px;
-    }
-
-
-    .learn-btn {
-        background-color: #6FCDB9;
-        font-family: "Poppins", sans-serif;
-        border: none;
-        font-weight: 600;
-        border-radius: 20px;
-        padding: 8px 20px;
-        color: #fff;
-        font-size: 15px;
-        cursor: pointer;
-        transition: background0.3s ease;
-    }
-
-    .learn-btn:hover {
-        background-color: #000;
-        color: #6FCDB9;
-    }
-
-
-
-
-    .dental-process {
-        background-color: #6B51B1;
-        padding: 80px;
-    }
-
-    .dental-process .subheading {
-        font-size: 16px;
-        font-weight: 600;
-        margin: 0%;
-        padding: 0%;
-        font-family: "Poppins", sans-serif;
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        flex-wrap: wrap;
-
-    }
-
-    .dental-process .title {
-        font-family: "Cherry Bomb One", cursive;
-        color: #ffffff;
-        text-shadow: 2px 4px #00000030;
-        font-size: 45px;
-        margin: 0%;
-        padding: 0%;
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-    }
-
-    .star-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-        gap: 40px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .star-box {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 1;
-    }
-
-    .star-image {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        transition: opacity 0.3s ease;
-    }
-
-    .star-image.hover {
-        opacity: 0;
-        z-index: 2;
-    }
-
-    .star-box:hover .star-image.hover {
-        opacity: 1;
-    }
-
-    .star-box:hover .star-image.normal {
-        opacity: 0;
-    }
-
-    .star-hover-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 80%;
-        transform: translate(-50%, -50%);
-        color: black;
-        font-family: "Poppins", sans-serif;
-        font-size: 18px;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: 3;
-        pointer-events: none;
-    }
-
-    p {
-        font-family: "Poppins", sans-serif;
-        font-size: 13px;
-        margin: 20px 60px;
-    }
-
-    .star-hover-text h4 {
-        font-weight: 700;
-        margin-bottom: 8px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .star-box:hover .star-hover-text {
-        opacity: 1;
-    }
-
-
-
-
-    /*laptopL*/
-    @media (max-width: 1325px) {
-        .nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        /* 强制 logo（第一个 div）显示在最上面 */
-        .nav>div:first-child {
-            order: 0;
-        }
-
-        #search {
-            width: 20%;
-            margin-top: 10px;
-        }
-
-        #menu {
-            order: 0;
-            width: auto;
-            align-items: center;
-        }
-
-        h1 {
-            font-size: 80px;
-        }
-
-        .referral-container {
-            padding: 0 20px;
-
-            /* 增加两边间距适配小屏幕 */
-        }
-
-        .referral-card {
-            padding: 20px 10px;
-            /* 缩小白卡片内边距 */
-            max-width: 700px;
-            width: 100%;
-
-        }
-
-        .referral-item {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .clinic-logo {
-            margin: 0 auto 15px;
-            /* 居中图片 */
-        }
-
-        .clinic-info {
-            margin: 0;
-            text-align: center;
-        }
-
-        .clinic-info h3,
-        .clinic-info p {
-            text-align: center;
-        }
-
-        .clinic-tag {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .book-btn {
-            margin-top: 20px;
-            align-self: center;
-        }
-
-        .left-btn,
-        .right-btn {
-            position: static;
-            display: inline-block;
-            margin: 20px 30px 0;
-            /* spacing 上下10左右20 */
-            transform: none;
-        }
-
-        .clinic-header {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px;
-        }
-    }
-
-
-
-
-    @media (max-width: 768px) {
-
-        .header {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 10px 20px;
-        }
-
-        .nav ul {
-            flex-direction: column;
-            gap: 10px;
-            width: 100%;
-            margin-top: 10px;
-        }
-
-        .nav a {
-            display: block;
-            width: 100%;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-
-        h1 {
-            font-size: 60px;
-        }
-
-
-        .left-btn,
-        .right-btn {
-            display: none;
-
-        }
-    }
-</style>
 
 <body>
     <div id="flex-container">
@@ -550,7 +17,7 @@
         <div class="nav">
             <div>
                 <a href="homepage.html">
-                    <img src="image file/logo.png" width="80" alt="logo">
+                    <img src="imagefile/imagefile.homepage/logo.png" width="80" alt="logo">
                 </a>
             </div>
 
@@ -592,7 +59,7 @@
 
     <div class="location-section">
         <div class="location-header">
-            <img src="imagefile.servicespage/location-iocn.png" alt="location-icon" width="3%" height="auto"
+            <img src="imagefile/imagefile.servicespage/location-iocn.png" alt="location-icon" width="3%" height="auto"
                 location-icon style="padding-top: 20px;">
             <h2>Mont Kiara, Kuala Lumpur</h2>
         </div>
@@ -622,7 +89,8 @@
             <div class="referral-card">
 
                 <div class="referral-item">
-                    <img src="imagefile.servicespage/dentallogo1.png" alt="Dr Kayla Logo" class="clinic-logo" />
+                    <img src="imagefile/imagefile.servicespage/dentallogo1.png" alt="Dr Kayla Logo"
+                        class="clinic-logo" />
                     <div class="clinic-info">
                         <h3>Dr Kayla Dental Clinic</h3>
                         <div class="clinic-tag">Dentist and dental surgery</div>
@@ -633,7 +101,8 @@
 
 
                 <div class="referral-item">
-                    <img src="imagefile.servicespage/dentallogo2.png" alt="Little GiGi Logo" class="clinic-logo" />
+                    <img src="imagefile/imagefile.servicespage/dentallogo2.png" alt="Little GiGi Logo"
+                        class="clinic-logo" />
                     <div class="clinic-info">
                         <h3>Little GiGi Children Dental Clinic</h3>
                         <div class="clinic-tag">Cosmetic dentist</div>
@@ -644,7 +113,8 @@
 
 
                 <div class="referral-item">
-                    <img src="imagefile.servicespage/dentallogo3.png" alt="WhatClinic Logo" class="clinic-logo" />
+                    <img src="imagefile/imagefile.servicespage/dentallogo3.png" alt="WhatClinic Logo"
+                        class="clinic-logo" />
                     <div class="clinic-info">
                         <h3>WhatClinic Dental Clinic</h3>
                         <div class="clinic-tag">Cosmetic dentist</div>
@@ -666,7 +136,7 @@
         <h2 class="services-title">Fun Dental Services</h2>
 
         <div class="clinic-header">
-            <img src="imagefile.servicespage/iconpart-logo.png" alt="Dr Kayla Logo" class="clinic-logo" />
+            <img src="imagefile/imagefile.servicespage/iconpart-logo.png" alt="Dr Kayla Logo" class="clinic-logo" />
             <span class="clinic-name">Dr Kayla Dental Clinic</span>
         </div>
 
@@ -674,7 +144,7 @@
             <!-- Card 1 -->
             <div class="service-card">
                 <div class="label">Dental Care</div>
-                <img src="imagefile.servicespage/icon1.png" alt="Brushing Icon" class="card-icon" />
+                <img src="imagefile/imagefile.servicespage/icon1.png" alt="Brushing Icon" class="card-icon" />
                 <h3 class="card-title">Proper Brushing Techniques</h3>
                 <button class="learn-btn">Learn More</button>
             </div>
@@ -682,7 +152,7 @@
             <!-- Card 2 -->
             <div class="service-card">
                 <div class="label">Pediatric Care</div>
-                <img src="imagefile.servicespage/icon2.png" alt="Cavity Icon" class="card-icon" />
+                <img src="imagefile/imagefile.servicespage/icon2.png" alt="Cavity Icon" class="card-icon" />
                 <h3 class="card-title">Preventing cavities</h3>
                 <button class="learn-btn">Learn More</button>
             </div>
@@ -690,7 +160,7 @@
             <!-- Card 3 -->
             <div class="service-card">
                 <div class="label">Pediatric Care</div>
-                <img src="imagefile.servicespage/icon3.png" alt="Oral Care Icon" class="card-icon" />
+                <img src="imagefile/imagefile.servicespage/icon3.png" alt="Oral Care Icon" class="card-icon" />
                 <h3 class="card-title">At-Home Oral Care</h3>
                 <button class="learn-btn">Learn More</button>
             </div>
@@ -698,7 +168,7 @@
             <!-- Card 4 -->
             <div class="service-card">
                 <div class="label">Diet</div>
-                <img src="imagefile.servicespage/icon4.png" alt="Food Icon" class="card-icon" />
+                <img src="imagefile/imagefile.servicespage/icon4.png" alt="Food Icon" class="card-icon" />
                 <h3 class="card-title">Foods Your Teeth Love &amp; Hate</h3>
                 <button class="learn-btn">Learn More</button>
             </div>
@@ -706,15 +176,15 @@
             <!-- Card 5 -->
             <div class="service-card">
                 <div class="label">Dental Care</div>
-                <img src="imagefile.servicespage/icon5.png" alt="Kids Teeth Icon" class="card-icon" />
-                <h3 class="card-title">How to Take Care of Your Child’s Teeth</h3>
+                <img src="imagefile/imagefile.servicespage/icon5.png" alt="Kids Teeth Icon" class="card-icon" />
+                <h3 class="card-title">How to Take Care of Your Child's Teeth</h3>
                 <button class="learn-btn">Learn More</button>
             </div>
 
             <!-- Card 6 -->
             <div class="service-card">
                 <div class="label">Cosmetic Dentistry</div>
-                <img src="imagefile.servicespage/icon6.png" alt="Whitening Icon" class="card-icon" />
+                <img src="imagefile/imagefile.servicespage/icon6.png" alt="Whitening Icon" class="card-icon" />
                 <h3 class="card-title">Whitening</h3>
                 <button class="learn-btn">Learn More</button>
             </div>
@@ -722,7 +192,7 @@
             <!-- Card 7 -->
             <div class="service-card">
                 <div class="label">Pregnancy Care</div>
-                <img src="imagefile.servicespage/icon7.png" alt="Maternity Icon" class="card-icon" />
+                <img src="imagefile/imagefile.servicespage/icon7.png" alt="Maternity Icon" class="card-icon" />
                 <h3 class="card-title">Maternity Dentistry</h3>
                 <button class="learn-btn">Learn More</button>
             </div>
@@ -730,7 +200,7 @@
             <!-- Card 8 -->
             <div class="service-card">
                 <div class="label">Telemedicine</div>
-                <img src="imagefile.servicespage/icon8.png" alt="Online Doctor Icon" class="card-icon" />
+                <img src="imagefile/imagefile.servicespage/icon8.png" alt="Online Doctor Icon" class="card-icon" />
                 <h3 class="card-title">Online medical consultation</h3>
                 <button class="learn-btn">Learn More</button>
             </div>
@@ -748,8 +218,9 @@
         <div class="star-grid">
 
             <div class="star-box">
-                <img src="imagefile.servicespage/star1.png" alt="Star" class="star-image normal" />
-                <img src="imagefile.servicespage/background-star.png" alt="Star Hover" class="star-image hover" />
+                <img src="imagefile/imagefile.servicespage/star1.png" alt="Star" class="star-image normal" />
+                <img src="imagefile/imagefile.servicespage/background-star.png" alt="Star Hover"
+                    class="star-image hover" />
                 <div class="star-hover-text">
                     <h4>Initial Check-up</h4>
                     <p>The dentist checks your child's teeth and gums. They look for cavities, gum issues, or other
@@ -761,8 +232,9 @@
 
 
             <div class="star-box">
-                <img src="imagefile.servicespage/star2.png" alt="Star" class="star-image normal" />
-                <img src="imagefile.servicespage/background-star.png" alt="Star Hover" class="star-image hover" />
+                <img src="imagefile/imagefile.servicespage/star2.png" alt="Star" class="star-image normal" />
+                <img src="imagefile/imagefile.servicespage/background-star.png" alt="Star Hover"
+                    class="star-image hover" />
                 <div class="star-hover-text">
                     <h4>Diagnosis & Treatment Plan</h4>
                     <p>The dentist explains your child's dental health. If treatment is needed (like filling cavities or
@@ -773,8 +245,9 @@
 
 
             <div class="star-box">
-                <img src="imagefile.servicespage/star3.png" alt="Star" class="star-image normal" />
-                <img src="imagefile.servicespage/background-star.png" alt="Star Hover" class="star-image hover" />
+                <img src="imagefile/imagefile.servicespage/star3.png" alt="Star" class="star-image normal" />
+                <img src="imagefile/imagefile.servicespage/background-star.png" alt="Star Hover"
+                    class="star-image hover" />
                 <div class="star-hover-text">
                     <h4>Treatment Care</h4>
                     <p>Teeth Cleaning:Removes plaque and keeps teeth healthy.</p>
@@ -786,8 +259,9 @@
 
 
             <div class="star-box">
-                <img src="imagefile.servicespage/star4.png" alt="Star" class="star-image normal" />
-                <img src="imagefile.servicespage/background-star.png" alt="Star Hover" class="star-image hover" />
+                <img src="imagefile/imagefile.servicespage/star4.png" alt="Star" class="star-image normal" />
+                <img src="imagefile/imagefile.servicespage/background-star.png" alt="Star Hover"
+                    class="star-image hover" />
                 <div class="star-hover-text">
                     <h4>Follow-up & Preventive Care</h4>
                     <p>To keep teeth healthy and prevent problems.</p>
@@ -806,10 +280,11 @@
         <p3>Contact us anytime!</p3>
         <div class="contact-card-group">
             <div class="contact-card1">
-                <img src="image file/24call.png" alt="24hr Call" width="50%" height="auto" />
+                <img src="imagefile//imagefile.homepage/24call.png" alt="24hr Call" width="50%" height="auto" />
             </div>
             <div class="contact-card2">
-                <img src="image file/customerservices.png" alt="Customer Service" width="50%" height="auto" />
+                <img src="imagefile/imagefile.homepage/customerservices.png" alt="Customer Service" width="50%"
+                    height="auto" />
             </div>
         </div>
     </div>
@@ -818,13 +293,13 @@
     <footer class="footer">
 
         <div class="footer-logo-wrapper">
-            <img src="image file/logo.png" alt="Tooth Logo" class="footer-logo">
+            <img src="imagefile/imagefile.homepage/logo.png" alt="Tooth Logo" class="footer-logo">
         </div>
 
 
         <div class="footer-nav">
-            <a href="#">About</a>
-            <a href="#">Services</a>
+            <a href="aboutpage.html">About</a>
+            <a href="servicespage.html">Services</a>
             <a href="#">Contact</a>
             <a href="#">Book Now</a>
             <a href="#">FAQ</a>
@@ -835,8 +310,8 @@
 
 
         <div class="social-icons">
-            <a href="#"><img src="image file/facebook_5968764.png" alt="Facebook"></a>
-            <a href="#"><img src="image file/instagram_5968776.png" alt="Instagram"></a>
+            <a href="#"><img src="imagefile//imagefile.homepage/facebook_5968764.png" alt="Facebook"></a>
+            <a href="#"><img src="imagefile/imagefile.homepage/instagram_5968776.png" alt="Instagram"></a>
         </div>
     </footer>
 

@@ -232,3 +232,13 @@ p3 {
     background-color: #000;
     color: #fff;
 }
+
+
+
+h1 {
+    color: #FAA5CA;
+    font-family: "Cherry Bomb One", cursive;
+    text-align: center;
+    font-size: 100px;
+    margin: 10px 5px 0px 5px;
+}

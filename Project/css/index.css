@@ -65,7 +65,7 @@ h1 {
 
 
 #welcome2 {
-    background-image: url('image file/sticker1.png');
+    background-image: url('imagefile/imagefile.homepage/sticker1.png');
     background-size: 150px;
     background-repeat: no-repeat;
     background-position: left top;
@@ -75,7 +75,7 @@ h1 {
 }
 
 #welcome3 {
-    background-image: url('image file/sticker2.png');
+    background-image: url('imagefile//imagefile.homepage/sticker2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -195,7 +195,7 @@ p {
 
 #welcome4 {
     background-color: #6B51B1;
-    background-image: url('image file/sticker3.png');
+    background-image: url('imagefile/imagefile.homepage/sticker3.png');
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: right top;
