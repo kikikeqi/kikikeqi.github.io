@@ -10,15 +10,102 @@
 
 
 <style>
+    #flex-container {
+        background-color: white;
+        justify-content: space-between;
+        padding: 5px 20px 80px;
+        top: 0;
+        z-index: 1000;
+    }
+
+    h1 {
+        color: #6FCDB9;
+        font-size: 90px;
+    }
 
 
+    .Cavitiesform-section {
+        font-family: "Poppins", sans-serif;
+    }
 
+    .Cavitiesform-header {
+        background-color: #FAA5CA;
+        padding: 40px 20px 60px;
+        text-align: center;
+    }
+
+    .Cavitiesform-header h2 {
+        font-size: 50px;
+        font-family: "Cherry Bomb One", cursive;
+        color: #6B51B1;
+        text-shadow: 2px 2px #00000033;
+        margin: 0%;
+    }
+
+    .Cavitiesform-label {
+        display: inline-block;
+        background-color: #FEE273;
+        color: #F96D4A;
+        padding: 12px 50px;
+        border-radius: 20px;
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: bold;
+    }
 </style>
 
 <body>
+    <div id="flex-container">
+
+        <div class="nav">
+            <div>
+                <a href="homepage.html">
+                    <img src="imagefile/imagefile.homepage/logo.png" width="80" alt="logo">
+                </a>
+            </div>
 
 
+            <div id="menu">
+                <div class="menu-item">
+                    <a href="aboutpage.html">ABOUT<i class="fas fa-chevron-down down-icon"></i></a>
+                    <div class="submenu">
+                        <a href="#">Mission</a>
+                        <a href="#">Vision</a>
+                    </div>
+                </div>
 
+                <div class="menu-item">
+                    <a href="serviespage.html">SERVICES<i class="fas fa-chevron-down down-icon"></i></a>
+                    <div class="submenu">
+                        <a href="#">Web Development</a>
+                        <a href="#">App Development</a>
+                    </div>
+                </div>
+
+                <div class="menu-item"><a href="#">BOOK NOW</a></div>
+                <div class="menu-item"><a href="#">CONTACT</a></div>
+                <div class="menu-item"><a href="#">FAQ</a></div>
+            </div>
+
+            <input id="search" type="text" placeholder="Search" autocomplete="off">
+        </div>
+    </div>
+
+
+    <h1>DENTAL CARE</h1>
+
+
+    <div class="Cavitiesform-section">
+        <div class="Cavitiesform-header">
+            <h2>
+                How Cavities Form<br>&<br>
+                How to Prevent Cavities?
+            </h2>
+            <div class="Cavitiesform-label">
+                I Brush My Teeth Every Day, So Why Do I Still Get Cavities?
+            </div>
+        </div>
+    </div>
 
 
 
