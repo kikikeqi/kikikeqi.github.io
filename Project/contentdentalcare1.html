@@ -26,31 +26,30 @@
 
 
     .brushing-section {
-        width: 100%;
-        font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+        font-family: "Poppins", sans-serif;
     }
 
     .brushing-header {
         background-color: #f89ac2;
-        padding: 60px 20px 40px;
+        padding: 40px 20px 60px;
         text-align: center;
     }
 
     .brushing-header h2 {
-        font-size: 28px;
+        font-size: 50px;
+        font-family: "Cherry Bomb One", cursive;
         color: #5f4b8b;
-        font-weight: bold;
-        text-shadow: 1px 1px 2px #fff;
-        line-height: 1.5;
+        text-shadow: 2px 2px #00000033;
+        margin: 0%;
     }
 
     .brushing-label {
         display: inline-block;
         background-color: #ffe466;
         color: #ff5e00;
-        padding: 12px 20px;
+        padding: 12px 50px;
         border-radius: 20px;
-        margin-top: 20px;
+        margin-top: 40px;
         font-size: 16px;
         font-weight: bold;
     }
@@ -61,39 +60,116 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 100px;
     }
 
     .step-card {
-        width: 160px;
+        width: 200px;
         text-align: center;
         color: white;
-        font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        flex-direction: column;
     }
 
     .step-number {
         background-color: #ffe466;
+        font-family: "Poppins", sans-serif;
         color: #000;
         width: 32px;
         height: 32px;
-        line-height: 32px;
+        align-content: center;
         border-radius: 50%;
         font-weight: bold;
         font-size: 18px;
-        margin: 0 auto 10px;
     }
 
     .step-card img {
-        width: 100%;
-        max-width: 130px;
-        height: auto;
         margin-bottom: 10px;
     }
 
     .step-card p {
         font-size: 14px;
-        line-height: 1.3;
+        font-family: "Poppins", sans-serif;
         color: black;
+        margin: 0 auto;
+        max-width: 160px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+    .tips-section {
+        background-color: #6B51B1;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .tips-title {
+        font-family: "Cherry Bomb One", cursive;
+        font-size: 35px;
+        color: #FEE273;
+        margin-bottom: 40px;
+    }
+
+    .tips-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px
+    }
+
+    .tips-card-row {
+        display: flex;
+        gap: 90px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tips-card-row.center {
+        justify-content: center;
+    }
+
+    .tips-card {
+        background-color: #FAA5CA;
+        width: 270px;
+        height: 320px;
+        padding: 30px 20px 30px;
+        border-radius: 20px;
+        position: relative;
+        text-align: center;
+
+    }
+
+    .card-icon {
+        position: absolute;
+        top: -60px;
+        left: -50px;
+    }
+
+    .card-star {
+        width: 155px;
+        height: auto;
+        margin: 10px auto 5px;
+    }
+
+    .star-text {
+        margin-top: -78px;
+        font-size: 18px;
+        color: #F96D4A;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .tips-card p {
+        font-size: 18px;
+        color: white;
+        padding-top: 50px;
+        font-family: "Poppins", sans-serif;
     }
 </style>
 
@@ -147,7 +223,7 @@
                 What is the Bass Brushing Technique?
             </h2>
             <div class="brushing-label">
-                The Bass Brushing Technique is a good way to clean your teeth and gums.
+                The Bass Brushing Technique is a good way to clean your teeth and gums
             </div>
         </div>
     </div>
@@ -181,6 +257,64 @@
         </div>
     </div>
 
+
+
+
+
+
+    <!-- 紫色背景 -->
+    <div class="tips-section">
+        <h2 class="tips-title">Tips for brushing your teeth</h2>
+
+        <div class="tips-card-container">
+
+            <!-- 上排三张卡片 -->
+            <div class="tips-card-row">
+                <div class="tips-card">
+                    <img src="imagefile/imagefile.contentdentalcare1/tips-icon1.png" alt="icon" class="card-icon" />
+                    <img src="imagefile/imagefile.contentdentalcare1/star-background.png" alt="star"
+                        class="card-star" />
+                    <div class="star-text">Time</div>
+                    <p>Brush for at least 3 minutes each time to effectively remove food residue and bacteria.</p>
+                </div>
+
+                <div class="tips-card">
+                    <img src="imagefile/imagefile.contentdentalcare1/tips-icon2.png" alt="icon" class="card-icon" />
+                    <img src="imagefile/imagefile.contentdentalcare1/star-background.png" alt="star"
+                        class="card-star" />
+                    <div class="star-text">Frequency</div>
+                    <p>Brush your teeth every morning and evening, and rinse after meals. If possible, brush after each
+                        meal.</p>
+                </div>
+
+                <div class="tips-card">
+                    <img src="imagefile/imagefile.contentdentalcare1/tips-icon3.png" alt="icon" class="card-icon" />
+                    <img src="imagefile/imagefile.contentdentalcare1/star-background.png" alt="star"
+                        class="card-star" />
+                    <div class="star-text">Replace</div>
+                    <p>Replace your toothbrush regularly, generally every 3-4 months.</p>
+                </div>
+
+
+                <div class="tips-card">
+                    <img src="imagefile/imagefile.contentdentalcare1/tips-icon4.png" alt="icon" class="card-icon" />
+                    <img src="imagefile/imagefile.contentdentalcare1/star-background.png" alt="star"
+                        class="card-star" />
+                    <div class="star-text">Prevent</div>
+                    <p>Using dental floss and mouthwash can further clean the mouth and prevent oral diseases.</p>
+                </div>
+
+                <div class="tips-card">
+                    <img src="imagefile/imagefile.contentdentalcare1/tips-icon5.png" alt="icon" class="card-icon" />
+                    <img src="imagefile/imagefile.contentdentalcare1/star-background.png" alt="star"
+                        class="card-star" />
+                    <div class="star-text">Clean</div>
+                    <p>Brush for at least 3 minutes each time to effectively remove food residue and bacteria.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 </body>
