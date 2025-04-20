@@ -112,7 +112,7 @@ h2 {
 
 .clinic-logo {
     width: 80px;
-    height: 80px;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
@@ -126,18 +126,20 @@ h2 {
 
 .clinic-info h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 23px;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 .clinic-tag {
     display: inline-block;
     background: #000;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     padding: 5px 10px;
     border-radius: 20px;
     margin: 10px 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .clinic-info p {
@@ -490,26 +492,36 @@ p {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 929px) {
 
-    .header {
+    .nav {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
+        align-items: center;
+        gap: 30px;
     }
 
-    .nav ul {
+    #menu {
         flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        margin-top: 10px;
+        align-items: center;
+        gap: 20px;
     }
 
-    .nav a {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-        border-bottom: 1px solid #eee;
+    .submenu {
+        position: static;
+        text-align: center;
+        box-shadow: none;
+        background-color: white;
+        margin-top: 5px;
+    }
+
+    .submenu a {
+        font-size: 22px;
+    }
+
+    #search {
+        width: 60%;
+        padding: 8px 12px;
+        font-size: 16px;
     }
 
 

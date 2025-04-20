@@ -20,6 +20,7 @@
 
     h1 {
         color: #6FCDB9;
+        font-size: 90px;
     }
 
 
@@ -30,7 +31,7 @@
     }
 
     .brushing-header {
-        background-color: #f89ac2;
+        background-color: #FAA5CA;
         padding: 40px 20px 60px;
         text-align: center;
     }
@@ -45,8 +46,8 @@
 
     .brushing-label {
         display: inline-block;
-        background-color: #ffe466;
-        color: #ff5e00;
+        background-color: #FEE273;
+        color: #F96D4A;
         padding: 12px 50px;
         border-radius: 20px;
         margin-top: 40px;
@@ -56,7 +57,7 @@
 
     .brushing-steps {
         background-color: white;
-        padding: 40px 20px;
+        padding: 60px 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -80,7 +81,7 @@
         height: 32px;
         align-content: center;
         border-radius: 50%;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 18px;
     }
 
@@ -95,6 +96,7 @@
         margin: 0 auto;
         max-width: 160px;
         text-align: center;
+        font-weight: 500;
     }
 
 
@@ -111,9 +113,11 @@
 
     .tips-title {
         font-family: "Cherry Bomb One", cursive;
-        font-size: 35px;
+        font-size: 40px;
         color: #FEE273;
-        margin-bottom: 40px;
+        padding: 20px 20px 80px;
+        margin: 0;
+        text-shadow: 2px 5px #00000033;
     }
 
     .tips-card-container {
@@ -171,6 +175,94 @@
         padding-top: 50px;
         font-family: "Poppins", sans-serif;
     }
+
+
+
+
+    /*laptopL*/
+    @media (max-width: 1220px) {
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* 强制 logo（第一个 div）显示在最上面 */
+        .nav>div:first-child {
+            order: 0;
+        }
+
+        #search {
+            width: 20%;
+            margin-top: 10px;
+        }
+
+        #menu {
+            order: 0;
+            width: auto;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        .brushing-header h2 {
+            font-size: 35px;
+        }
+    }
+
+    @media (max-width: 929px) {
+        .nav {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        #menu {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .submenu {
+            position: static;
+            text-align: center;
+            box-shadow: none;
+            background-color: white;
+            margin-top: 5px;
+        }
+
+        .submenu a {
+            font-size: 22px;
+        }
+
+        #search {
+            width: 60%;
+            padding: 8px 12px;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .brushing-header h2 {
+            font-size: 28px;
+        }
+
+        .brushing-label {
+            display: inline-block;
+            background-color: #FEE273;
+            color: #F96D4A;
+            padding: 12px 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
 </style>
 
 <body>
@@ -212,8 +304,6 @@
 
 
     <h1>DENTAL CARE</h1>
-
-
 
 
     <div class="brushing-section">
@@ -262,13 +352,13 @@
 
 
 
-    <!-- 紫色背景 -->
+
     <div class="tips-section">
         <h2 class="tips-title">Tips for brushing your teeth</h2>
 
         <div class="tips-card-container">
 
-            <!-- 上排三张卡片 -->
+
             <div class="tips-card-row">
                 <div class="tips-card">
                     <img src="imagefile/imagefile.contentdentalcare1/tips-icon1.png" alt="icon" class="card-icon" />

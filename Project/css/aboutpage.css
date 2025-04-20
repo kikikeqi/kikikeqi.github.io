@@ -358,7 +358,7 @@ p {
 
 
 /*laptopL*/
-@media (max-width: 1150px) {
+@media (max-width: 1218px) {
 
     .nav {
         display: flex;
@@ -367,7 +367,7 @@ p {
         gap: 20px;
     }
 
-    /* 2. 强制 logo（第一个 div）显示在最上面 */
+    /* 强制 logo（第一个 div）显示在最上面 */
     .nav>div:first-child {
         order: 0;
     }
@@ -381,6 +381,10 @@ p {
         order: 0;
         width: auto;
         align-items: center;
+    }
+
+    h1 {
+        font-size: 70px;
     }
 
     .philosophy-section {
@@ -574,24 +578,34 @@ p {
 
 
 @media (max-width: 768px) {
-    .header {
+    .nav {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
+        align-items: center;
+        gap: 30px;
     }
 
-    .nav ul {
+    #menu {
         flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        margin-top: 10px;
+        align-items: center;
+        gap: 20px;
     }
 
-    .nav a {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-        border-bottom: 1px solid #eee;
+    .submenu {
+        position: static;
+        text-align: center;
+        box-shadow: none;
+        background-color: white;
+        margin-top: 5px;
+    }
+
+    .submenu a {
+        font-size: 22px;
+    }
+
+    #search {
+        width: 60%;
+        padding: 8px 12px;
+        font-size: 16px;
     }
 
     /* Hero Section */
