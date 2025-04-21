@@ -24,11 +24,11 @@
     }
 
 
-    .Cavitiesform-section {
+    .cavitiesform-section {
         font-family: "Poppins", sans-serif;
     }
 
-    .Cavitiesform-header {
+    .cavitiesform-header {
         background-color: #FAA5CA;
         padding: 40px 20px 60px;
         text-align: center;
@@ -38,7 +38,7 @@
         align-items: center;
     }
 
-    .Cavitiesform-header h2 {
+    .cavitiesform-header h2 {
         font-size: 50px;
         font-family: "Cherry Bomb One", cursive;
         color: #6B51B1;
@@ -46,7 +46,7 @@
         margin: 0%;
     }
 
-    .Cavitiesform-label {
+    .cavitiesform-label {
         display: inline-block;
         background-color: #FEE273;
         color: #F96D4A;
@@ -61,6 +61,167 @@
         margin-top: 40px;
         max-width: 150px;
         height: auto;
+    }
+
+
+
+
+
+
+    .container-process {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 6%;
+        gap: 90px;
+        flex-direction: row;
+    }
+
+    .process-teeth-bad {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+
+    .image-teeth {
+        position: relative;
+        display: inline-block;
+    }
+
+    .image-teeth img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .number {
+        position: absolute;
+        background-color: #ffeb3b;
+        color: #000;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        bottom: 100%;
+        right: 90%;
+    }
+
+    .label {
+        margin-top: 10px;
+        background-color: #ffeb3b;
+        border-radius: 20px;
+        font-family: "Poppins", sans-serif;
+        padding: 10px 15px;
+        font-weight: 500;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    #background-cavities {
+        background-color: #6B51B1;
+        padding: 50px;
+    }
+
+    .title-cavities {
+        font-size: 60px;
+        color: #ff6d37;
+        font-family: "Cherry Bomb One", cursive;
+        text-shadow: 2px 4px #00000033;
+        text-align: center;
+    }
+
+    .c-icon {
+        background-image: url('imagefile/imagefile.contentdentalcare-2/icon-tittle-teeth.png');
+        position: relative;
+        background-size: 35px;
+        background-repeat: no-repeat;
+        padding-top: 6px;
+        left: 20px;
+    }
+
+    .container-boy-effect {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-top: 50px;
+    }
+
+    .boy-effect {
+        width: 200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .p-text-effect {
+        font-size: 13px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        padding-bottom: 15px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .boy {
+        width: 100%;
+        cursor: pointer;
+        animation: shake 1.5s infinite;
+    }
+
+    .toggle-btn {
+        display: none;
+        margin-top: 10px;
+        background-color: #ff6d37;
+        color: white;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+    }
+
+    /* 被点击后 */
+    .toggle-box:checked+.boy+.toggle-btn {
+        display: block;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(1.5deg);
+        }
+
+        50% {
+            transform: rotate(-1.5deg);
+        }
+
+        75% {
+            transform: rotate(1deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
     }
 </style>
 
@@ -105,13 +266,13 @@
     <h1>DENTAL CARE</h1>
 
 
-    <div class="Cavitiesform-section">
-        <div class="Cavitiesform-header">
+    <div class="cavitiesform-section">
+        <div class="cavitiesform-header">
             <h2>
                 How Cavities Form<br>&<br>
                 How to Prevent Cavities?
             </h2>
-            <div class="Cavitiesform-label">
+            <div class="cavitiesform-label">
                 I Brush My Teeth Every Day, So Why Do I Still Get Cavities?
             </div>
             <img src="imagefile/imagefile.contentdentalcare-2/image-toothbroken.png" alt="tooth image"
@@ -122,6 +283,97 @@
 
 
 
+
+    <div class="container-process">
+        <div class="process-teeth-bad">
+            <div class="image-teeth">
+                <div class="number">1</div>
+                <img src="imagefile/imagefile.contentdentalcare-2/process-teethbad-icon1.png" alt="Step 1">
+            </div>
+            <div class="label">Your teeth eat sugar</div>
+        </div>
+
+        <div class="process-teeth-bad">
+            <div class="image-teeth">
+                <div class="number">2</div>
+                <img src="imagefile/imagefile.contentdentalcare-2/process-teethbad-icon2.png" alt="Step 2">
+            </div>
+            <div class="label">Cavity bugs appear</div>
+        </div>
+
+        <div class="process-teeth-bad">
+            <div class="image-teeth">
+                <div class="number">3</div>
+                <img src="imagefile/imagefile.contentdentalcare-2/process-teethbad-icon3.png" alt="Step 3">
+            </div>
+            <div class="label">Cavity bugs attack your teeth</div>
+        </div>
+
+        <div class="process-teeth-bad">
+            <div class="image-teeth">
+                <div class="number">4</div>
+                <img src="imagefile/imagefile.contentdentalcare-2/process-teethbad-icon4.png" alt="Step 4">
+            </div>
+            <div class="label">Teeth become loose and painful</div>
+        </div>
+
+        <div class="process-teeth-bad">
+            <div class="image-teeth">
+                <div class="number">5</div>
+                <img src="imagefile/imagefile.contentdentalcare-2/process-teethbad-icon5.png" alt="Step 5">
+            </div>
+            <div class="label">Your teeth got defeated... KO!</div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="background-cavities">
+        <div class="title-cavities">
+            <span class="c-icon">Cavity Troubles!</span>
+        </div>
+
+        <div class="container-boy-effect">
+
+            <div class="boy-effect">
+                <div class="p-text-effect">Cavities can make your teeth sore and sensitive.</div>
+                <label class="boy-label">
+                    <input type="checkbox" class="toggle-box" hidden>
+                    <img src="imagefile/imagefile.contentdentalcare-2/cavitytroubles-icon1.png" class="boy" />
+                    <div class="toggle-btn">Ouch , It hurts !</div>
+                </label>
+            </div>
+
+            <div class="boy-effect">
+                <div class="p-text-effect">Eating can become painful and less fun.</div>
+                <label class="boy-label">
+                    <input type="checkbox" class="toggle-box" hidden>
+                    <img src="imagefile/imagefile.contentdentalcare-2/cavitytroubles-icon2.png" class="boy" />
+                    <div class="toggle-btn">No more yummy food !</div>
+                </label>
+            </div>
+
+            <div class="boy-effect">
+                <div class="p-text-effect">Cavities weaken your teeth, making them wobbly.</div>
+                <label class="boy-label">
+                    <input type="checkbox" class="toggle-box" hidden>
+                    <img src="imagefile/imagefile.contentdentalcare-2/cavitytroubles-icon3.png" class="boy" />
+                    <div class="toggle-btn">Bye-bye , strong teeth !</div>
+                </label>
+            </div>
+
+            <div class="boy-effect">
+                <div class="p-text-effect">You might need a filling or even lose a tooth!</div>
+                <label class="boy-label">
+                    <input type="checkbox" class="toggle-box" hidden>
+                    <img src="imagefile/imagefile.contentdentalcare-2/cavitytroubles-icon4.png" class="boy" />
+                    <div class="toggle-btn">Dentist visit needed !</div>
+                </label>
+            </div>
+        </div>
+    </div>
 
 
 </body>
