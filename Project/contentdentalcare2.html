@@ -395,6 +395,103 @@
         font-weight: 500;
         font-family: "Poppins", sans-serif;
     }
+
+
+
+
+    .boy-hand-brush {
+        display: block;
+        background-color: white;
+        background-image: url('imagefile/imagefile.contentdentalcare-2/sticker-boy-toothbrush.png');
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding: 60px;
+        position: relative;
+        top: 30px;
+        right: 50px;
+    }
+
+
+
+
+
+
+
+
+    @media (max-width: 1215px) {
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* 强制 logo（第一个 div）显示在最上面 */
+        .nav>div:first-child {
+            order: 0;
+        }
+
+        #search {
+            width: 20%;
+            margin-top: 10px;
+        }
+
+        #menu {
+            order: 0;
+            width: auto;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+    }
+
+
+    @media (max-width: 1043px) {
+        .column {
+            padding-bottom: 10%;
+        }
+    }
+
+
+    @media (max-width: 929px) {
+        .nav {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        #menu {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .submenu {
+            position: static;
+            text-align: center;
+            box-shadow: none;
+            background-color: white;
+            margin-top: 5px;
+        }
+
+        .submenu a {
+            font-size: 22px;
+        }
+
+        #search {
+            width: 60%;
+            padding: 8px 12px;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    }
 </style>
 
 <body>
@@ -618,9 +715,6 @@
 
 
 
-
-
-
     <div class="container-teeth-like-dontlike">
         <!-- Left column -->
         <div class="column">
@@ -641,6 +735,51 @@
         </div>
     </div>
 
+
+    <div class="boy-hand-brush"></div>
+
+
+
+    <div class="contact">
+        <h6>Have questions?</h6>
+        <p3>Contact us anytime!</p3>
+        <div class="contact-card-group">
+            <div class="contact-card1">
+                <img src="imagefile/imagefile.homepage/24call.png" alt="24hr Call" width="50%" height="auto" />
+            </div>
+            <div class="contact-card2">
+                <img src="imagefile/imagefile.homepage/customerservices.png" alt="Customer Service" width="50%"
+                    height="auto" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+
+        <div class="footer-logo-wrapper">
+            <img src="imagefile/imagefile.homepage/logo.png" alt="Tooth Logo" class="footer-logo">
+        </div>
+
+
+        <div class="footer-nav">
+            <a href="aboutpage.html">About</a>
+            <a href="servicespage.html">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Book Now</a>
+            <a href="#">FAQ</a>
+        </div>
+
+
+        <p class="copyright">© 2025 Little Dental Hub. All rights reserved.</p>
+
+
+        <div class="social-icons">
+            <a href="#"><img src="imagefile/imagefile.homepage/facebook_5968764.png" alt="Facebook"></a>
+            <a href="#"><img src="imagefile//imagefile.homepage/instagram_5968776.png" alt="Instagram"></a>
+        </div>
+    </footer>
 
 </body>
 
