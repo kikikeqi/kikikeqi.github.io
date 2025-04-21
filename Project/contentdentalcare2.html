@@ -132,7 +132,7 @@
 
     #background-cavities {
         background-color: #6B51B1;
-        padding: 50px;
+        padding: 50px 40px 80px;
     }
 
     .title-cavities {
@@ -200,6 +200,127 @@
     /* 被点击后 */
     .toggle-box:checked+.boy+.toggle-btn {
         display: block;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(1.5deg);
+        }
+
+        50% {
+            transform: rotate(-1.5deg);
+        }
+
+        75% {
+            transform: rotate(1deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+
+
+
+
+
+
+    #container-teeth-rules {
+        background-color: #FAA5CA;
+        padding: 70px 30px 30px;
+    }
+
+    h3 {
+        color: #FEE273;
+        font-size: 50px;
+        font-family: "Cherry Bomb One", cursive;
+        text-shadow: 2px 4px #00000033;
+        text-align: center;
+        margin: 0%;
+    }
+
+    .rules-container {
+        padding: 70px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 130px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .rule-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+
+    .rule-checkbox {
+        display: none;
+    }
+
+    .rule-label {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .rule-img {
+        width: 200px;
+        animation: shake 1.5s infinite;
+    }
+
+    .rule-btn {
+        background-color: white;
+        color: black;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        display: flex;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .rule-checkbox:checked+.rule-label .rule-btn {
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 按钮文字切换 */
+    .rule-btn::after {
+        content: attr(data-text);
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+
+    }
+
+    .rule-checkbox:checked+.rule-label .rule-btn::after {
+        content: attr(data-alt);
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     @keyframes shake {
@@ -375,6 +496,74 @@
         </div>
     </div>
 
+
+
+
+
+
+    <div id="container-teeth-rules">
+        <h3>Strong & Happy Teeth Rules</h3>
+
+        <div class="rules-container">
+
+            <!-- Rule 1 -->
+            <div class="rule-item">
+                <input type="checkbox" id="rule1" class="rule-checkbox">
+                <label for="rule1" class="rule-label">
+                    <img src="imagefile/imagefile.contentdentalcare-2/teethrules-icon1.png" alt="no biting"
+                        class="rule-img">
+                    <div class="rule-btn" data-text="No biting hard foods!" data-alt="Teeth are strong, 
+                    but not superheroes!">
+                    </div>
+                </label>
+            </div>
+
+            <!-- Rule 2 -->
+            <div class="rule-item">
+                <input type="checkbox" id="rule2" class="rule-checkbox">
+                <label for="rule2" class="rule-label">
+                    <img src="imagefile/imagefile.contentdentalcare-2/teethrules-icon2.png" alt="less sweets"
+                        class="rule-img">
+                    <div class="rule-btn" data-text="Less sweet treats!" data-alt="Sugar bugs love them!"></div>
+                </label>
+            </div>
+
+            <!-- Rule 3 -->
+            <div class="rule-item">
+                <input type="checkbox" id="rule3" class="rule-checkbox">
+                <label for="rule3" class="rule-label">
+                    <img src="imagefile/imagefile.contentdentalcare-2/teethrules-icon3.png" alt="brush"
+                        class="rule-img">
+                    <div class="rule-btn" data-text="Brush, brush, brush!"
+                        data-alt="Twice a day for a sparkling smile!"></div>
+                </label>
+            </div>
+
+            <!-- Rule 4 -->
+            <div class="rule-item">
+                <input type="checkbox" id="rule4" class="rule-checkbox">
+                <label for="rule4" class="rule-label">
+                    <img src="imagefile/imagefile.contentdentalcare-2/teethrules-icon4.png" alt="no touch"
+                        class="rule-img">
+                    <div class="rule-btn" data-text="No touching with dirty hands!"
+                        data-alt="Keep them safe from germs!">
+                    </div>
+                </label>
+            </div>
+
+
+            <!-- Rule 5 -->
+            <div class="rule-item">
+                <input type="checkbox" id="rule5" class="rule-checkbox">
+                <label for="rule5" class="rule-label">
+                    <img src="imagefile/imagefile.contentdentalcare-2/teethrules-icon5.png" alt="visit"
+                        class="rule-img">
+                    <div class="rule-btn" data-text="Visit the dentist!" data-alt="Check-ups keep your teeth happy!">
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
 
 </body>
 
