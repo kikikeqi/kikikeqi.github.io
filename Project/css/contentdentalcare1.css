@@ -1,0 +1,260 @@
+h1 {
+    color: #6FCDB9;
+    font-size: 90px;
+}
+
+
+
+
+.brushing-section {
+    font-family: "Poppins", sans-serif;
+}
+
+.brushing-header {
+    background-color: #FAA5CA;
+    padding: 40px 20px 60px;
+    text-align: center;
+}
+
+.brushing-header h2 {
+    font-size: 50px;
+    font-family: "Cherry Bomb One", cursive;
+    color: #6B51B1;
+    text-shadow: 2px 2px #00000033;
+    margin: 0%;
+}
+
+.brushing-label {
+    display: inline-block;
+    background-color: #FEE273;
+    color: #F96D4A;
+    padding: 12px 50px;
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+.brushing-steps {
+    background-color: white;
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.step-card {
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.step-number {
+    background-color: #ffe466;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    width: 32px;
+    height: 32px;
+    align-content: center;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.step-card img {
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin: 0 auto;
+    max-width: 160px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+.tips-section {
+    background-color: #6B51B1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tips-title {
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 40px;
+    color: #FEE273;
+    padding: 20px 20px 80px;
+    margin: 0;
+    text-shadow: 2px 5px #00000033;
+}
+
+.tips-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+}
+
+.tips-card-row {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tips-card-row.center {
+    justify-content: center;
+}
+
+.tips-card {
+    background-color: #FAA5CA;
+    width: 270px;
+    height: 320px;
+    padding: 30px 20px 30px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+.card-icon {
+    position: absolute;
+    top: -60px;
+    left: -50px;
+}
+
+.card-star {
+    width: 155px;
+    height: auto;
+    margin: 10px auto 5px;
+}
+
+.star-text {
+    margin-top: -78px;
+    font-size: 18px;
+    color: #F96D4A;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.tips-card p {
+    font-size: 18px;
+    color: white;
+    padding-top: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sticker-brush {
+    display: block;
+    background-color: white;
+    background-image: url("imagefile/imagefile.contentdentalcare1/sticker-brush.png");
+    background-repeat: no-repeat;
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 80px;
+    position: relative;
+    top: 30px;
+    right: 50px;
+}
+
+
+/*laptopL*/
+@media (max-width: 1220px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 强制 logo（第一个 div）显示在最上面 */
+    .nav>div:first-child {
+        order: 0;
+    }
+
+    #search {
+        width: 20%;
+        margin-top: 10px;
+    }
+
+    #menu {
+        order: 0;
+        width: auto;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .brushing-header h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 929px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .submenu {
+        position: static;
+        text-align: center;
+        box-shadow: none;
+        background-color: white;
+        margin-top: 5px;
+    }
+
+    .submenu a {
+        font-size: 22px;
+    }
+
+    #search {
+        width: 60%;
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .brushing-header h2 {
+        font-size: 28px;
+    }
+
+    .brushing-label {
+        display: inline-block;
+        background-color: #FEE273;
+        color: #F96D4A;
+        padding: 12px 40px;
+        border-radius: 20px;
+        margin-top: 40px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
