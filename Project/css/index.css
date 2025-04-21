@@ -73,7 +73,7 @@ h1 {
 
 
 #welcome2 {
-    background-image: url('imagefile/imagefile.homepage/sticker1.png');
+    background-image: url("imagefile/imagefile.homepage/sticker1.png");
     background-size: 150px;
     background-repeat: no-repeat;
     background-position: left top;
@@ -357,6 +357,19 @@ p2 {
 
     h2 {
         white-space: pre-wrap;
+    }
+
+}
+
+@media (max-width: 1173px) {
+    #feedback-group {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        display: none;
     }
 
 }

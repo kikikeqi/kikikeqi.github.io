@@ -41,7 +41,7 @@ h2 {
 .sticker1 {
     display: block;
     background-color: #6B51B1;
-    background-image: url(imagefile.servicespage/sticker1.png);
+    background-image: url("imagefile/servicespage/sticker1.png");
     background-repeat: no-repeat;
     background-size: 150px;
     background-repeat: no-repeat;
