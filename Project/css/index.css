@@ -183,16 +183,12 @@ p {
     flex-wrap: wrap;
 }
 
-.contact2-group1,
-.contact2-group2,
-.contact2-group3,
-.contact2-group4,
-.contact2-group5 {
+.contact2-group {
     text-align: center;
     object-fit: contain;
     border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+    margin: 0;
+    gap: 5%;
 }
 
 
