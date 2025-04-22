@@ -11,6 +11,7 @@ body {
     z-index: 1000;
 }
 
+
 h1 {
     font-size: 75px;
     font-family: cherry Bomb One;
@@ -48,14 +49,6 @@ h1 {
 
 .contact1-group>div {
     max-width: 290px;
-}
-
-.contact1-group {
-    text-align: center;
-    object-fit: contain;
-    /* 避免图片被拉伸压缩 */
-    border-radius: 50%;
-    margin: 0 auto;
 }
 
 
@@ -314,6 +307,17 @@ p2 {
 }
 
 
+@media (max-width: 1384px) {
+    .contact1-group {
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        gap: 0;
+    }
+}
+
+
+
 
 /*laptopL*/
 @media (max-width: 1259px) {
@@ -354,7 +358,30 @@ p2 {
         white-space: pre-wrap;
     }
 
+    .contact1-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .contact2-group {
+        text-align: center;
+        object-fit: contain;
+        border-radius: 50%;
+        margin: 0;
+        gap: 20%;
+    }
+
 }
+
+
+
+
+
 
 @media (max-width: 1173px) {
     #feedback-group {
