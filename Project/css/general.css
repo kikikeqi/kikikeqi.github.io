@@ -7,8 +7,6 @@ body {
 }
 
 /* navigation bar - homepage*/
-
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -122,7 +120,8 @@ h6 {
     text-shadow: 2px 3px #00000033;
 }
 
-p3 {
+
+.contact p {
     font-size: 18px;
     margin-bottom: 50px;
     color: black;

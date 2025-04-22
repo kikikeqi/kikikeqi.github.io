@@ -73,7 +73,7 @@ h1 {
 
 
 #welcome2 {
-    background-image: url("imagefile/imagefile.homepage/sticker1.png");
+    background-image: url("../imagefile/imagefile.homepage/sticker1.png");
     background-size: 150px;
     background-repeat: no-repeat;
     background-position: left top;
@@ -83,7 +83,7 @@ h1 {
 }
 
 #welcome3 {
-    background-image: url('imagefile//imagefile.homepage/sticker2.png');
+    background-image: url('../imagefile/imagefile.homepage/sticker2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -203,7 +203,7 @@ p {
 
 #welcome4 {
     background-color: #6B51B1;
-    background-image: url('imagefile/imagefile.homepage/sticker3.png');
+    background-image: url('../imagefile/imagefile.homepage/sticker3.png');
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: right top;
@@ -314,7 +314,7 @@ p2 {
 
 #welcome5 {
     background-color: white;
-    background-image: url('image file/sticker4.png');
+    background-image: url('../imagefile/imagefile.homepage/sticker4.png file/sticker4.png');
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: left top;
