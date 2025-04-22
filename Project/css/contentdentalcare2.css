@@ -124,7 +124,7 @@ h1 {
 }
 
 .c-icon {
-    background-image: url('imagefile/imagefile.contentdentalcare-2/icon-tittle-teeth.png');
+    background-image: url('../imagefile/imagefile.contentdentalcare-2/icon-tittle-teeth.png');
     position: relative;
     background-size: 35px;
     background-repeat: no-repeat;
@@ -382,7 +382,7 @@ h3 {
 .boy-hand-brush {
     display: block;
     background-color: white;
-    background-image: url('imagefile/imagefile.contentdentalcare-2/sticker-boy-toothbrush.png');
+    background-image: url('../imagefile/imagefile.contentdentalcare-2/sticker-boy-toothbrush.png');
     background-repeat: no-repeat;
     background-size: 150px;
     background-repeat: no-repeat;
