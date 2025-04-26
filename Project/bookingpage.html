@@ -12,9 +12,157 @@
 
 
 <style>
+    .sticker1-love-shape {
+        display: block;
+        background-image: url('imagefile/imagefile.bookingpage/sticker1-love-shape.png');
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-position: right top;
+        padding: 70px;
+        position: absolute;
+        right: 45px;
+    }
+
+    #flex-container-booking {
+        background-color: #6B51B1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+
+    .collaboration-header {
+        text-align: center;
+    }
+
+    .collaboration-header h1 {
+        font-size: 36px;
+        color: #FEE273;
+        margin-bottom: 20px;
+        font-family: "Cherry Bomb One", cursive;
+    }
+
+    .collaboration-header p {
+        font-size: 16px;
+        color: #FFFFFF;
+        max-width: 700px;
+        margin: 0 auto 40px;
+
+    }
 
 
 
+    .collaboration-section {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        background-color: white;
+        width: 70%;
+        height: auto;
+        gap: 50px;
+        padding: 50px;
+        border-radius: 20px;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+
+
+
+
+
+
+
+
+    div.collaboration-form-card {
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        gap: 13%;
+        flex-wrap: wrap;
+    }
+
+    .form-left {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+
+
+
+
+
+
+    .form-left form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 400px;
+        /* max-width: 0%; */
+        align-items: center;
+        flex-wrap: wrap;
+        /* border: 20px; */
+        margin: 20x;
+        justify-content: center;
+
+    }
+
+    div.form-left input[type="text"],
+    div.form-left input[type="email"] {
+        padding: 15px;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        font-size: 16px;
+        width: 85%;
+        height: auto;
+    }
+
+    div.form-left input::placeholder {
+        color: #B0B0B0;
+        font-size: 16px;
+    }
+
+    .form-right {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    div.students-number,
+    div.collaboration-type {
+        border: 1px solid #000000;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    p.section-title {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    div.form-right label {
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    div.form-right input[type="radio"] {
+        margin-bottom: 12px;
+    }
 </style>
 
 
@@ -60,9 +208,68 @@
     </div>
 
 
-
-
-
-
-
     <h1>BOOK APPOINTMENT</h1>
+
+    <div class="sticker1-love-shape"></div>
+
+
+
+    <div id="flex-container-booking">
+        <div class="collaboration-header">
+            <h1>Schedule a Collaboration</h1>
+            <p>Bring Engaging Dental Health Lessons to Your School! Fill in the form below to schedule an exciting oral
+                health lecture or interactive workshop for your students. Let’s help kids build healthy smiles together!
+            </p>
+        </div>
+
+
+        <div class="collaboration-section">
+            <div class="form-left">
+                <form>
+                    <input type="text" placeholder="School Name">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Remark">
+                </form>
+            </div>
+
+            <div class="form-right">
+                <div class="students-number">
+                    <p class="section-title">Estimated Number of Students (person)</p>
+                    <form>
+                        <input type="radio" id="students1" name="students" value="80-200">
+                        <label for="students1">80-200</label><br>
+
+                        <input type="radio" id="students2" name="students" value="300-500">
+                        <label for="students2">300-500</label><br>
+
+                        <input type="radio" id="students3" name="students" value="500-700">
+                        <label for="students3">500-700</label><br>
+
+                        <input type="radio" id="students4" name="students" value="800-1000">
+                        <label for="students4">800-1000</label><br>
+
+                        <input type="radio" id="students5" name="students" value="1000-above">
+                        <label for="students5">1000 above</label>
+                    </form>
+                </div>
+
+                <div class="collaboration-type">
+                    <p class="section-title">Type of Collaboration</p>
+                    <form>
+                        <input type="radio" id="lecture" name="collaboration" value="Oral Health Lecture">
+                        <label for="lecture">Oral Health Lecture</label><br>
+
+                        <input type="radio" id="workshop" name="collaboration" value="Interactive Workshop">
+                        <label for="workshop">Interactive Workshop</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
