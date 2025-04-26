@@ -52,7 +52,6 @@ h1 {
 
 
 
-
 #learnaboutpart {
     background-color: #FEE273;
     padding: 30px 30px;
@@ -306,7 +305,7 @@ p2 {
 }
 
 
-@media (max-width: 1384px) {
+@media (max-width: 1382px) {
     .contact1-group {
         text-align: center;
         border-radius: 50%;
@@ -315,7 +314,16 @@ p2 {
     }
 }
 
+@media (max-width: 1339px) {
 
+    .contact2-group {
+        text-align: center;
+        object-fit: contain;
+        border-radius: 50%;
+        margin: 0;
+        gap: 35px;
+    }
+}
 
 
 /*laptopL*/
@@ -364,7 +372,7 @@ p2 {
         padding: 40px;
         text-align: center;
         flex-wrap: wrap;
-        gap: 0;
+        gap: 20px;
     }
 
     .contact2-group {
@@ -425,7 +433,7 @@ p2 {
 }
 
 /*mobile*/
-@media (max-width: 968px) {
+@media (max-width: 969px) {
     .nav {
         flex-direction: column;
         align-items: center;
