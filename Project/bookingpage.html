@@ -331,6 +331,18 @@
         color: #68D2C5;
         cursor: pointer;
     }
+
+
+    .sticker2-toothpaste {
+        display: block;
+        background-image: url("imagefile/imagefile.bookingpage/sticker2-toothpaste.png");
+        background-repeat: no-repeat;
+        background-size: 150px;
+        background-position: left top;
+        padding: 70px;
+        position: absolute;
+        left: 45px;
+    }
 </style>
 
 
@@ -386,7 +398,7 @@
         <div class="collaboration-header">
             <h1>Schedule a Collaboration</h1>
             <p>Bring Engaging Dental Health Lessons to Your School! Fill in the form below to schedule an exciting oral
-                health lecture or interactive workshop for your students. Let’s help kids build healthy smiles together!
+                health lecture or interactive workshop for your students. Let's help kids build healthy smiles together!
             </p>
         </div>
 
@@ -442,6 +454,9 @@
 
 
 
+
+
+
     <div id="calendar-box-background">
         <div class="page-container">
             <p>Preferred Date & Time</p>
@@ -453,6 +468,12 @@
                         <input type="month" id="monthPicker" value="2025-08">
                         <button class="next-month">&#10095;</button>
                     </div>
+
+                    <script>
+                        function myFunction() {
+                            document.getElementById("monthPicker").select();
+                        }
+                    </script>
 
                     <ul class="weekdays">
                         <li>MON</li>
@@ -497,6 +518,8 @@
                         <li>30</li>
                         <li>31</li>
                     </ul>
+
+
                 </div>
 
                 <div class="calendar-right">
@@ -529,6 +552,9 @@
 
 
 
+    <div class="sticker2-toothpaste"></div>
+
+
 
     <div class="contact">
         <h6>Have questions?</h6>
@@ -543,7 +569,6 @@
             </div>
         </div>
     </div>
-
 
 
     <footer class="footer">
