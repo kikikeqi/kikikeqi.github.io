@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking appointment/Little Dental Hub for kid in Mont Kiara,Kuala Lumpur</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+
+<style>
+    .sticker1-girl {
+        display: block;
+        background-image: url('imagefile/imagefile.contactpage/sticker1-girlhugteeth.png');
+        background-repeat: no-repeat;
+        background-size: 110px;
+        background-position: right top;
+        padding: 60px;
+        position: absolute;
+        margin-top: 20px;
+        right: 45px;
+    }
+
+
+
+    #form-container-startconversation {
+        background-color: #6B51B1;
+        padding: 20px 20px 50px;
+    }
+
+    .form-topic {
+        text-align: left;
+        padding: 50px 20px 40px 80px;
+    }
+
+    .form-topic h2 {
+        color: #FEE273;
+        font-size: 40px;
+        font-family: "Cherry Bomb One", cursive;
+        margin-bottom: 10px;
+        margin: 0;
+        text-shadow: 2px 3px #00000033;
+    }
+
+    .form-topic p {
+        color: white;
+        margin: 0;
+        font-size: 18px;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+    }
+
+    .form-container-information {
+        padding: 20px 80px;
+    }
+
+
+    .container-customer-information {
+        display: flex;
+        gap: 50px;
+        margin-bottom: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container-customer-information>div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-customer-message {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    label {
+        color: white;
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-family: Poppins, sans-serif;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    textarea {
+        min-height: 150px;
+    }
+
+    .submit-button {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    input[type=submit] {
+        background-color: #6FCDB9;
+        color: white;
+        padding: 12px 50px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-family: Poppins, sans-serif;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: black;
+        color: #6FCDB9;
+    }
+
+
+    .sticker2 {
+        display: block;
+        background-image: url('imagefile/imagefile.contactpage/sticker1-girlhugteeth.png');
+        background-repeat: no-repeat;
+        background-size: 110px;
+        background-position: right top;
+        padding: 60px;
+        position: absolute;
+        margin-top: 20px;
+        right: 45px;
+    }
+
+
+    #seminar-container {
+        background-color: #FAA5CA;
+        padding: 30px;
+    }
+
+    .seminar-container-topic h1 {
+        font-family: "Cherry Bomb One", cursive;
+        font-size: 50px;
+        color: #FEE273;
+        margin: 0;
+        text-shadow: 2px 4px #00000033;
+        text-align: center;
+
+    }
+
+    .seminar-container-topic p {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+    }
+
+    .seminar-container-photo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 20px;
+    }
+</style>
+
+
+
+
+<body>
+    <div id="flex-container">
+
+        <div class="nav">
+            <div>
+                <a href="index.html">
+                    <img src="imagefile/imagefile.homepage/logo.png" width="80" alt="logo">
+                </a>
+            </div>
+            <div id="menu">
+                <div class="mbenu-item"><a href="aboutpage.html">ABOUT</a></div>
+
+
+                <div class="menu-item">
+                    <a href="servicespage.html">SERVICES <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="submenu">
+                        <a href="contentdentalcare1.html">Proper Brushing Techniques</a>
+                        <a href="contentdentalcare2.html">Preventing Cavities</a>
+                    </div>
+                </div>
+
+                <div class="menu-item"><a href="#">BOOK NOW</a></div>
+                <div class="menu-item"><a href="#">CONTACT</a></div>
+                <div class="menu-item"><a href="#">FAQ</a></div>
+            </div>
+
+
+            <input id="search" type="text" placeholder="Search" autocomplete="off">
+        </div>
+    </div>
+
+
+
+    <h1>CONTACT US</h1>
+
+
+    <div class="sticker1-girl"></div>
+
+    <div id="form-container-startconversation">
+        <div class="form-topic">
+            <h2>Start a conversation</h2>
+            <p>Please complete this form, our team will be in touch shortly.</p>
+        </div>
+
+        <!-- 表单区 -->
+        <div class="form-container-information">
+            <form action="/action_page.php">
+
+                <!-- 第一行：3个输入框 -->
+                <div class="container-customer-information">
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your Name">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+
+                    <div>
+                        <label for="contact">Contact Number</label>
+                        <input type="text" id="contact" name="contact" placeholder="Phone Number">
+                    </div>
+                </div>
+
+                <!-- 第二行：Message -->
+                <div class="container-customer-message">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type Your Message Here"></textarea>
+                </div>
+
+                <!-- 第三行：按钮 -->
+                <div class="submit-button">
+                    <input type="submit" value="Send Message">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="sticker2-teacher"></div>
+
+
+
+    <div id="seminar-container">
+        <div class="seminar-container-topic">
+            <h1>School Partnerships</h1>
+            <p>We actively collaborate with schools in the Kuala Lumpur area to conduct oral health education
+                activities,
+                lectures, and hands-on workshops. Our goal is to enhance students' awareness and understanding of dental
+                care, promoting good oral hygiene habits that benefit them for a lifetime.</p>
+        </div>
+
+        <div class="seminar-container-photo">
+            <img src="imagefile/imagefile.contactpage/seminar1.png" alt="seminar photo" width="100%" height="auto">
+            <img src="imagefile/imagefile.contactpage/seminar2.png" alt="seminar photo" width="100%" height="auto">
+            <img src="imagefile/imagefile.contactpage/seminar3.png" alt="seminar photo" width="100%" height="auto">
+            <img src="imagefile/imagefile.contactpage/seminar4.png" alt="seminar photo" width="100%" height="auto">
+            <img src="imagefile/imagefile.contactpage/seminar5.png" alt="seminar photo" width="100%" height="auto">
+            <img src="imagefile/imagefile.contactpage/seminar6.png" alt="seminar photo" width="100%" height="auto">
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
