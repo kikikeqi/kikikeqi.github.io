@@ -26,6 +26,10 @@ body {
     position: relative;
 }
 
+#menua a:hover {
+    background-color: #e1e1e1;
+}
+
 .menu-item a {
     text-decoration: none;
     color: rgb(108, 42, 170);
@@ -68,8 +72,6 @@ body {
 
 
 
-
-
 #search {
     color: white;
     background-color: blueviolet;
@@ -81,6 +83,18 @@ body {
 input::placeholder {
     color: white;
     padding: 6px;
+}
+
+
+
+/* Default desktop */
+.navbar-mobile {
+    display: none;
+}
+
+/* Mobile Nav Hidden Submenu */
+.menu-mobile {
+    display: none;
 }
 
 

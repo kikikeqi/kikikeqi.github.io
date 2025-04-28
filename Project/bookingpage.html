@@ -6,6 +6,7 @@
     <title>booking appointment/Little Dental Hub for kid in Mont Kiara,Kuala Lumpur</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
 </head>
@@ -343,6 +344,158 @@
         position: absolute;
         left: 45px;
     }
+
+
+    @media (max-width: 1218px) {
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* 强制 logo（第一个 div）显示在最上面 */
+        .nav>div:first-child {
+            order: 0;
+        }
+
+        #search {
+            width: 20%;
+            margin-top: 10px;
+        }
+
+        #menu {
+            order: 0;
+            width: auto;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 1046px) {
+
+        .confirm-button {
+            left: 40px;
+        }
+    }
+
+
+
+    /*mobile*/
+    @media (max-width: 945px) {
+
+        h1 {
+            font-size: 60px;
+        }
+
+        #flex-container {
+            display: none;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        /* Show Mobile  */
+        .navbar-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+
+        .menu-toggle-checkbox {
+            display: none;
+        }
+
+        /* show menu */
+        .menu-toggle-checkbox:checked~.menu-mobile {
+            display: flex;
+            flex-direction: column;
+            background: pink;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            padding-top: 5rem;
+            padding-left: 50px;
+            z-index: 1000;
+            gap: 30px;
+            align-items: flex-start;
+            font-family: "Cherry Bomb One", cursive;
+        }
+
+        .close-btn {
+            font-size: 50px;
+            color: #6b51b1;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            cursor: pointer;
+            font-family: poppins;
+        }
+
+        .menu-item-mobile {
+            color: #6b51b1;
+            font-size: 32px;
+            margin: 20px 0;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        .menu-item-mobile:hover {
+            color: white;
+            text-decoration: underline;
+            text-underline-offset: 7px;
+        }
+
+
+        .submenu-mobile {
+            display: none;
+            flex-direction: column;
+        }
+
+        .submenu-mobile a {
+            color: #f96d4a;
+            font-size: 20px;
+            padding: 8px 0;
+            text-decoration: none;
+        }
+
+        .submenu-toggle {
+            display: none;
+        }
+
+        .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+            display: flex;
+            gap: 50px;
+            flex-direction: row;
+            font-family: Poppins, sans-serif;
+            margin-top: -40px;
+            font-weight: 600;
+        }
+
+
+        .menu-toggle-btn {
+            font-size: 45px;
+            color: #6B51B1;
+            cursor: pointer;
+        }
+
+        .search-btn {
+            font-size: 30px;
+            color: #6B51B1;
+            cursor: pointer;
+        }
+
+
+    }
 </style>
 
 
@@ -359,16 +512,9 @@
                     <img src="imagefile/imagefile.homepage/logo.png" width="80" alt="logo">
                 </a>
             </div>
-
-
             <div id="menu">
-                <div class="menu-item">
-                    <a href="aboutpage.html">ABOUT<i class="fas fa-chevron-down down-icon"></i></a>
-                    <div class="submenu">
-                        <a href="#">Mission</a>
-                        <a href="#">Vision</a>
-                    </div>
-                </div>
+                <div class="menu-item"><a href="aboutpage.html">ABOUT</a></div>
+
 
                 <div class="menu-item">
                     <a href="servicespage.html">SERVICES<i class="fas fa-chevron-down down-icon"></i></a>
@@ -383,9 +529,57 @@
                 <div class="menu-item"><a href="#">FAQ</a></div>
             </div>
 
+
             <input id="search" type="text" placeholder="Search" autocomplete="off">
         </div>
     </div>
+
+
+
+
+    <!-- mobile hamburger  -->
+    <!-- mobile hamburger -->
+    <div class="navbar-mobile">
+        <!-- 左边：☰汉堡按钮 -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <label for="menu-toggle" class="menu-toggle-btn">&#9776;</label>
+
+        <!-- 中间：logo -->
+        <a href="index.html" class="logo">
+            <img src="imagefile/imagefile.homepage/logo.png" width="80" alt="logo">
+        </a>
+
+        <!-- 右边：🔍 -->
+        <label class="search-btn">
+            <i class="fas fa-search"></i>
+        </label>
+
+        <!-- 菜单 -->
+        <div class="menu-mobile">
+            <label for="menu-toggle" class="close-btn">&times;</label>
+
+            <input type="checkbox" id="about-toggle" class="submenu-toggle">
+            <label for="about-toggle" class="menu-item-mobile">ABOUT</label>
+            <div class="submenu-mobile">
+                <a href="#">Mission</a>
+                <a href="#">Vision</a>
+            </div>
+
+            <input type="checkbox" id="services-toggle" class="submenu-toggle">
+            <label for="services-toggle" class="menu-item-mobile">SERVICES</label>
+            <div class="submenu-mobile">
+                <a href="contentdentalcare1.html">Proper Brushing Techniques</a>
+                <a href="contentdentalcare2.html">Preventing Cavities</a>
+            </div>
+
+            <a href="#" class="menu-item-mobile">BOOK NOW</a>
+            <a href="#" class="menu-item-mobile">CONTACT</a>
+            <a href="#" class="menu-item-mobile">FAQ</a>
+        </div>
+    </div>
+
+
+
 
 
     <h1>BOOK APPOINTMENT</h1>
