@@ -207,35 +207,115 @@ h1 {
     }
 }
 
-@media (max-width: 929px) {
+
+
+
+
+@media (max-width: 934px) {
+
+    #flex-container {
+        display: none;
+    }
+
     .nav {
-        flex-direction: column;
+        display: none;
+    }
+
+    /* Show Mobile  */
+    .navbar-mobile {
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    .menu-toggle-checkbox {
+        display: none;
+    }
+
+    /* show menu */
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        display: flex;
+        flex-direction: column;
+        background: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-left: 50px;
+        z-index: 1000;
         gap: 30px;
+        align-items: flex-start;
+        font-family: "Cherry Bomb One", cursive;
     }
 
-    #menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    .close-btn {
+        font-size: 50px;
+        color: #6b51b1;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+        font-family: poppins;
     }
 
-    .submenu {
-        position: static;
+    .menu-item-mobile {
+        color: #6b51b1;
+        font-size: 32px;
+        margin: 20px 0;
+        padding: 0px 13px 0px 0px;
+        cursor: pointer;
         text-align: center;
-        box-shadow: none;
-        background-color: white;
-        margin-top: 5px;
+        text-decoration: none;
     }
 
-    .submenu a {
-        font-size: 22px;
+    .menu-item-mobile:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 7px;
     }
 
-    #search {
-        width: 60%;
-        padding: 8px 12px;
-        font-size: 16px;
+
+    .submenu-mobile {
+        display: none;
+        flex-direction: column;
+    }
+
+    .submenu-mobile a {
+        color: #f96d4a;
+        font-size: 20px;
+        padding: 8px 0;
+        text-decoration: none;
+    }
+
+    .submenu-toggle {
+        display: none;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        margin-top: -40px;
+        font-weight: 600;
+    }
+
+
+    .menu-toggle-btn {
+        font-size: 45px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .search-btn {
+        font-size: 30px;
+        color: #6B51B1;
+        cursor: pointer;
     }
 
     h1 {
