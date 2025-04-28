@@ -427,8 +427,8 @@ p.section-title {
         color: #6b51b1;
         font-size: 32px;
         margin: 20px 0;
+        padding: 0px 13px 0px 0px;
         cursor: pointer;
-        display: block;
         text-align: center;
         text-decoration: none;
 

@@ -375,11 +375,10 @@ input[type=book]:hover {
         color: #6b51b1;
         font-size: 32px;
         margin: 20px 0;
+        padding: 0px 13px 0px 0px;
         cursor: pointer;
-        display: block;
         text-align: center;
         text-decoration: none;
-        font-family: 'Cherry Bomb One';
     }
 
     .menu-item-mobile:hover {
@@ -425,10 +424,6 @@ input[type=book]:hover {
         font-size: 30px;
         color: #6B51B1;
         cursor: pointer;
-    }
-
-    .book-collaboration-photo {
-        width: 600px;
     }
 }
 
