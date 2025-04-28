@@ -172,6 +172,118 @@
         justify-content: center;
         gap: 20px;
     }
+
+
+
+
+
+
+    #book-collaboration-container {
+        background-color: #FAA5CA;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+
+    .book-collaboration-topic {
+        text-align: center;
+        padding: 30px;
+    }
+
+
+    .book-collaboration-topic h1 {
+        font-family: "Cherry Bomb One", cursive;
+        font-size: 50px;
+        color: #FEE273;
+        margin: 0;
+        text-shadow: 2px 4px #00000033;
+    }
+
+    .book-collaboration-topic h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        color: white;
+        margin: 0;
+    }
+
+
+    .book-collaboration-photo {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .book-collaboration-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .photo-public-talk {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        opacity: 0;
+        transition: 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .book-collaboration-photo .photo-public-talk h1,
+    h2 {
+        margin: 0;
+        font-size: 28px;
+        font-family: Poppins, sans-serif;
+        color: white;
+        font-weight: bold;
+    }
+
+    .book-collaboration-photo .photo-public-talk p {
+        font-size: 16px;
+        font-family: Poppins, sans-serif;
+        color: white;
+        margin-bottom: 80px;
+        font-weight: normal;
+        max-width: 600px;
+    }
+
+    .book-collaboration-photo:hover .photo-public-talk {
+        opacity: 1;
+    }
+
+    .book-school-visit {
+        padding: 20px;
+    }
+
+    input[type=book] {
+        background-color: #6FCDB9;
+        color: white;
+        padding: 12px 50px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    input[type=book]:hover {
+        background-color: black;
+        color: #6FCDB9;
+    }
 </style>
 
 
@@ -198,9 +310,9 @@
                     </div>
                 </div>
 
-                <div class="menu-item"><a href="#">BOOK NOW</a></div>
-                <div class="menu-item"><a href="#">CONTACT</a></div>
-                <div class="menu-item"><a href="#">FAQ</a></div>
+                <div class="menu-item"><a href="bookingpage.html">BOOK NOW</a></div>
+                <div class="menu-item"><a href="contactpage.html">CONTACT</a></div>
+                <div class="menu-item"><a href="faqpage.html">FAQ</a></div>
             </div>
 
 
@@ -221,11 +333,11 @@
             <p>Please complete this form, our team will be in touch shortly.</p>
         </div>
 
-        <!-- 表单区 -->
+
         <div class="form-container-information">
             <form action="/action_page.php">
 
-                <!-- 第一行：3个输入框 -->
+
                 <div class="container-customer-information">
                     <div>
                         <label for="fullname">Full Name</label>
@@ -243,13 +355,11 @@
                     </div>
                 </div>
 
-                <!-- 第二行：Message -->
                 <div class="container-customer-message">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Type Your Message Here"></textarea>
                 </div>
 
-                <!-- 第三行：按钮 -->
                 <div class="submit-button">
                     <input type="submit" value="Send Message">
                 </div>
@@ -257,6 +367,7 @@
             </form>
         </div>
     </div>
+
 
 
     <div class="sticker2-teacher"></div>
@@ -280,6 +391,7 @@
             <img src="imagefile/imagefile.contactpage/seminar5.png" alt="seminar photo" width="100%" height="auto">
             <img src="imagefile/imagefile.contactpage/seminar6.png" alt="seminar photo" width="100%" height="auto">
         </div>
+    </div>
 
 
 
@@ -287,10 +399,35 @@
 
 
 
+    <div id="book-collaboration-container">
+        <div class="book-collaboration-topic">
+            <h1>Forms of Collaboration</h1>
+            <h2>It's Make Oral Health Fun!</h2>
+        </div>
+
+        <div class="book-collaboration-photo">
+            <img src="imagefile/imagefile.contactpage/public-talk-concept.png" alt="public talk concept" width="100%"
+                height="auto">
+            <div class="photo-public-talk">
+                <h1>Interactive Workshops</h1>
+                <p>Hands-on sessions where students can practice proper brushing techniques and learn effective dental
+                    care methods.</p>
+
+                <h2>Oral Health Lectures</h2>
+                <p>Engaging presentations by professional dentists to provide students with essential dental health
+                    knowledge.</p>
+            </div>
+        </div>
 
 
+        <div class="book-school-visit">
+            <input type="book" value="Book a School Visit">
+        </div>
 
     </div>
+
+
+
 
 </body>
 
