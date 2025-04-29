@@ -558,7 +558,7 @@ p {
     }
 
     /* show menu */
-    .menu-toggle-checkbox:checked~.menu-mobile {
+    .menu-toggle-checkbox:checked.menu-mobile {
         display: flex;
         flex-direction: column;
         background: pink;
