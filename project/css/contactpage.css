@@ -329,7 +329,7 @@ input[type=book]:hover {
         display: none;
     }
 
-    /* Show Mobile  */
+    /* show mobile  */
     .navbar-mobile {
         display: flex;
         align-items: center;
@@ -344,7 +344,7 @@ input[type=book]:hover {
     }
 
     /* show menu */
-    .menu-toggle-checkbox:checked.menu-mobile {
+    .menu-toggle-checkbox:checked~.menu-mobile {
         display: flex;
         flex-direction: column;
         background: pink;
