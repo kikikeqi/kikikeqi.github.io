@@ -543,8 +543,8 @@ p {
         font-size: 50px;
         color: #6b51b1;
         position: absolute;
-        top: 20px;
-        right: 30px;
+        top: 10px;
+        left: 40px;
         cursor: pointer;
         font-family: poppins;
     }
