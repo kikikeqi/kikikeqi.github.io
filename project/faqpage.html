@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us/Little Dental Hub for kid in Mont Kiara,Kuala Lumpur</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<style>
+    .sticker-apple {
+        display: block;
+        background-image: url("imagefile/imagefile.faqpage/sticker-love-apple.png");
+        background-repeat: no-repeat;
+        background-color: #6B51B1;
+        background-size: 150px;
+        background-position: right top;
+        padding: 60px;
+    }
+
+
+
+    #faq-container {
+        background-color: #6B51B1;
+        padding: 20px;
+    }
+
+
+    .faq-container-tittle h1 {
+        font-size: 50px;
+        color: #FEE273;
+        text-shadow: 2px 5px #00000033;
+        font-family: "Cherry Bomb One", cursive;
+        margin: 0;
+    }
+
+    #faq-container-twobox {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+
+    .faq-questions-box {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+
+    .faq-question {
+        width: 100%;
+        height: 80px;
+        padding: 20px;
+        background-color: white;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+        font-family: Poppins;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+    }
+
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        background-color: #000;
+        color: #fff;
+        border-radius: 0 0 10px 10px;
+        padding: 0 20px;
+    }
+
+
+    .faq-answer p {
+        font-family: Poppins;
+        font-size: 18px;
+    }
+
+    .faq-item.active .faq-answer {
+        max-height: 300px;
+        padding: 20px;
+    }
+
+
+
+
+
+
+    /* 圆形图标背景 */
+    .icon-circle {
+        background-color: #ff774d;
+        color: white;
+        border-radius: 50%;
+        padding: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faq-toggle-button {
+        background-color: #f36c48;
+        /* 橙色圆背景 */
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+    .faq-side {
+        width: 40%;
+        text-align: center;
+        color: white;
+    }
+
+    .question-mark img {
+        width: 40%;
+
+    }
+
+    .side-title {
+        color: #FEE273;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: Poppins;
+    }
+
+    .side-desc {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: white;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .side-cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .side-card {
+        background-color: #FAA5CA;
+        border-radius: 20px;
+        padding: 20px;
+        width: 30%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div id="flex-container">
+
+        <div class="nav">
+            <div>
+                <a href="index.html">
+                    <img src="imagefile/imagefile.homepage/logo.png" width="80" alt="logo">
+                </a>
+            </div>
+            <div id="menu">
+                <div class="menu-item"><a href="aboutpage.html">ABOUT</a></div>
+
+
+                <div class="menu-item">
+                    <a href="servicespage.html">SERVICES <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="submenu">
+                        <a href="contentdentalcare1.html">Proper Brushing Techniques</a>
+                        <a href="contentdentalcare2.html">Preventing Cavities</a>
+                    </div>
+                </div>
+
+                <div class="menu-item"><a href="bookingpage.html">BOOK NOW</a></div>
+                <div class="menu-item"><a href="contactpage.html">CONTACT</a></div>
+                <div class="menu-item"><a href="#">FAQ</a></div>
+            </div>
+
+
+            <input id="search" type="text" placeholder="Search" autocomplete="off">
+        </div>
+    </div>
+
+
+    <h1>FAQ</h1>
+
+    <div class="sticker-apple"></div>
+
+
+
+
+    <div id="faq-container">
+        <div class="faq-container-tittle">
+            <h1>Frequently Ask Questions</h1>
+        </div>
+
+        <div id="faq-container-twobox">
+            <div class="faq-questions-box">
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa-solid fa-plus"></i> Does your clinic work with schools?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We collaborate with schools to provide oral health talks, interactive workshops, and
+                            check-ups for students.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa-solid fa-plus"></i> How often should I visit the dentist?
+                    </button>
+                    <div class="faq-answer">
+                        <p>It is recommended to visit the dentist every (six months) for a routine check-up and
+                            cleaning.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa-solid fa-plus"></i> How long should I brush my teeth?
+                    </button>
+                    <div class="faq-answer">
+                        <p>At least 2 minutes! You can listen to your favorite song while brushing to make it fun!</p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa-solid fa-plus"></i> How do I book an appointment?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply fill out our online form, choose a date, and wait for our confirmation email.</p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa-solid fa-plus"></i> Can I reschedule my appointment?
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can reschedule your appointment by (contacting us at least 24 hours) in advance.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="faq-side">
+                <div class="question-mark">
+                    <img src="imagefile/imagefile.faqpage/question-orange.png" alt="Question Mark" />
+                </div>
+                <h2 class="side-title">Any Question?</h2>
+                <p class="side-desc">You can ask anything you want to know Feedback</p>
+                <div class="side-cards">
+                    <div class="side-card">
+                        <img src="icon1.png" alt="Icon 1" />
+                    </div>
+                    <div class="side-card">
+                        <img src="icon2.png" alt="Icon 2" />
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <script> document.querySelectorAll(".faq-question").forEach((button) => {
+                button.addEventListener("click", () => {
+                    const faqItem = button.parentElement;
+                    faqItem.classList.toggle("active");
+                });
+            });
+
+        </script>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
