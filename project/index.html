@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+
+
+
 </head>
 
 
@@ -192,32 +198,74 @@
     <div id="feedback-layer">
         <h5>Smiles & Stories</h5>
         <div id="feedback-group">
-            <button class="left-arrow">←</button>
 
-            <div class="images">
-                <img src="imagefile//imagefile.homepage/feedback.png" alt="Girl's Face" width="80%" height="auto">
-            </div>
-
-            <div class="testimonial">
-                <div class="user-info">
-                    <img src="imagefile//imagefile.homepage/parents.png" alt="Amy Avatar" />
-                    <div>
-                        <div class="username">Amy</div>
-                        <div class="user-role">(mother of a 4-year-old)</div>
-                    </div>
+            <div class="images-kids">
+                <!-- Slide 1 -->
+                <div><img src="imagefile/imagefile.homepage/kidfeedback-photo1.jpg" alt="kids" width="80%"
+                        height="auto">
                 </div>
-                <p2> My child used to hate brushing his teeth, and I had to remind him multiple times every day.
-                    But after visiting this website, he was so attracted to the cute illustrations and fun stories
-                    that he started brushing on his own! Now, he has developed a habit of brushing his teeth every
-                    morning and night. He even reminds me to use dental floss! I'm really grateful for the
-                    educational
-                    content on this website!
-                </p2>
-            </div>
 
-            <button class="right-arrow">→</button>
+                <!-- Slide 2 -->
+                <div><img src="imagefile//imagefile.homepage/kidfeedback-photo2.jpg" alt="kids" width="80%"
+                        height="auto">
+                </div>
+
+                <!-- Slide 3 -->
+                <div><img src="imagefile//imagefile.homepage/kidfeedback-photo3.jpg" alt="kids" width="80%"
+                        height="auto">
+                </div>
+
+                <!-- Slide 4 -->
+                <div><img src="imagefile//imagefile.homepage/kidfeedback-photo4.jpg" alt="kids" width="80%"
+                        height="auto">
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="images-kids">
+                    <div class="images">
+                        <img src="imagefile/imagefile.homepage/kidfeedback-photo5.jpg" alt="kids" width="80%"
+                            height="auto">
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="user-info">
+                            <div>
+                                <div class="user-role">(mother of a 4-year-old)</div>
+                            </div>
+
+                            <p>
+                                My child used to hate brushing his teeth, and I had to remind him every day. But after
+                                visiting this site, he was hooked by the fun stories and now brushes happily twice a
+                                day. He
+                                even teaches his little sister how to brush!
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+                    <script type="text/javascript" src="slick/slick.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $('.images').slick({
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                autoplay: true,
+                                autoplaySpeed: 2000,
+                            });
+                        });
+                    </script>
+
+                </div>
+            </div>
         </div>
     </div>
+
+
+
+
 
     <div id="welcome5"></div>
 
@@ -263,8 +311,8 @@
         </div>
     </footer>
 
-
-
 </body>
+
+
 
 </html>

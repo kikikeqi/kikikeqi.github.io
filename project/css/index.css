@@ -213,6 +213,8 @@ h5 {
     text-shadow: 2px 5px #00000033;
 }
 
+
+
 #feedback-group {
     display: flex;
     align-items: center;
@@ -239,7 +241,7 @@ h5 {
     cursor: pointer;
 }
 
-.images {
+.images-kids {
     background: white;
     border-radius: 16px;
     padding: 20px;
@@ -282,7 +284,7 @@ h5 {
     font-size: 18px;
 }
 
-p2 {
+.testimonial p {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
