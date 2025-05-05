@@ -1,33 +1,31 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 #flex-container {
-    background-color: #FEE273;
     justify-content: space-between;
     padding: 10px 20px;
     top: 0;
+    position: relative;
     z-index: 1000;
+    background-image: url('../imagefile/imagefile.homepage/background-homemain.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 h1 {
-    font-size: 75px;
+    font-size: 70px;
     font-family: cherry Bomb One;
     text-align: center;
     color: #F96D4A;
     margin: 0%;
-    margin-top: 60px;
+    padding: 50px;
     text-shadow: 2px 4px #00000033;
 }
 
 .main-photo {
-    background-color: #FEE273;
     text-align: center;
-    justify-content: space-between;
+    background-size: contain;
     align-items: center;
-    padding: 20px 40px;
+    padding: 50px 30px 80px;
 }
 
 
@@ -437,17 +435,12 @@ p2 {
 
 /*mobile*/
 @media (max-width: 969px) {
-    #flex-container {
-        display: none;
-    }
-
     .nav {
         display: none;
     }
 
     /* Show Mobile  */
     .navbar-mobile {
-        background-color: #FEE273;
         display: flex;
         align-items: center;
         justify-content: space-between;
