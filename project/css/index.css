@@ -193,6 +193,7 @@ p {
 
 
 
+
 #feedback-layer {
     padding: 20px 30px;
     display: flex;
@@ -213,54 +214,51 @@ h5 {
     text-shadow: 2px 5px #00000033;
 }
 
+.images-kids {
+    background: white;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    border-radius: 20px;
+}
 
 
-#feedback-group {
-    display: flex;
+
+/* #feedback-group { */
+/* display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
     width: 100%;
     position: relative;
-    margin-bottom: 10%;
-}
+    margin-bottom: 10%; */
+/* } */
 
-.left-arrow,
-.right-arrow {
-    position: relative;
-    background-color: #4fe0c2;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
 
-.images-kids {
-    background: white;
+/* .images-kids { */
+/* background: white;
     border-radius: 16px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 16px; */
 
-}
+/* } */
 
-.testimonial {
+/* .testimonial {
     background: white;
     border-radius: 16px;
     padding: 30px;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
+} */
+
+
+
 
 .user-info {
     display: flex;
@@ -291,6 +289,8 @@ h5 {
     color: #333;
     line-height: 1.6;
 }
+
+
 
 
 
@@ -391,7 +391,7 @@ h5 {
 
 
 @media (max-width: 1173px) {
-    #feedback-group {
+    /* #feedback-group {
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -399,7 +399,7 @@ h5 {
     .left-arrow,
     .right-arrow {
         display: none;
-    }
+    } */
 
 }
 

@@ -75,11 +75,11 @@ h2 {
     align-items: center;
 }
 
-.referral-card {
-    background-color: #fff;
+.referral-card1,
+.referral-card2 {
+    background-color: white;
     border-radius: 20px;
     padding: 40px;
-    max-width: 900px;
     width: 100%;
     display: flex;
     align-items: stretch;
@@ -101,7 +101,7 @@ h2 {
 
 
 .clinic-logo {
-    width: 80px;
+    width: 7%;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
@@ -152,16 +152,6 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
 }
-
-.left-btn {
-    left: 70px;
-}
-
-.right-btn {
-    right: 70px;
-}
-
-
 
 .sticker2 {
     display: block;
