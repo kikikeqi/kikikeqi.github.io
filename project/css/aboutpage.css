@@ -534,12 +534,60 @@ p {
 }
 
 
+@media (max-width: 1099px) {
+    .card-section {
+        background: none;
+        padding-bottom: 50px;
+    }
+
+    .philosophy-text1 {
+        top: 175%;
+    }
+}
+
+
+@media (max-width: 935px) {
+    #menu {
+        font-size: 20px;
+        gap: 75px
+    }
+}
+
+@media (max-width: 830px) {
+    #menu {
+        font-size: 20px;
+        gap: 70px
+    }
+}
+
+@media (max-width: 810px) {
+    #menu {
+        font-size: 20px;
+        gap: 60px
+    }
+}
+
+@media (max-width: 770px) {
+    #menu {
+        font-size: 18px;
+        gap: 60px
+    }
+}
+
+@media (max-width: 728px) {
+    #menu {
+        font-size: 18px;
+        gap: 50px
+    }
+}
+
+
 
 
 
 
 /*mobile hamburger*/
-@media (max-width: 935px) {
+@media (max-width: 699px) {
     h1 {
         font-size: 60px;
     }
