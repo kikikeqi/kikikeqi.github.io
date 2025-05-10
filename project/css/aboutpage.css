@@ -389,7 +389,7 @@ p {
     }
 
     .philosophy-text1 {
-        top: 156%;
+        top: 128%;
         left: 14%;
     }
 
@@ -489,7 +489,7 @@ p {
     }
 
     .card-overlay h3 {
-        font-size: 18px;
+        font-size: 14px;
         margin-bottom: 0;
         margin-top: 8px;
     }
@@ -497,10 +497,11 @@ p {
     .card-overlay h4 {
         margin-top: 15px;
         margin-bottom: 0;
+        font-size: 13px;
     }
 
     .card-overlay p {
-        font-size: 12px;
+        font-size: 11px;
         padding: 3px 15px 16px;
         margin-top: 5px;
         margin-bottom: 0;
