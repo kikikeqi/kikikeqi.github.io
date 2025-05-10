@@ -345,6 +345,52 @@ p {
 
 
 
+@media (max-width: 1280px) {
+    .card.default-img {
+        opacity: 1;
+    }
+
+    .card .hover-img {
+        opacity: 1;
+    }
+
+
+    .card .card-overlay {
+        opacity: 1;
+    }
+
+    .card-overlay {
+        width: auto;
+        height: 130px;
+        top: 58%;
+        opacity: none;
+    }
+
+    .card-overlay h3 {
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 8px;
+    }
+
+    .card-overlay h4 {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+
+    .card-overlay p {
+        font-size: 11px;
+        padding: 3px 15px 16px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
 
 /*laptopL*/
 @media (max-width: 1221px) {
@@ -534,6 +580,12 @@ p {
 }
 
 
+@media (max-width: 1101px) {}
+
+
+
+
+
 @media (max-width: 1099px) {
     .card-section {
         background: none;
@@ -544,6 +596,8 @@ p {
         top: 175%;
     }
 }
+
+
 
 
 @media (max-width: 935px) {
