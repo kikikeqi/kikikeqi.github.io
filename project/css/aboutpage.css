@@ -13,7 +13,7 @@
 
 .mission-text {
     position: absolute;
-    top: 440px;
+    top: 430px;
     left: 80px;
     font-size: 35px;
     color: #fff04c;
@@ -95,6 +95,7 @@
     background-color: #6B51B1;
     padding: 40px;
     gap: 40px;
+    width: 100%;
 }
 
 .triangle-image img {
@@ -178,7 +179,7 @@ p {
 .card {
     position: relative;
     width: 320px;
-    height: 460px;
+    height: auto;
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
@@ -346,7 +347,7 @@ p {
 
 
 /*laptopL*/
-@media (max-width: 1218px) {
+@media (max-width: 1221px) {
 
     .nav {
         display: flex;
@@ -387,8 +388,9 @@ p {
         margin-bottom: -40px;
     }
 
-    .philosophy-text {
-        margin: 0%;
+    .philosophy-text1 {
+        top: 156%;
+        left: 14%;
     }
 
 
@@ -401,13 +403,8 @@ p {
     }
 
     .mission-text {
-        position: absolute;
-        top: 580px;
-        left: 80px;
-        font-size: 35px;
-        color: #fff04c;
-        font-family: "Cherry Bomb One", cursive;
-        text-shadow: 2px 5px #00000033;
+        top: 550px;
+        left: 14%;
     }
 
 
@@ -453,84 +450,95 @@ p {
         margin-bottom: 15px;
     }
 
-    .philosophy-text1 {
-        position: absolute;
-        top: 190%;
-        left: 80px;
-        font-size: 35px;
-        color: #fff04c;
-        font-family: "Cherry Bomb One", cursive;
-        text-shadow: 2px 5px #00000033;
+
+
+
+
+    .card.default-img {
+        opacity: 1;
     }
 
+    .card .hover-img {
+        opacity: 1;
+    }
+
+
+    .card .card-overlay {
+        opacity: 1;
+    }
+
+
     .card-section {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .card {
-        width: 90%;
-        max-width: 400px;
+
+    .card .card-overlay {
+        opacity: none;
     }
 
-    .card-section {
-        background: linear-gradient(to bottom, #FAA5CA 100%);
-        padding-bottom: 60px;
-        gap: 40px;
+    .card-overlay {
+        width: auto;
+        height: 130px;
+        top: 58%;
+        opacity: none;
     }
-}
+
+    .card-overlay h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-top: 8px;
+    }
+
+    .card-overlay h4 {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .card-overlay p {
+        font-size: 12px;
+        padding: 3px 15px 16px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
 
 
-@media (max-width: 1010px) {
+
     .team-card {
-        flex-direction: column;
+        position: relative;
+        display: flex;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
     }
 
     .team-img {
-        position: static;
-        margin: 0 0 -50px 0;
-        /* 让图片向下“压”住卡片顶部，贴近 */
-        width: 250px;
-        z-index: 2;
+        left: 0;
     }
 
     .team-info {
-        width: 90%;
-        padding: 20px;
-        right: 0;
-        margin-top: 0;
-        z-index: 1;
+        padding: 0px 20px 30px 70px;
+        right: 85px;
+        max-width: 450px;
     }
 
-    .mission-text {
-        position: absolute;
-        top: 120%;
-        left: 80px;
-        font-size: 35px;
-        color: #fff04c;
-        font-family: "Cherry Bomb One", cursive;
-        text-shadow: 2px 5px #00000033;
+    .team-info li {
+        font-size: 13px;
     }
-
-    .philosophy-text1 {
-        position: absolute;
-        top: 220%;
-        left: 80px;
-        font-size: 35px;
-        color: #fff04c;
-        font-family: "Cherry Bomb One", cursive;
-        text-shadow: 2px 5px #00000033;
-    }
-
 }
+
 
 
 
 
 
 /*mobile hamburger*/
-@media (max-width: 928px) {
+@media (max-width: 935px) {
     h1 {
         font-size: 60px;
     }
@@ -638,6 +646,28 @@ p {
         font-size: 30px;
         color: #6B51B1;
         cursor: pointer;
+    }
+
+
+    .team-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-img {
+        position: static;
+        margin: 0 0 -50px 0;
+        /* 让图片向下“压”住卡片顶部，贴近 */
+        width: 250px;
+        z-index: 2;
+    }
+
+    .team-info {
+        width: 90%;
+        padding: 20px;
+        right: 0;
+        margin-top: 0;
+        z-index: 1;
     }
 }
 
