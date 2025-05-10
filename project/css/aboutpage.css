@@ -386,12 +386,6 @@ p {
     }
 }
 
-
-
-
-
-
-
 /*laptopL*/
 @media (max-width: 1221px) {
 
@@ -580,11 +574,6 @@ p {
 }
 
 
-@media (max-width: 1101px) {}
-
-
-
-
 
 @media (max-width: 1099px) {
     .card-section {
@@ -593,10 +582,16 @@ p {
     }
 
     .philosophy-text1 {
-        top: 175%;
+        top: 127%;
+    }
+
+    .section-title {
+        padding-left: 40px;
+        margin-top: 0;
+        text-align: left;
+        margin-bottom: 60px;
     }
 }
-
 
 
 
