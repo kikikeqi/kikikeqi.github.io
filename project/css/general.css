@@ -326,7 +326,6 @@ h1 {
 }
 
 
-
 @media (max-width: 558px) {
     .footer p {
         padding-bottom: 40px;
@@ -405,6 +404,23 @@ h1 {
 
     .menu-toggle-checkbox:checked~.menu-mobile {
         padding-left: 30px;
+        width: 60%;
+    }
+
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        font-family: Poppins, sans-serif;
+        margin-top: -40px;
+        font-weight: 600;
+    }
+
+    .submenu-mobile a {
+        font-size: 15px;
+        padding: 5px 0;
     }
 
     .close-btn {
