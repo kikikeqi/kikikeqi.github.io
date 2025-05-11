@@ -483,6 +483,20 @@ p.section-title {
     }
 }
 
+@media (max-width: 889px) {
+    .sticker1-love-shape {
+        background-size: 120px;
+        right: 5px;
+    }
+
+
+    .sticker2-toothpaste {
+
+        background-size: 110px;
+        margin-top: 20px;
+        left: 20px;
+    }
+}
 
 
 @media (max-width: 870px) {
@@ -494,4 +508,73 @@ p.section-title {
         background-size: 110px;
     }
 
+}
+
+@media (max-width: 320px) {
+    .form-left form {
+        width: 200px;
+        gap: 15px;
+    }
+
+
+    .collaboration-section {
+        width: 100%;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #calendar-box-background {
+        background-color: #6B51B1;
+        display: flex;
+        padding: 30px 20px 80px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .month-selector input[type="month"] {
+        margin: 0 10px;
+    }
+
+    .calendar-card {
+        width: 40%;
+        justify-content: center;
+    }
+
+    .month-selector button {
+        width: 10%;
+        height: auto;
+    }
+
+    .month-selector input[type="month"] {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .weekdays {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .weekdays li {
+        font-size: 12px;
+    }
+
+    .days {
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .sticker2-toothpaste {
+        top: 290%;
+        background-size: 50px;
+    }
 }

@@ -463,3 +463,30 @@ input[type=book]:hover {
 
 
 }
+
+@media (max-width: 320px) {
+
+
+    .sticker1-girl {
+        background-size: 50px;
+        top: 25%;
+    }
+
+
+    .form-topic {
+        padding: 0;
+    }
+
+    .form-topic h2 {
+        font-size: 28px;
+    }
+
+    .form-container-information {
+        padding: 0;
+    }
+
+    .sticker3-skiing {
+        background-size: 40px;
+        right: 0px;
+    }
+}
