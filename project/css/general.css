@@ -329,7 +329,7 @@ h1 {
 
 @media (max-width: 558px) {
     .footer p {
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
 }
 
@@ -343,12 +343,15 @@ h1 {
     }
 
     .footer p {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .social-icons {
         display: flex;
         gap: 15px;
         justify-content: center;
+        position: relative;
+        right: 0;
+        bottom: 0;
     }
 }
