@@ -40,7 +40,6 @@ h2 {
 
 .sticker1 {
     display: block;
-    background-color: #6B51B1;
     background-image: url("../imagefile/imagefile.servicespage/sticker1.png");
     background-repeat: no-repeat;
     background-size: 150px;
@@ -604,5 +603,47 @@ p {
     .right-btn {
         display: none;
 
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .location-section {
+        padding: 0 50px 60px;
+    }
+
+    .location-header img {
+        width: 10%;
+    }
+
+    .location-header h2 {
+        font-size: 20px;
+    }
+
+    .map-container {
+        width: 120%;
+        height: 300px;
+        margin-left: -20px;
+    }
+
+    .location-description {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .sticker1 {
+        background-size: 80px;
+        left: 25px;
+        padding: 40px;
+    }
+
+    .referral-title {
+        font-size: 24px;
+        padding: 0px 20px 20px;
+    }
+
+    .star-box {
+        width: 50%;
     }
 }

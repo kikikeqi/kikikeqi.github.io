@@ -43,7 +43,7 @@ body {
     position: absolute;
     min-width: 130px;
     z-index: 1;
-    margin: 3px;
+    margin: 0;
     font-family: 'Poppins';
     font-weight: 700;
     background-color: #F96D4A;
@@ -336,14 +336,40 @@ h1 {
 
 
 
-@media (max-width: 412px) {
+@media (max-width: 320px) {
+
+    .footer {
+        padding: 20px 20px;
+    }
+
     .footer-nav {
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 
+    .footer-nav a {
+        font-size: 18px;
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .contact h6 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+
     .footer p {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
+        font-size: 10px;
     }
 
     .social-icons {
@@ -353,5 +379,41 @@ h1 {
         position: relative;
         right: 0;
         bottom: 0;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: auto;
+    }
+
+    .contact {
+        padding: 10px 20px 20px;
+    }
+
+    .contact-card-group {
+        gap: 15px;
+        padding: 10px;
+    }
+
+
+
+    .contact-card1,
+    .contact-card2 {
+        width: 75px;
+        height: 50px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        padding-left: 30px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        left: 20px;
+    }
+
+    .menu-item-mobile {
+        font-size: 20px;
+        margin: 10px 0;
     }
 }
