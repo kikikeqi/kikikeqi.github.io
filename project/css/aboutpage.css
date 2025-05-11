@@ -939,5 +939,35 @@
         width: 80%;
     }
 
+    .doctor-image-wrapper {
+        width: 400px;
+    }
 
+    .doctor-text-box {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .doctor-text-box p {
+        font-size: 12px;
+    }
+
+    .philosophy-text1 {
+        top: 94%;
+    }
+}
+
+
+@media (max-width: 530px) {
+    .philosophy-text {
+        width: 90%;
+    }
+
+    .title-line1 {
+        font-size: 30px;
+    }
+
+    .title-line2 {
+        font-size: 30px;
+    }
 }

@@ -283,3 +283,72 @@ h1 {
     top: 0;
     z-index: 1000;
 }
+
+
+
+@media (max-width: 742px) {
+    .footer-nav {
+        gap: 45px;
+    }
+
+    .footer-nav a {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 689px) {
+
+    .footer-nav {
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 669px) {
+
+    .footer-logo-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .footer-nav {
+        gap: 35px;
+    }
+
+    .footer-nav a {
+        font-size: 28px;
+        margin-top: -20px;
+    }
+
+    .footer p {
+        padding-bottom: 40px;
+    }
+
+}
+
+
+
+@media (max-width: 558px) {
+    .footer p {
+        padding-bottom: 50px;
+    }
+}
+
+
+
+
+@media (max-width: 412px) {
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer p {
+        padding-bottom: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+}
