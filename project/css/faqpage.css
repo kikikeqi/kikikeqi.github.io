@@ -322,10 +322,31 @@
 
 
 
-
-
 @media (max-width: 918px) {
     .faq-question {
         font-size: 14px;
     }
+}
+
+
+@media (max-width: 320px) {
+    #faq-container-twobox {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+
+    .faq-questions-box {
+        width: 100%;
+    }
+
+    .faq-question {
+        height: auto;
+        gap: 10px;
+    }
+
+    .faq-side {
+        width: 90%;
+    }
+
 }
