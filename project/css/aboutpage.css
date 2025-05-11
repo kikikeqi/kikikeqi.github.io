@@ -122,7 +122,7 @@
     margin-bottom: 10px;
 }
 
-h4 {
+.block h4 {
     margin: 10px 0 5px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
@@ -130,7 +130,7 @@ h4 {
     font-size: 20px;
 }
 
-p {
+.block p {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     color: white;
@@ -574,7 +574,6 @@ p {
 }
 
 
-
 @media (max-width: 1099px) {
     .card-section {
         background: none;
@@ -600,7 +599,50 @@ p {
         font-size: 20px;
         gap: 75px
     }
+
+    .mission-text {
+        top: 540px;
+        left: 14%;
+    }
 }
+
+
+
+@media (max-width: 889px) {
+    .team-card {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .team-img {
+        width: 280px;
+        height: auto;
+        border-radius: 50%;
+        top: 50px;
+        flex-shrink: 0;
+        margin-right: 0;
+    }
+
+
+    .team-info {
+        padding: 30px;
+        right: 0;
+        max-width: 700px;
+    }
+
+
+    .team-info ul {
+        padding-left: 15px;
+    }
+
+}
+
+
 
 @media (max-width: 830px) {
     #menu {
@@ -623,15 +665,100 @@ p {
     }
 }
 
-@media (max-width: 728px) {
-    #menu {
-        font-size: 18px;
-        gap: 50px
+
+
+
+@media (max-width: 768px) {
+
+    /* Hero Section */
+    .hero {
+        padding: 100px 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: 8px;
+    }
+
+    .hero p {
+        font-size: 8px;
+    }
+
+    /* About Sections */
+    .about {
+        padding: 40px 20px;
+    }
+
+    .about h2 {
+        font-size: 10px;
+    }
+
+    .about p {
+        font-size: 10px;
+    }
+
+
+    .team-info {
+        max-width: 500px;
+    }
+
+    .team-info h3 {
+        font-size: 20px;
+    }
+
+    .team-info li {
+        font-size: 13px;
+    }
+
+    .mission-text {
+        top: 530px;
+    }
+
+    .philosophy-text1 {
+        top: 125%;
     }
 }
 
 
 
+
+@media (max-width: 728px) {
+    #menu {
+        font-size: 18px;
+        gap: 50px
+    }
+
+    .title-line1 {
+        font-size: 40px;
+    }
+
+    .title-line2 {
+        font-size: 40px;
+    }
+
+    .triangle-image img {
+        width: 70%;
+        margin: auto;
+        margin-bottom: -40px;
+        margin-top: 40px;
+    }
+
+    .orange {
+        font-size: 23px;
+    }
+
+    .block h4 {
+        font-size: 16px;
+    }
+
+    .block p {
+        font-size: 13px;
+    }
+
+    .philosophy-text {
+        width: 80%;
+    }
+
+}
 
 
 
@@ -767,99 +894,50 @@ p {
         margin-top: 0;
         z-index: 1;
     }
+
+    .mission-text {
+        top: 350px;
+        left: 8%;
+    }
+
+    .doctor-image-wrapper {
+        width: 500px;
+    }
+
+
+    .doctor-text-box {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+
+    .philosophy-text1 {
+        top: 100%;
+        left: 8%;
+    }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-
-    /* Hero Section */
-    .hero {
-        padding: 100px 20px 40px;
+@media (max-width: 630px) {
+    .title-line1 {
+        font-size: 35px;
     }
 
-    .hero h1 {
-        font-size: 8px;
+    .title-line2 {
+        font-size: 35px;
     }
+}
 
-    .hero p {
-        font-size: 8px;
-    }
 
-    /* About Sections */
-    .about {
-        padding: 40px 20px;
-    }
-
-    .about h2 {
-        font-size: 10px;
-    }
-
-    .about p {
-        font-size: 10px;
-    }
-
-    /* Team Section */
-    .team-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px 0;
-    }
-
+@media (max-width: 565px) {
     .team-img {
-        width: 200px;
-        height: auto;
-        margin-bottom: 20px;
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
+        margin: 0 0 -30px 0;
+        width: 250px;
     }
 
     .team-info {
-        padding: 20px;
+        width: 80%;
     }
 
-    .team-info h3 {
-        font-size: 20px;
-    }
 
-    .team-info li {
-        font-size: 13px;
-    }
-
-    .mission-text {
-        position: absolute;
-        top: 137%;
-        left: 80px;
-        font-size: 35px;
-        color: #fff04c;
-        font-family: "Cherry Bomb One", cursive;
-        text-shadow: 2px 5px #00000033;
-    }
-
-    .philosophy-text1 {
-        position: absolute;
-        top: 240%;
-        left: 80px;
-        font-size: 35px;
-        color: #fff04c;
-        font-family: "Cherry Bomb One", cursive;
-        text-shadow: 2px 5px #00000033;
-    }
 }
