@@ -1034,6 +1034,34 @@
         width: 70px;
         z-index: 5;
     }
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+
+
 }
 
 @media (max-width: 350px) {

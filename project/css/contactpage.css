@@ -490,6 +490,12 @@ input[type=button]:hover {
 }
 
 @media (max-width: 375px) {
+    .backtotop {
+        left: 82%;
+        width: 70px;
+        z-index: 5;
+    }
+
     .menu-item-mobile {
         font-size: 20px;
     }
