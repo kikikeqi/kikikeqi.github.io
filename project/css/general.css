@@ -189,7 +189,18 @@ h6 {
     margin-top: 30px;
 }
 
+#callbox-24 h1 {
+    font-size: 31px;
+    font-family: 'Cherry Bomb One', cursive;
+    margin: 0;
+    padding: 10px;
+    text-shadow: none;
+}
 
+#callbox-24 p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
 
 
 .contact-card2 p img {
