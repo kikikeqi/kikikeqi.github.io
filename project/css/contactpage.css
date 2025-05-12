@@ -154,14 +154,25 @@ input[type=submit]:hover {
 
 .seminar-container-photo {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     justify-content: center;
     gap: 20px;
 }
 
+.seminar-container-photo img {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
 
+.slick-prev {
+    left: 300px !important;
+}
 
-
+.slick-next {
+    right: 300px !important;
+}
 
 
 #book-collaboration-container {
@@ -284,6 +295,15 @@ input[type=book]:hover {
 }
 
 
+
+.seminar-container-photo img {
+    width: 50%;
+    /* 图片宽度设置为 50% */
+    height: auto;
+    /* 保持图片比例 */
+    display: block;
+    /* 确保图片是块级元素 */
+}
 
 
 @media (max-width: 1246px) {
