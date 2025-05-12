@@ -522,6 +522,7 @@ p {
 }
 
 
+
 /*mobile*/
 @media (max-width: 440px) {
     .nav {
@@ -678,5 +679,50 @@ p {
         left: 86%;
         width: 60px;
     }
+
+}
+
+
+@media (max-width: 375px) {
+
+    .layer-photo1,
+    .layer-photo2 {
+        flex: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .backtotop {
+        left: 82%;
+        width: 70px;
+        z-index: 5;
+    }
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+
 
 }
