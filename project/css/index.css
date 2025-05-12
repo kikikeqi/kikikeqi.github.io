@@ -11,7 +11,7 @@
 }
 
 
-h1 {
+.main-photo h1 {
     font-size: 70px;
     font-family: cherry Bomb One;
     text-align: center;
@@ -85,7 +85,7 @@ h1 {
     gap: 20px;
 }
 
-h2 {
+.photo-group h2 {
     font-size: 45px;
     font-family: 'Cherry Bomb One', cursive;
     color: #F96D4A;
@@ -119,14 +119,15 @@ h2 {
 }
 
 
-.layer-photo img {
-    width: 400px;
+.layer-photo1,
+.layer-photo2 img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
-.layer-photo {
+.layer-photo1,
+.layer-photo2 {
     flex: 0 0 500px;
     /* 保持图片宽度统一，并为中心对齐提供固定参考宽度 */
     display: flex;
@@ -291,18 +292,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #welcome5 {
     background-color: white;
     background-image: url('../imagefile/imagefile.homepage/sticker4.png');
@@ -312,6 +301,13 @@ p {
     display: block;
     padding: 60px;
 }
+
+
+
+
+
+
+
 
 
 @media (max-width: 1382px) {
@@ -366,7 +362,7 @@ p {
         align-items: center;
     }
 
-    h1 {
+    .main-photo h1 {
         font-size: 60px;
     }
 
@@ -398,22 +394,23 @@ p {
 
 
 
-
-
-
 /*laptop*/
 @media (max-width: 1100px) {
+
     .contact2-group {
-        flex-wrap: wrap;
-        justify-content: center;
+        text-align: center;
+        object-fit: contain;
+        border-radius: 50%;
+        margin: 0;
+        gap: 0;
     }
+
 
     .contact2-group1,
     .contact2-group2,
     .contact2-group3,
     .contact2-group4 {
         width: 45%;
-        /* 每行两个 */
     }
 
     .contact2-group1 img,
@@ -426,13 +423,107 @@ p {
         max-width: 250px;
     }
 
+    .backtotop {
+        left: 91%;
+    }
+
+    .photo-group h2 {
+        font-size: 40px;
+    }
+
+    .main-photo h1 {
+        font-size: 58px;
+    }
 }
 
 
+@media (max-width: 1066px) {
+
+
+    .main-photo img {
+        width: 60%;
+    }
+
+    .photo-group h2 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 938px) {
+    #layer2 {
+        flex-direction: column-reverse;
+    }
+
+    .layer-photo2 {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 935px) {
+    #menu {
+        gap: 70px
+    }
+
+}
+
+
+@media (max-width: 895px) {
+
+    #menu {
+        gap: 50px;
+    }
+
+    .backtotop {
+        left: 90%;
+    }
+
+    .layer-photo2 img {
+        width: 80%;
+        padding-left: 78px;
+    }
+}
+
+@media (max-width: 815px) {
+    #menu {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 700px) {
+    #menu {
+        font-size: 20px;
+        gap: 40px;
+    }
+
+    .main-photo h1 {
+        font-size: 40px;
+        padding: 10px 0px 20px;
+    }
+
+    .main-photo {
+        padding: 30px 20px 50px;
+    }
+
+    .backtotop {
+        width: 75px;
+    }
+
+}
+
+@media (max-width: 690px) {
+    #menu {
+        font-size: 18px;
+        gap: 40px;
+    }
+}
 
 
 /*mobile*/
-@media (max-width: 969px) {
+@media (max-width: 440px) {
     .nav {
         display: none;
     }
@@ -533,8 +624,14 @@ p {
         cursor: pointer;
     }
 
-    h1 {
-        font-size: 50px;
+    .main-photo {
+        padding: 0px 30px 20px;
+    }
+
+    .main-photo h1 {
+        font-size: 30px;
+        margin: 0px;
+        padding: 10px 0px 20px;
     }
 
 
@@ -575,4 +672,11 @@ p {
         align-self: center;
         margin-top: 20px;
     }
+
+
+    .backtotop {
+        left: 86%;
+        width: 60px;
+    }
+
 }
