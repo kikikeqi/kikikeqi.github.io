@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/contentdentalcare2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 </head>
 
 
@@ -299,11 +301,38 @@
         <p>Contact us anytime!</p>
         <div class="contact-card-group">
             <div class="contact-card1">
-                <img src="imagefile/imagefile.homepage/24call.png" alt="24hr Call" width="50%" height="auto" />
+
+                <div id="callbox-24" class="modal">
+                    <h1>Thank You for Reaching Out!</h1>
+                    <p>We're always happy to help with your child's dental needs 😊</p>
+                    <p>If you have any questions or would like to schedule an appointment, feel free to contact us:</p>
+                    <p><strong>📞 Phone:</strong> <a href="tel:0123567889">012 356 7889</a></p>
+                    <p><em>Available Monday to Friday, 8am-6pm</em></p>
+                    <a href="#" rel="modal:close"></a>
+                </div>
+
+                <p><a href="#callbox-24" rel="modal:open"> <img src="imagefile/imagefile.homepage/24call.png"
+                            alt="24hr Call" width="50%" height="auto" /></a></p>
+
             </div>
+
+
             <div class="contact-card2">
-                <img src="imagefile/imagefile.homepage/customerservices.png" alt="Customer Service" width="50%"
-                    height="auto" />
+
+                <div id="email-box" class="modal">
+                    <h1>Thank You for Reaching Out!</h1>
+                    <p>We're so glad you clicked — it means you care about your child's healthy smile 😊</p>
+                    <p>If you have any questions about our dental services for kids, or just want to learn more, feel
+                        free to email us:</p>
+                    <p><strong>📧 Email:</strong> <a
+                            href="mailto:littledentalhub.@gmail.com">littledentalhub.@gmail.com</a>
+                    </p>
+                    <p>We love hearing from caring parents like you, and we'll get back to you as soon as we can!</p>
+                    <a href="#" rel="modal:close"></a>
+                </div>
+
+                <p><a href="#email-box" rel="modal:open"> <img src="imagefile/imagefile.homepage/emailcontactus.png"
+                            alt="24hr Call" width="50%" height="auto" /></a></p>
             </div>
         </div>
     </div>
@@ -334,6 +363,21 @@
             <a href="#"><img src="imagefile//imagefile.homepage/instagram_5968776.png" alt="Instagram"></a>
         </div>
     </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // 初始化 jQuery Modal
+            $('a[rel="modal:open"]').on('click', function (event) {
+                event.preventDefault(); // 阻止默认行为
+                $($(this).attr('href')).modal(); // 打开对应的 modal
+            });
+        });
+    </script>
 
 </body>
 
