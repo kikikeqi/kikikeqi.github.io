@@ -265,7 +265,7 @@ h2 {
     padding: 20px;
 }
 
-input[type=book] {
+input[type=button] {
     background-color: #6FCDB9;
     color: white;
     padding: 12px 50px;
@@ -277,7 +277,7 @@ input[type=book] {
     cursor: pointer;
 }
 
-input[type=book]:hover {
+input[type=button]:hover {
     background-color: black;
     color: #6FCDB9;
 }
@@ -298,11 +298,19 @@ input[type=book]:hover {
 
 .seminar-container-photo img {
     width: 50%;
-    /* 图片宽度设置为 50% */
     height: auto;
-    /* 保持图片比例 */
     display: block;
-    /* 确保图片是块级元素 */
+
+}
+
+
+
+@media (max-width: 1280px) {
+
+    .book-collaboration-photo .photo-public-talk {
+        opacity: 1;
+    }
+
 }
 
 
@@ -330,8 +338,6 @@ input[type=book]:hover {
         align-items: center;
     }
 }
-
-
 
 
 /*mobile hamburger*/

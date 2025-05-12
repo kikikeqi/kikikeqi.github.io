@@ -225,7 +225,7 @@ h6 {
 
 .footer {
     background-color: #F96D4A;
-    padding: 40px 20px;
+    padding: 40px 20px 10px;
     position: relative;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -267,11 +267,11 @@ h6 {
 }
 
 .social-icons {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
     display: flex;
     gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icons img {
@@ -323,7 +323,7 @@ h1 {
 
 .backtotop {
     position: fixed;
-    bottom: 80px;
+    bottom: 25px;
     right: 20px;
     background-color: black;
     padding: 20px 23px;
