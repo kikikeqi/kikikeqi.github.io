@@ -1025,6 +1025,10 @@
 }
 
 @media (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+    }
+
     .philosophy-text1 {
         top: 172%;
     }

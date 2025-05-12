@@ -512,6 +512,9 @@ p.section-title {
 
 
 @media (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+    }
 
     .backtotop {
         left: 82%;
