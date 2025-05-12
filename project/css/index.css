@@ -684,6 +684,28 @@ p {
 
 
 @media (max-width: 375px) {
+    .contact1-group>div {
+        max-width: 100px;
+    }
+
+    #welcome2 {
+        background-size: 60px;
+        padding: 10px;
+    }
+
+    .photo-group h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #welcome3 {
+        background-size: 60px;
+        padding: 0;
+    }
+
+    .photo-group img {
+        width: 100%;
+    }
 
     .layer-photo1,
     .layer-photo2 {
@@ -691,6 +713,34 @@ p {
         display: flex;
         justify-content: flex-end;
     }
+
+    .layer-photo1,
+    .layer-photo2 {
+        flex: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .layer-photo2 img {
+        width: 80%;
+        padding-left: 30px;
+    }
+
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .learnmore {
+        font-size: 10px;
+        padding: 6px 20px;
+    }
+
 
     .backtotop {
         left: 82%;

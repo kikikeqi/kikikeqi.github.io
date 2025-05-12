@@ -615,6 +615,11 @@ p {
         z-index: 5;
     }
 
+    h1 {
+        font-size: 30px;
+    }
+
+
     .menu-item-mobile {
         font-size: 20px;
     }
