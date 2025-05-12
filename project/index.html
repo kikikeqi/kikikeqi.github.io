@@ -205,46 +205,38 @@
     </div>
 
 
-
     <div id="feedback-layer2">
         <div class="images-kids">
             <!-- Slide 1 -->
-
             <div class="feedback-comment-kids1">
-                <div><img src="imagefile//imagefile.homepage/kidfeedback-photo1.jpg" alt="kids" width="100%"
-                        height="auto">
-
-                    <div class="user-info">
-                        <h1>Jennie (mother of a 4-year-old)</h1>
-                        <p>My son used to be scared of dentists and didn't care about his teeth at all. But the fun
-                            facts
-                            and
-                            cute pictures on this site made him curious. Now he's even looking up tooth trivia and says
-                            he
-                            wants
-                            to eat less sugar!
-                        </p>
-                    </div>
+                <img src="imagefile/imagefile.homepage/kidfeedback-photo1.jpg" alt="kids" width="100%" height="auto">
+                <div class="user-info">
+                    <h1>Jennie (mother of a 4-year-old)</h1>
+                    <p>My son used to be scared of dentists and didn't care about his teeth at all. But the
+                        fun
+                        facts
+                        and cute pictures on this site made him curious. Now he's even looking up tooth
+                        trivia and
+                        says
+                        he wants to eat less sugar!</p>
                 </div>
             </div>
+
 
             <!-- Slide 2 -->
             <div class="feedback-comment-kids2">
-                <div><img src="imagefile//imagefile.homepage/kidfeedback-photo2.jpg" alt="kids" width="100%"
-                        height="auto">
-
-                    <div class="user-info">
-                        <h1>Tommy (5 years old)</h1>
-                        <p>I love the fun facts about teeth! I learned that my teeth are like superheroes, and I want to
-                            keep
-                            them strong. I even told my friends at school about it!
-                        </p>
-                    </div>
+                <img src="imagefile/imagefile.homepage/kidfeedback-photo2.jpg" alt="kids" width="100%" height="auto">
+                <div class="user-info">
+                    <h1>Tommy (5 years old)</h1>
+                    <p>I love the fun facts about teeth! I learned that my teeth are like superheroes, and I
+                        want to
+                        keep them strong. I even told my friends at school about it!</p>
                 </div>
-
             </div>
         </div>
+
     </div>
+
 
 
 
@@ -261,7 +253,8 @@
                 <div id="callbox-24" class="modal">
                     <h1>Thank You for Reaching Out!</h1>
                     <p>We're always happy to help with your child's dental needs 😊</p>
-                    <p>If you have any questions or would like to schedule an appointment, feel free to contact us:</p>
+                    <p>If you have any questions or would like to schedule an appointment, feel free to contact
+                        us:</p>
                     <p><strong>📞 Phone:</strong> <a href="tel:0123567889">012 356 7889</a></p>
                     <p><em>Available Monday to Friday, 8am-6pm</em></p>
                     <a href="#" rel="modal:close"></a>
@@ -278,12 +271,14 @@
                 <div id="email-box" class="modal">
                     <h1>Thank You for Reaching Out!</h1>
                     <p>We're so glad you clicked — it means you care about your child's healthy smile 😊</p>
-                    <p>If you have any questions about our dental services for kids, or just want to learn more, feel
+                    <p>If you have any questions about our dental services for kids, or just want to learn more,
+                        feel
                         free to email us:</p>
                     <p><strong>📧 Email:</strong> <a
                             href="mailto:littledentalhub.@gmail.com">littledentalhub.@gmail.com</a>
                     </p>
-                    <p>We love hearing from caring parents like you, and we'll get back to you as soon as we can!</p>
+                    <p>We love hearing from caring parents like you, and we'll get back to you as soon as we
+                        can!</p>
                     <a href="#" rel="modal:close"></a>
                 </div>
 
@@ -331,23 +326,6 @@
 
 
 
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $(',.image-kids.feedback-comment-kids1,.feedback-comment-kids2').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear'
-        });
-    </script>
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
@@ -360,6 +338,21 @@
             });
         });
     </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $('.images-kids').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+    </script>
+
 
 
 </body>

@@ -204,99 +204,92 @@ p {
     gap: 20px;
 }
 
-
-h5 {
-    font-size: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "Cherry Bomb One", cursive;
-    text-align: center;
-    color: #FEE273;
-    text-shadow: 2px 5px #00000033;
+#feedback-layer h5 {
+    font-size: 55px;
+    font-family: 'Cherry Bomb One', cursive;
+    color: #F96D4A;
+    text-shadow: 2px 3px #00000033;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 
+#feedback-layer2 {
+    background: #6b51b1;
+    padding: 0px 200px 90px;
+    text-align: center;
+    margin: auto;
+}
 
 
 
 
 .images-kids {
-    background: #6b51b1;
     display: flex;
     justify-content: center;
-    padding: 10px 30px 100px;
-}
+    align-items: center;
+    margin: auto;
+    width: 100%;
 
+}
 
 
 .feedback-comment-kids1,
 .feedback-comment-kids2 {
     background: white;
     border-radius: 16px;
-    padding: 60px;
     display: flex;
-    gap: 30px;
-    width: 50%;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    flex-direction: column;
 }
 
 
+.feedback-comment-kids1 img,
+.feedback-comment-kids2 img {
+    width: 70%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
 
 .user-info h1 {
-    font-size: 30px;
+    font-size: 24px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: black;
+    margin-bottom: 10px;
     text-shadow: none;
-    text-align: center;
     padding: 0;
 }
 
 .user-info p {
-    font-size: 25px;
+    font-size: 16px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
-    color: #333;
-    text-align: center;
+    color: #373737;
+    line-height: 1.6;
     margin: 0;
+    text-align: center;
 }
 
 
 
-
-
-/* #feedback-group { */
-/* display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    width: 100%;
-    position: relative;
-    margin-bottom: 10%; */
-/* } */
-
-
-/* .images-kids { */
-/* background: white;
-    border-radius: 16px;
-    padding: 20px;
+.slick-slide img {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px; */
+}
 
-/* } */
 
-/* .testimonial {
-    background: white;
-    border-radius: 16px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-} */
+
 
 
 
@@ -405,19 +398,6 @@ h5 {
 
 
 
-
-@media (max-width: 1173px) {
-    /* #feedback-group {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .left-arrow,
-    .right-arrow {
-        display: none;
-    } */
-
-}
 
 
 
