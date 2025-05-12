@@ -323,12 +323,12 @@ h1 {
 
 .backtotop {
     position: fixed;
-    bottom: 25px;
-    right: 20px;
-    background-color: black;
+    bottom: 10px;
+    left: 93%;
     padding: 20px 23px;
     border-radius: 50px;
     cursor: pointer;
+    width: 100px;
 }
 
 .backtotop a {
