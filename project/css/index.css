@@ -684,6 +684,12 @@ p {
 
 
 @media (max-width: 375px) {
+
+    #menu {
+        font-size: 12px;
+        gap: 10px;
+    }
+
     .contact1-group>div {
         max-width: 100px;
     }

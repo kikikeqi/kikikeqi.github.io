@@ -484,9 +484,6 @@ p {
 }
 
 
-
-
-
 @media (max-width: 935px) {
     #flex-container {
         display: none;
@@ -607,10 +604,9 @@ p {
 }
 
 
-
 @media (max-width: 375px) {
     .backtotop {
-        left: 82%;
+        left: 80%;
         width: 70px;
         z-index: 5;
     }
@@ -646,6 +642,7 @@ p {
         padding: 0px;
     }
 }
+
 
 @media (max-width: 320px) {
 
@@ -683,7 +680,11 @@ p {
         padding: 0px 20px 20px;
     }
 
+
+
     .star-box {
+        position: relative;
         width: 50%;
+        aspect-ratio: 1;
     }
 }
