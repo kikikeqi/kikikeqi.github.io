@@ -1,0 +1,650 @@
+.sticker1-love-shape {
+    display: block;
+    background-image: url('../imagefile/imagefile.bookingpage/sticker1-love-shape.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: right top;
+    padding: 70px;
+    position: absolute;
+    right: 45px;
+}
+
+#flex-container-booking {
+    background-color: #6B51B1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px;
+}
+
+
+
+
+
+.collaboration-header {
+    text-align: center;
+}
+
+.collaboration-header h1 {
+    font-size: 50px;
+    color: #FEE273;
+    text-shadow: 2px 5px #00000033;
+    margin-bottom: 20px;
+    font-family: "Cherry Bomb One", cursive;
+}
+
+.collaboration-header p {
+    font-size: 16px;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.collaboration-section {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 90%;
+    height: auto;
+    gap: 50px;
+    padding: 40px;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-left {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.form-left form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-left input[type="text"],
+.form-left input[type="email"] {
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    font-size: 16px;
+    width: 85%;
+    height: auto;
+}
+
+.form-left input::placeholder {
+    color: #B0B0B0;
+    font-size: 16px;
+}
+
+.form-right {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.students-number,
+.collaboration-type {
+    border: 1px solid #000000;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+p.section-title {
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    color: black;
+}
+
+.form-right label {
+    font-size: 16px;
+    margin-left: 8px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-right input[type="radio"] {
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+#calendar-box-background {
+    background-color: #6B51B1;
+    display: flex;
+    padding: 30px 30px 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.page-container p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: poppins, sans-serif;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.calendar-card {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    width: 130%;
+    height: auto;
+    display: flex;
+    gap: 50px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.month-selector {
+    display: flex;
+    justify-content: center;
+}
+
+.month-selector button {
+    background: #FBAED2;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.month-selector input[type="month"] {
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: poppins;
+    text-align: center;
+    margin: 0 20px;
+    outline: none;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.days {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    list-style: none;
+    justify-items: stretch;
+    align-content: center;
+}
+
+.weekdays li,
+.days li {
+    width: 14.28%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.weekdays li {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    font-family: poppins;
+}
+
+.days li {
+    font-size: 16px;
+    color: #ccc;
+    font-family: poppins;
+}
+
+.days li.selected {
+    background: #68D2C5;
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.calendar-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.selected-date {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+}
+
+.time-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.time-button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: poppins;
+    text-align: center;
+}
+
+.time-button.active {
+    background: black;
+    color: white;
+}
+
+.time-radio {
+    display: none;
+}
+
+.time-radio:checked+.time-button {
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+.confirm-button {
+    font-family: Poppins, sans-serif;
+    margin-top: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #68D2C5;
+    color: white;
+    border: none;
+    font-size: 18px;
+    left: 90px;
+    position: relative;
+}
+
+
+.confirm-button:hover {
+    background: black;
+    color: #68D2C5;
+    cursor: pointer;
+}
+
+
+.sticker2-toothpaste {
+    display: block;
+    background-image: url("../imagefile/imagefile.bookingpage/sticker2-toothpaste.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: left top;
+    padding: 70px;
+    position: absolute;
+    left: 45px;
+}
+
+
+@media (max-width: 1218px) {
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 强制 logo（第一个 div）显示在最上面 */
+    .nav>div:first-child {
+        order: 0;
+    }
+
+    #search {
+        width: 20%;
+        margin-top: 10px;
+    }
+
+    #menu {
+        order: 0;
+        width: auto;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1046px) {
+
+    .confirm-button {
+        left: 40px;
+    }
+}
+
+
+
+/*mobile hamburger*/
+@media (max-width: 945px) {
+
+    h1 {
+        font-size: 60px;
+    }
+
+    #flex-container {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    /* show mobile  */
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    .menu-toggle-checkbox {
+        display: none;
+    }
+
+    /* show menu */
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        display: flex;
+        flex-direction: column;
+        background: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-left: 50px;
+        z-index: 1000;
+        gap: 30px;
+        align-items: flex-start;
+        font-family: "Cherry Bomb One", cursive;
+    }
+
+    .close-btn {
+        font-size: 50px;
+        color: #6b51b1;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        cursor: pointer;
+        font-family: poppins;
+    }
+
+    .menu-item-mobile {
+        color: #6b51b1;
+        font-size: 32px;
+        margin: 20px 0;
+        padding: 0px 13px 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item-mobile:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+
+    .submenu-mobile {
+        display: none;
+        flex-direction: column;
+    }
+
+    .submenu-mobile a {
+        color: #f96d4a;
+        font-size: 20px;
+        padding: 8px 0;
+        text-decoration: none;
+    }
+
+    .submenu-toggle {
+        display: none;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        margin-top: -40px;
+        font-weight: 600;
+    }
+
+
+    .menu-toggle-btn {
+        font-size: 45px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .search-btn {
+        font-size: 30px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .sticker1-love-shape {
+        background-size: 130px;
+    }
+}
+
+@media (max-width: 889px) {
+    .sticker1-love-shape {
+        background-size: 120px;
+        right: 5px;
+    }
+
+
+    .sticker2-toothpaste {
+
+        background-size: 110px;
+        margin-top: 20px;
+        left: 20px;
+    }
+}
+
+
+@media (max-width: 870px) {
+    .confirm-button {
+        left: 0px;
+    }
+
+    .sticker2-toothpaste {
+        background-size: 110px;
+    }
+
+}
+
+@media (max-width: 688px) {
+
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .backtotop {
+        left: 82%;
+        width: 70px;
+        z-index: 5;
+    }
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .form-left form {
+        width: 200px;
+        gap: 15px;
+    }
+
+
+    .collaboration-section {
+        width: 100%;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #calendar-box-background {
+        background-color: #6B51B1;
+        display: flex;
+        padding: 30px 20px 80px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .month-selector input[type="month"] {
+        margin: 0 10px;
+    }
+
+    .calendar-card {
+        width: 40%;
+        justify-content: center;
+    }
+
+    .month-selector button {
+        width: 10%;
+        height: auto;
+    }
+
+    .month-selector input[type="month"] {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .weekdays {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .weekdays li {
+        font-size: 12px;
+    }
+
+    .days {
+        padding: 30px;
+        gap: 10px;
+    }
+
+    .sticker2-toothpaste {
+        top: 290%;
+        background-size: 50px;
+    }
+}

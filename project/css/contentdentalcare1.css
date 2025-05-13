@@ -1,0 +1,408 @@
+h1 {
+    color: #6FCDB9;
+    font-size: 90px;
+}
+
+
+
+
+.brushing-section {
+    font-family: "Poppins", sans-serif;
+}
+
+.brushing-header {
+    background-color: #FAA5CA;
+    padding: 40px 20px 60px;
+    text-align: center;
+}
+
+.brushing-header h2 {
+    font-size: 50px;
+    font-family: "Cherry Bomb One", cursive;
+    color: #6B51B1;
+    text-shadow: 2px 2px #00000033;
+    margin: 0%;
+}
+
+.brushing-label {
+    display: inline-block;
+    background-color: #FEE273;
+    color: #F96D4A;
+    padding: 12px 50px;
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+.brushing-steps {
+    background-color: white;
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.step-card {
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.step-number {
+    background-color: #ffe466;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    width: 32px;
+    height: 32px;
+    align-content: center;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.step-card img {
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin: 0 auto;
+    max-width: 160px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+.tips-section {
+    background-color: #6B51B1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.tips-title {
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 40px;
+    color: #FEE273;
+    padding: 20px 20px 80px;
+    margin: 0;
+    text-shadow: 2px 5px #00000033;
+}
+
+.tips-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+}
+
+.tips-card-row {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tips-card-row.center {
+    justify-content: center;
+}
+
+.tips-card {
+    background-color: #FAA5CA;
+    width: 270px;
+    height: 320px;
+    padding: 30px 20px 30px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+
+}
+
+.card-icon {
+    position: absolute;
+    top: -60px;
+    left: -50px;
+}
+
+.card-star {
+    width: 155px;
+    height: auto;
+    margin: 10px auto 5px;
+}
+
+.star-text {
+    margin-top: -78px;
+    font-size: 18px;
+    color: #F96D4A;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.tips-card p {
+    font-size: 18px;
+    color: white;
+    padding-top: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sticker-brush {
+    display: block;
+    background-color: white;
+    background-image: url("../imagefile/imagefile.contentdentalcare1/sticker-brush.png");
+    background-repeat: no-repeat;
+    background-size: 140px;
+    background-position: right top;
+    padding: 80px;
+    position: relative;
+    top: 30px;
+    right: 50px;
+}
+
+
+/*laptopL*/
+@media (max-width: 1220px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 强制 logo（第一个 div）显示在最上面 */
+    .nav>div:first-child {
+        order: 0;
+    }
+
+    #search {
+        width: 20%;
+        margin-top: 10px;
+    }
+
+    #menu {
+        order: 0;
+        width: auto;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .brushing-header h2 {
+        font-size: 35px;
+    }
+}
+
+
+
+
+
+@media (max-width: 934px) {
+
+    #flex-container {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    /* Show Mobile  */
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    .menu-toggle-checkbox {
+        display: none;
+    }
+
+    /* show menu */
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        display: flex;
+        flex-direction: column;
+        background: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-left: 50px;
+        z-index: 1000;
+        gap: 30px;
+        align-items: flex-start;
+        font-family: "Cherry Bomb One", cursive;
+    }
+
+    .close-btn {
+        font-size: 50px;
+        color: #6b51b1;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        cursor: pointer;
+        font-family: poppins;
+    }
+
+    .menu-item-mobile {
+        color: #6b51b1;
+        font-size: 32px;
+        margin: 20px 0;
+        padding: 0px 13px 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item-mobile:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+
+    .submenu-mobile {
+        display: none;
+        flex-direction: column;
+    }
+
+    .submenu-mobile a {
+        color: #f96d4a;
+        font-size: 20px;
+        padding: 8px 0;
+        text-decoration: none;
+    }
+
+    .submenu-toggle {
+        display: none;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        margin-top: -40px;
+        font-weight: 600;
+    }
+
+
+    .menu-toggle-btn {
+        font-size: 45px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .search-btn {
+        font-size: 30px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .brushing-header h2 {
+        font-size: 28px;
+    }
+
+    .brushing-label {
+        display: inline-block;
+        background-color: #FEE273;
+        color: #F96D4A;
+        padding: 12px 40px;
+        border-radius: 20px;
+        margin-top: 40px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 688px) {
+
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .backtotop {
+        left: 82%;
+        width: 70px;
+        z-index: 5;
+    }
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}

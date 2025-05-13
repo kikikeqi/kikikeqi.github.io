@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BizBud Bar</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+
+
+        #nav-buttons {
+            display: flex;
+            gap: 30px;
+            color: black;
+            cursor: pointer;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #nav-buttons div:hover {
+            color: rgb(179, 47, 223);
+        }
+
+
+        button.callnow {
+            background-color: rgb(179, 47, 223);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 25px;
+            cursor: pointer;
+            margin-left: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(3, 3, 53);
+            margin-right: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="logo">BizBud</div>
+            <div id="nav-buttons">
+                <div>Home</div>
+                <div>Services</div>
+                <div>About</div>
+                <div>Testimonials</div>
+                <div>Clients</div>
+                <div>Contact</div>
+                <button class="callnow">Call Now</button>
+            </div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>

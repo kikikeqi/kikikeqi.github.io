@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar - homepage*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 2%;
+}
+
+
+#menu {
+    display: flex;
+    color: #6B51B1;
+    font-size: 24px;
+    font-family: "Cherry Bomb One", cursive;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+}
+
+#menu :hover {
+    color: #F96D4A;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #6B51B1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    z-index: 1;
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 700;
+    background-color: #F96D4A;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+    border-radius: 10px;
+}
+
+
+
+.submenu a {
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+.submenu a:hover {
+    background-color: #FAA5CA;
+    border-radius: 10px;
+}
+
+
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.nav-buttons div {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+#search {
+    color: white;
+    background-color: #6B51B1;
+    border: 15px;
+    border-radius: 50px;
+    padding: 1%;
+}
+
+input::placeholder {
+    color: white;
+    padding: 6px;
+}
+
+
+
+
+
+
+
+/* Default desktop */
+.navbar-mobile {
+    display: none;
+}
+
+/* Mobile Nav Hidden Submenu */
+.menu-mobile {
+    display: none;
+}
+
+
+
+
+
+.learnmore {
+    background-color: #6FCDB9;
+    color: white;
+    font-size: 15px;
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.learnmore:hover {
+    background-color: black;
+    color: #6FCDB9;
+}
+
+.contact {
+    padding: 10px 20px 50px;
+    text-align: center;
+}
+
+h6 {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #F96D4A;
+    font-family: "Cherry Bomb One", cursive;
+    text-align: center;
+    text-shadow: 2px 3px #00000033;
+}
+
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.contact-card-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.contact-card1,
+.contact-card2 {
+    background-color: #6ed2c5;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+}
+
+.contact-card1 p img {
+    width: 80%;
+    margin-top: 30px;
+}
+
+#callbox-24 h1 {
+    font-size: 31px;
+    font-family: 'Cherry Bomb One', cursive;
+    margin: 0;
+    padding: 10px;
+    text-shadow: none;
+}
+
+#callbox-24 p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contact-card2 p img {
+    width: 80%;
+    margin-top: 30px;
+}
+
+#email-box h1 {
+    font-size: 31px;
+    font-family: 'Cherry Bomb One', cursive;
+    margin: 0;
+    padding: 10px;
+    text-shadow: none;
+}
+
+#email-box p {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.footer {
+    background-color: #F96D4A;
+    padding: 40px 20px 10px;
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-nav a {
+    color: #FEE273;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+
+.footer-nav a:hover {
+    color: #FAA5CA;
+}
+
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: white;
+    font-size: 14px;
+    margin: 0%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* --- booking button/servicespage --- */
+
+.book-btn {
+    background-color: #77DACA;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+h1 {
+    color: #FAA5CA;
+    font-family: "Cherry Bomb One", cursive;
+    text-align: center;
+    font-size: 90px;
+    margin: 10px 5px 0px 5px;
+}
+
+
+#flex-container {
+    background-color: white;
+    justify-content: space-between;
+    padding: 5px 20px 80px;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.backtotop {
+    position: fixed;
+    bottom: 10px;
+    left: 93%;
+    padding: 20px 23px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.backtotop a {
+    color: white;
+}
+
+
+
+@media (max-width: 742px) {
+    .footer-nav {
+        gap: 45px;
+    }
+
+    .footer-nav a {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 688px) {
+
+    .footer-nav {
+        gap: 40px;
+    }
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 669px) {
+
+    .footer-logo-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .footer-nav {
+        gap: 35px;
+    }
+
+    .footer-nav a {
+        font-size: 28px;
+        margin-top: -20px;
+    }
+
+    .footer p {
+        padding-bottom: 40px;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 558px) {
+    .footer p {
+        padding-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+
+    .footer {
+        padding: 20px 20px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-nav a {
+        font-size: 18px;
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .contact h6 {
+        font-size: 28px;
+    }
+
+    .contact p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+
+    .footer p {
+        padding-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: auto;
+    }
+
+    .contact {
+        padding: 10px 20px 20px;
+    }
+
+    .contact-card-group {
+        gap: 15px;
+        padding: 10px;
+    }
+
+
+
+    .contact-card1,
+    .contact-card2 {
+        width: 75px;
+        height: 50px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        padding-left: 30px;
+        width: 60%;
+    }
+
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        font-family: Poppins, sans-serif;
+        margin-top: -40px;
+        font-weight: 600;
+    }
+
+    .submenu-mobile a {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        left: 20px;
+    }
+
+    .menu-item-mobile {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+}

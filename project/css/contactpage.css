@@ -1,0 +1,650 @@
+.sticker1-girl {
+    display: block;
+    background-image: url('../imagefile/imagefile.contactpage/sticker1-girlhugteeth.png');
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-position: right top;
+    padding: 60px;
+    position: absolute;
+    margin-top: 20px;
+    right: 45px;
+}
+
+
+
+#form-container-startconversation {
+    background-color: #6B51B1;
+    padding: 20px 20px 50px;
+}
+
+.form-topic {
+    text-align: left;
+    padding: 50px 20px 40px 80px;
+}
+
+.form-topic h2 {
+    color: #FEE273;
+    font-size: 40px;
+    font-family: "Cherry Bomb One", cursive;
+    margin-bottom: 10px;
+    margin: 0;
+    text-shadow: 2px 3px #00000033;
+}
+
+.form-topic p {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+}
+
+.form-container-information {
+    padding: 20px 80px;
+}
+
+
+.container-customer-information {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-customer-information>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-customer-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+label {
+    color: white;
+    margin-bottom: 3px;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+}
+
+input[type=form],
+input[type=email],
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-family: Poppins, sans-serif;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+input[type=submit] {
+    background-color: #6FCDB9;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: #6FCDB9;
+}
+
+
+.sticker2-teacher {
+    display: block;
+    background-image: url('../imagefile/imagefile.contactpage/sticker2-teacher.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: left top;
+    padding: 70px;
+    position: absolute;
+    margin-top: 20px;
+    left: 45px;
+}
+
+
+#seminar-container {
+    background-color: #FAA5CA;
+    padding: 30px;
+}
+
+.seminar-container-topic {
+    padding: 10px 30px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seminar-container-topic h1 {
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 50px;
+    color: #FEE273;
+    margin: 0;
+    text-shadow: 2px 4px #00000033;
+    text-align: center;
+
+}
+
+.seminar-container-topic p {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+}
+
+.seminar-container-photo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 20px;
+}
+
+.seminar-container-photo img {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.slick-prev {
+    right: 300px !important;
+}
+
+.slick-next {
+    left: 300px !important;
+}
+
+
+#book-collaboration-container {
+    background-color: #FAA5CA;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.book-collaboration-topic {
+    text-align: center;
+    padding: 30px;
+}
+
+
+.book-collaboration-topic h1 {
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 50px;
+    color: #FEE273;
+    margin: 0;
+    text-shadow: 2px 4px #00000033;
+}
+
+.book-collaboration-topic h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+
+
+.book-collaboration-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.book-collaboration-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-public-talk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.book-collaboration-photo .photo-public-talk h1,
+h2 {
+    margin: 0;
+    font-size: 28px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.book-collaboration-photo .photo-public-talk p {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    margin-bottom: 80px;
+    font-weight: normal;
+    max-width: 600px;
+}
+
+.book-collaboration-photo:hover .photo-public-talk {
+    opacity: 1;
+}
+
+.book-school-visit {
+    padding: 20px;
+}
+
+input[type=button] {
+    background-color: #6FCDB9;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: black;
+    color: #6FCDB9;
+}
+
+.sticker3-skiing {
+    display: block;
+    background-image: url('../imagefile/imagefile.contactpage/sticker3-skiing.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: right top;
+    padding: 60px;
+    position: absolute;
+    margin-top: 20px;
+    right: 45px;
+}
+
+
+
+.seminar-container-photo img {
+    width: 50%;
+    height: auto;
+    display: block;
+
+}
+
+
+
+@media (max-width: 1280px) {
+
+    .book-collaboration-photo .photo-public-talk {
+        opacity: 1;
+    }
+
+}
+
+
+@media (max-width: 1246px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 强制 logo（第一个 div）显示在最上面 */
+    .nav>div:first-child {
+        order: 0;
+    }
+
+    #search {
+        width: 20%;
+        margin-top: 10px;
+    }
+
+    #menu {
+        order: 0;
+        width: auto;
+        align-items: center;
+    }
+}
+
+
+/*mobile hamburger*/
+@media (max-width: 935px) {
+
+    h1 {
+        font-size: 60px;
+    }
+
+    #flex-container {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    /* show mobile  */
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    .menu-toggle-checkbox {
+        display: none;
+    }
+
+    /* show menu */
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        display: flex;
+        flex-direction: column;
+        background: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-left: 50px;
+        z-index: 1000;
+        gap: 30px;
+        align-items: flex-start;
+        font-family: "Cherry Bomb One", cursive;
+    }
+
+    .close-btn {
+        font-size: 50px;
+        color: #6b51b1;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        cursor: pointer;
+        font-family: poppins;
+    }
+
+    .menu-item-mobile {
+        color: #6b51b1;
+        font-size: 32px;
+        margin: 20px 0;
+        padding: 0px 13px 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item-mobile:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+
+    .submenu-mobile {
+        display: none;
+        flex-direction: column;
+    }
+
+    .submenu-mobile a {
+        color: #f96d4a;
+        font-size: 20px;
+        padding: 8px 0;
+        text-decoration: none;
+    }
+
+    .submenu-toggle {
+        display: none;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        margin-top: -40px;
+        font-weight: 600;
+    }
+
+
+    .menu-toggle-btn {
+        font-size: 45px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .search-btn {
+        font-size: 30px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 865px) {
+    .sticker1-girl {
+        background-size: 90px;
+    }
+
+    .sticker2-teacher {
+        background-size: 120px;
+        left: 40px
+    }
+
+    .sticker3-skiing {
+        background-size: 120px;
+    }
+}
+
+
+@media (max-width: 770px) {
+
+    .sticker1-girl {
+        background-size: 90px;
+    }
+
+    .sticker2-teacher {
+        background-size: 110px;
+        left: 35px;
+    }
+
+    .sticker3-skiing {
+        background-size: 100px;
+        right: 40px;
+    }
+
+
+}
+
+@media (max-width: 688px) {
+
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    .sticker1-girl {
+        right: 10px;
+        margin-top: 10px;
+        background-size: 60px;
+    }
+
+    .form-topic {
+        padding: 50px 20px 40px 10px;
+    }
+
+    .form-topic h2 {
+        font-size: 26px;
+    }
+
+    .form-container-information {
+        padding: 20px 30px;
+    }
+
+    .container-customer-information {
+        gap: 10px;
+    }
+
+
+    .seminar-container-photo img {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .book-collaboration-photo .photo-public-talk h1,
+    h2 {
+        font-size: 16px;
+    }
+
+    .book-collaboration-photo .photo-public-talk p {
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .seminar-container-topic {
+        padding: 10px 0px 30px;
+    }
+
+    .seminar-container-topic h1 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .seminar-container-topic p {
+        font-size: 11px;
+        max-width: 100%;
+    }
+
+    .sticker2-teacher {
+        background-size: 70px;
+        left: 20px;
+        top: 192%;
+    }
+
+    #form-container-startconversation {
+        padding: 20px 20px 10px;
+    }
+
+
+    .backtotop {
+        left: 82%;
+        width: 70px;
+        z-index: 5;
+    }
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}
+
+
+
+
+@media (max-width: 320px) {
+
+
+    .sticker1-girl {
+        background-size: 50px;
+        top: 25%;
+    }
+
+
+    .form-topic {
+        padding: 0;
+    }
+
+    .form-topic h2 {
+        font-size: 28px;
+    }
+
+    .form-container-information {
+        padding: 0;
+    }
+
+    .sticker3-skiing {
+        background-size: 40px;
+        right: 0px;
+    }
+}

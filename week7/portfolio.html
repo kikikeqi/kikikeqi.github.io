@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display exercise</title>
+    <link rel="stylesheet" href="general.css/">
+
+    <style>
+        h1 {
+            text-align: center;
+            display: block;
+            font-family: "work sans", serif;
+            font-weight: bold;
+            color: #74c19d;
+            font-size: small;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            display: block;
+            font-size: 36px;
+            text-align: center;
+            font-family: "Crimson Text";
+            margin-top: -1px;
+            font-weight: bold;
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            font-family: "Work Sans", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            margin-top: -10px;
+        }
+
+
+
+
+
+        #container {
+            max-width: 1280px;
+            margin: auto;
+            background-color: #74c19d;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 32px 120px;
+        }
+
+        #nav div {
+            display: flex;
+            gap: 40px;
+            color: white;
+        }
+
+        #nav-buttons div:hover {
+            color: black;
+        }
+
+
+
+
+
+        #works-group {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+
+
+        #homepage-group {
+            display: grid;
+            max-width: 1280px;
+            margin: auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+
+
+
+        .learnmore-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .learnmore {
+            background: black;
+            color: white;
+            padding: 12px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-items: center;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+        .learnmore:hover {
+            background: #74C69d;
+            color: white;
+        }
+
+
+        footer {
+            max-width: 1280px;
+            margin: auto;
+            padding: 50px;
+            text-align: center;
+            margin-top: 30px;
+            background: #74C69d;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            #nav,
+            #works-group,
+            #homepage-group {
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                grid-template-columns: repeat(1, 1fr);
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="nav">
+            <div><img src="imagefile/logo.png" width="30"></div>
+            <div id="nav-buttons">
+                <div>Home</div>
+                <div>Portfolio</div>
+                <div>Services</div>
+                <div>Contact</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="works-group">
+        <h1>Works</h1>
+        <h2>Portfolio</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+
+
+    <div id="homepage-group">
+        <div class="homepage">
+            <img src="imagefile2/homepage1.svg" alt="100">
+        </div>
+
+        <div class="homepage">
+            <img src="imagefile2/homepage2.svg" alt="100">
+        </div>
+
+        <div class="homepage">
+            <img src="imagefile2/homepage3.svg" alt="100">
+        </div>
+
+        <div class="homepage">
+            <img src="imagefile2/homepage4.svg" alt="100">
+        </div>
+
+        <div class="homepage">
+            <img src="imagefile2/homepage5.svg" alt="100">
+        </div>
+
+        <div class="homepage">
+            <img src="imagefile2/homepage6.svg" alt="100">
+        </div>
+
+        <div class="homepage">
+            <img src="imagefile2/homepage7.svg" alt="100">
+        </div>
+
+        <div class="homepage">
+            <img src="imagefile2/homepage8.png" alt="100">
+        </div>
+    </div>
+
+
+
+    <div class="learnmore-container">
+        <button class="learnmore">Learn More</button>
+    </div>
+
+
+
+    <footer>
+        <p>© Start, 2022. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>

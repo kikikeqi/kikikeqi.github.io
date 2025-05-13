@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking appointment/Little Dental Hub for kid in Mont Kiara,Kuala Lumpur</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/bookingpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+
+
+<body>
+    <div id="flex-container">
+
+        <div class="nav">
+            <div>
+                <a href="index.html">
+                    <img src="imagefile/imagefile.homepage/logo.png" width="80" alt="logo">
+                </a>
+            </div>
+            <div id="menu">
+                <div class="menu-item"><a href="aboutpage.html">ABOUT</a></div>
+
+
+                <div class="menu-item">
+                    <a href="servicespage.html">SERVICES <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="submenu">
+                        <a href="contentdentalcare1.html">Proper Brushing Techniques</a>
+                        <a href="contentdentalcare2.html">Preventing Cavities</a>
+                    </div>
+                </div>
+
+                <div class="menu-item"><a href="bookingpage.html">BOOK NOW</a></div>
+                <div class="menu-item"><a href="contactpage.html">CONTACT</a></div>
+                <div class="menu-item"><a href="faqpage.html">FAQ</a></div>
+            </div>
+
+
+            <input id="search" type="text" placeholder="Search" autocomplete="off">
+        </div>
+    </div>
+
+
+
+
+    <!-- mobile hamburger  -->
+    <div class="navbar-mobile">
+        <!-- hamburger -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <label for="menu-toggle" class="menu-toggle-btn">&#9776;</label>
+
+        <!-- logo -->
+        <a href="index.html" class="logo">
+            <img src="imagefile/imagefile.homepage/logo.png" width="80" alt="logo">
+        </a>
+
+        <!-- serach button -->
+        <label class="search-btn">
+            <i class="fas fa-search"></i>
+        </label>
+
+        <!-- menu -->
+        <div class="menu-mobile">
+            <label for="menu-toggle" class="close-btn">&times;</label>
+
+            <input type="checkbox" id="about-toggle" class="submenu-toggle">
+
+            <a href="aboutpage.html" class="menu-item-mobile">ABOUT</a>
+
+            <input type="checkbox" id="services-toggle" class="submenu-toggle">
+            <label for="services-toggle" class="menu-item-mobile"> <a href="servicespage.html"
+                    class="menu-item-mobile">SERVICES </a><i class="fa-solid fa-caret-down"></i></label>
+            <div class="submenu-mobile">
+                <a href="contentdentalcare1.html">Proper Brushing Techniques</a>
+                <a href="contentdentalcare2.html">Preventing Cavities</a>
+            </div>
+
+            <a href="bookingpage.html" class="menu-item-mobile">BOOK NOW</a>
+            <a href="contactpage.html" class="menu-item-mobile">CONTACT</a>
+            <a href="faqpage.html" class="menu-item-mobile">FAQ</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <h1>BOOK APPOINTMENT</h1>
+
+    <div class="sticker1-love-shape"></div>
+
+
+
+    <div id="flex-container-booking">
+        <div class="collaboration-header">
+            <h1>Schedule a Collaboration</h1>
+            <p>Bring Engaging Dental Health Lessons to Your School! Fill in the form below to schedule an exciting oral
+                health lecture or interactive workshop for your students. Let's help kids build healthy smiles together!
+            </p>
+        </div>
+
+
+        <div class="collaboration-section">
+
+            <div class="form-left">
+                <form>
+                    <input type="text" placeholder="School Name">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Remark">
+                </form>
+            </div>
+
+
+            <div class="form-right">
+                <div class="students-number">
+                    <p class="section-title">Estimated Number of Students (person)</p>
+                    <form>
+                        <input type="radio" id="students1" name="students" value="80-200">
+                        <label for="students1">80-200</label><br>
+
+                        <input type="radio" id="students2" name="students" value="300-500">
+                        <label for="students2">300-500</label><br>
+
+                        <input type="radio" id="students3" name="students" value="500-700">
+                        <label for="students3">500-700</label><br>
+
+                        <input type="radio" id="students4" name="students" value="800-1000">
+                        <label for="students4">800-1000</label><br>
+
+                        <input type="radio" id="students5" name="students" value="1000-above">
+                        <label for="students5">1000 above</label>
+                    </form>
+                </div>
+
+                <div class="collaboration-type">
+                    <p class="section-title">Type of Collaboration</p>
+                    <form>
+                        <input type="radio" id="lecture" name="collaboration" value="Oral Health Lecture">
+                        <label for="lecture">Oral Health Lecture</label><br>
+
+                        <input type="radio" id="workshop" name="collaboration" value="Interactive Workshop">
+                        <label for="workshop">Interactive Workshop</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="calendar-box-background">
+        <div class="page-container">
+            <p>Preferred Date & Time</p>
+
+            <div class="calendar-card">
+                <div class="calendar-left">
+                    <div class="month-selector">
+                        <button class="prev-month">&#10094;</button>
+                        <input type="month" id="monthPicker" value="2025-08">
+                        <button class="next-month">&#10095;</button>
+                    </div>
+
+                    <script>
+                        function myFunction() {
+                            document.getElementById("monthPicker").select();
+                        }
+                    </script>
+
+                    <ul class="weekdays">
+                        <li>MON</li>
+                        <li>TUE</li>
+                        <li>WED</li>
+                        <li>THU</li>
+                        <li>FRI</li>
+                        <li>SAT</li>
+                        <li>SUN</li>
+                    </ul>
+
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li class="selected">14</li>
+                        <li class="selected">15</li>
+                        <li class="selected">16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="calendar-right">
+                    <div class="selected-date">
+                        Friday, 14, August, 2025
+                    </div>
+
+                    <div class="time-options">
+                        <input type="radio" id="time1" name="time" class="time-radio">
+                        <label for="time1" class="time-button">8:30 AM</label>
+
+                        <input type="radio" id="time2" name="time" class="time-radio">
+                        <label for="time2" class="time-button">10:00 AM</label>
+
+                        <input type="radio" id="time3" name="time" class="time-radio">
+                        <label for="time3" class="time-button">12:30 PM</label>
+
+                        <input type="radio" id="time4" name="time" class="time-radio">
+                        <label for="time4" class="time-button">2:00 PM</label>
+
+                        <input type="radio" id="time5" name="time" class="time-radio">
+                        <label for="time5" class="time-button">3:30 PM</label>
+                    </div>
+
+                    <button class="confirm-button">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="sticker2-toothpaste"></div>
+
+
+
+    <div class="contact">
+        <h6>Have questions?</h6>
+        <p>Contact us anytime!</p>
+        <div class="contact-card-group">
+            <div class="contact-card1">
+
+                <div id="callbox-24" class="modal">
+                    <h1>Thank You for Reaching Out!</h1>
+                    <p>We're always happy to help with your child's dental needs 😊</p>
+                    <p>If you have any questions or would like to schedule an appointment, feel free to contact us:</p>
+                    <p><strong>📞 Phone:</strong> <a href="tel:0123567889">012 356 7889</a></p>
+                    <p><em>Available Monday to Friday, 8am-6pm</em></p>
+                    <a href="#" rel="modal:close"></a>
+                </div>
+
+                <p><a href="#callbox-24" rel="modal:open"> <img src="imagefile/imagefile.homepage/24call.png"
+                            alt="24hr Call" width="50%" height="auto" /></a></p>
+
+            </div>
+
+
+            <div class="contact-card2">
+
+                <div id="email-box" class="modal">
+                    <h1>Thank You for Reaching Out!</h1>
+                    <p>We're so glad you clicked — it means you care about your child's healthy smile 😊</p>
+                    <p>If you have any questions about our dental services for kids, or just want to learn more, feel
+                        free to email us:</p>
+                    <p><strong>📧 Email:</strong> <a
+                            href="mailto:littledentalhub.@gmail.com">littledentalhub.@gmail.com</a>
+                    </p>
+                    <p>We love hearing from caring parents like you, and we'll get back to you as soon as we can!</p>
+                    <a href="#" rel="modal:close"></a>
+                </div>
+
+                <p><a href="#email-box" rel="modal:open"> <img src="imagefile/imagefile.homepage/emailcontactus.png"
+                            alt="24hr Call" width="50%" height="auto" /></a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="footer-logo-wrapper">
+            <a href="index.html">
+                <img src="imagefile/imagefile.homepage/logo.png" alt="Tooth Logo" class="footer-logo"></a>
+        </div>
+
+
+        <div class="footer-nav">
+            <a href="aboutpage.html">About</a>
+            <a href="servicespage.html">Services</a>
+            <a href="contactpage.html">Contact</a>
+            <a href="bookingpage.html">Book Now</a>
+            <a href="faqpage.html">FAQ</a>
+        </div>
+
+
+        <p class="copyright">© 2025 Little Dental Hub. All rights reserved.</p>
+
+
+        <div class="social-icons">
+            <a href="#"><img src="imagefile/imagefile.homepage/facebook_5968764.png" alt="Facebook"></a>
+            <a href="#"><img src="imagefile//imagefile.homepage/instagram_5968776.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script>
+
+        $('a[rel="modal:open"]').on('click', function (event) {
+            event.preventDefault();
+            $($(this).attr('href')).modal();
+        });
+
+    </script>
+
+</body>
+
+</html>

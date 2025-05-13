@@ -1,0 +1,627 @@
+h1 {
+    color: #6FCDB9;
+    font-size: 90px;
+}
+
+
+.cavitiesform-section {
+    font-family: "Poppins", sans-serif;
+}
+
+.cavitiesform-header {
+    background-color: #FAA5CA;
+    padding: 40px 20px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.cavitiesform-header h2 {
+    font-size: 50px;
+    font-family: "Cherry Bomb One", cursive;
+    color: #6B51B1;
+    text-shadow: 2px 2px #00000033;
+    margin: 0%;
+}
+
+.cavitiesform-label {
+    display: inline-block;
+    background-color: #FEE273;
+    color: #F96D4A;
+    padding: 12px 50px;
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cavities-img {
+    margin-top: 40px;
+    max-width: 150px;
+    height: auto;
+}
+
+
+
+
+
+
+.container-process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6%;
+    gap: 90px;
+    flex-direction: row;
+}
+
+.process-teeth-bad {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+.image-teeth {
+    position: relative;
+    display: inline-block;
+}
+
+.image-teeth img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.number {
+    position: absolute;
+    background-color: #ffeb3b;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    bottom: 100%;
+    right: 90%;
+}
+
+.label {
+    margin-top: 10px;
+    background-color: #ffeb3b;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#background-cavities {
+    background-color: #6B51B1;
+    padding: 50px 40px 80px;
+}
+
+.title-cavities {
+    font-size: 60px;
+    color: #ff6d37;
+    font-family: "Cherry Bomb One", cursive;
+    text-shadow: 2px 4px #00000033;
+    text-align: center;
+}
+
+.c-icon {
+    background-image: url('../imagefile/imagefile.contentdentalcare-2/icon-tittle-teeth.png');
+    position: relative;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    padding-top: 6px;
+    left: 20px;
+}
+
+.container-boy-effect {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.boy-effect {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.p-text-effect {
+    font-size: 13px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.boy {
+    width: 100%;
+    cursor: pointer;
+    animation: shake 1.5s infinite;
+}
+
+.toggle-btn {
+    display: none;
+    margin-top: 10px;
+    background-color: #ff6d37;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+/* 被点击后 */
+.toggle-box:checked+.boy+.toggle-btn {
+    display: block;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(1.5deg);
+    }
+
+    50% {
+        transform: rotate(-1.5deg);
+    }
+
+    75% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+#container-teeth-rules {
+    background-color: #FAA5CA;
+    padding: 70px 30px 30px;
+}
+
+h3 {
+    color: #FEE273;
+    font-size: 50px;
+    font-family: "Cherry Bomb One", cursive;
+    text-shadow: 2px 4px #00000033;
+    text-align: center;
+    margin: 0%;
+}
+
+.rules-container {
+    padding: 70px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 130px;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.rule-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.rule-checkbox {
+    display: none;
+}
+
+.rule-label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.rule-img {
+    width: 200px;
+    animation: shake 1.5s infinite;
+}
+
+.rule-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.rule-checkbox:checked+.rule-label .rule-btn {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 按钮文字切换 */
+.rule-btn::after {
+    content: attr(data-text);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+
+}
+
+.rule-checkbox:checked+.rule-label .rule-btn::after {
+    content: attr(data-alt);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(1.5deg);
+    }
+
+    50% {
+        transform: rotate(-1.5deg);
+    }
+
+    75% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+.container-teeth-like-dontlike {
+    display: flex;
+    gap: 15%;
+    text-align: center;
+    background-color: #6B51B1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.column {
+    color: white;
+    width: 400px;
+    height: auto;
+}
+
+.title {
+    font-size: 30px;
+    color: #FEE273;
+    font-family: "Cherry Bomb One", cursive;
+    text-shadow: 2px 3px #00000033;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+.text {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.boy-hand-brush {
+    display: block;
+    background-color: white;
+    background-image: url('../imagefile/imagefile.contentdentalcare-2/sticker-boy-toothbrush.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 60px;
+    position: relative;
+    top: 30px;
+    right: 50px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1215px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 强制 logo（第一个 div）显示在最上面 */
+    .nav>div:first-child {
+        order: 0;
+    }
+
+    #search {
+        width: 20%;
+        margin-top: 10px;
+    }
+
+    #menu {
+        order: 0;
+        width: auto;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+
+@media (max-width: 1043px) {
+    .column {
+        padding-bottom: 10%;
+    }
+}
+
+
+@media (max-width: 935px) {
+    #flex-container {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    /* Show Mobile  */
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    .menu-toggle-checkbox {
+        display: none;
+    }
+
+    /* show menu */
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        display: flex;
+        flex-direction: column;
+        background: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-left: 50px;
+        z-index: 1000;
+        gap: 30px;
+        align-items: flex-start;
+        font-family: "Cherry Bomb One", cursive;
+    }
+
+    .close-btn {
+        font-size: 50px;
+        color: #6b51b1;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        cursor: pointer;
+        font-family: poppins;
+    }
+
+    .menu-item-mobile {
+        color: #6b51b1;
+        font-size: 32px;
+        margin: 20px 0;
+        padding: 0px 13px 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item-mobile:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+
+    .submenu-mobile {
+        display: none;
+        flex-direction: column;
+    }
+
+    .submenu-mobile a {
+        color: #f96d4a;
+        font-size: 20px;
+        padding: 8px 0;
+        text-decoration: none;
+    }
+
+    .submenu-toggle {
+        display: none;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 50px;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        margin-top: -40px;
+        font-weight: 600;
+    }
+
+
+    .menu-toggle-btn {
+        font-size: 45px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .search-btn {
+        font-size: 30px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 688px) {
+
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .backtotop {
+        left: 82%;
+        width: 70px;
+        z-index: 5;
+    }
+
+    .menu-item-mobile {
+        font-size: 20px;
+    }
+
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        gap: 10px;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        margin-top: -20px;
+    }
+
+    .submenu-mobile a {
+        font-size: 12px;
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .card img {
+        width: 100%;
+
+    }
+}
