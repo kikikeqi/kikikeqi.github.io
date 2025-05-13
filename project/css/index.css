@@ -331,7 +331,7 @@ p {
 }
 
 
-/*laptopL*/
+
 @media (max-width: 1259px) {
 
     .nav {
@@ -392,9 +392,6 @@ p {
 
 
 
-
-
-/*laptop*/
 @media (max-width: 1100px) {
 
     .contact2-group {
