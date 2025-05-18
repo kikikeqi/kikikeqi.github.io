@@ -85,6 +85,8 @@
     gap: 20px;
 }
 
+
+
 .photo-group h2 {
     font-size: 45px;
     font-family: 'Cherry Bomb One', cursive;
@@ -94,6 +96,7 @@
     line-height: 1.5;
     text-shadow: 2px 3px #00000033;
 }
+
 
 
 
@@ -114,25 +117,20 @@
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
+    flex-direction: row;
+    padding: 50px 50px 90px;
     justify-content: center;
-    padding: 40px 50px 80px 50px;
 }
 
 
-.layer-photo1,
+.layer-photo1 img,
 .layer-photo2 img {
-    max-width: 100%;
-    height: auto;
     border-radius: 20px;
 }
 
-.layer-photo1,
-.layer-photo2 {
-    flex: 0 0 500px;
-    /* 保持图片宽度统一，并为中心对齐提供固定参考宽度 */
-    display: flex;
-    justify-content: flex-end;
-}
+
+
+
 
 .layer-text {
     flex: 1;
@@ -306,11 +304,7 @@ p {
 
 
 
-
-
-
-
-@media (max-width: 1382px) {
+@media (max-width: 1380px) {
     .contact1-group {
         text-align: center;
         border-radius: 50%;
@@ -329,7 +323,6 @@ p {
         gap: 35px;
     }
 }
-
 
 
 @media (max-width: 1259px) {
@@ -357,10 +350,7 @@ p {
         align-items: center;
     }
 
-    .photo-group {
-        flex-direction: column;
-        align-items: center;
-    }
+
 
     .main-photo h1 {
         font-size: 60px;
@@ -390,8 +380,246 @@ p {
 
 }
 
+@media (max-width: 1250px) {
+    #layer1 {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .layer-photo1 img {
+        border-radius: 20px;
+        max-width: 80%;
+        margin-left: 50px;
+    }
+
+    #layer2 {
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .layer-photo2 img {
+        border-radius: 20px;
+        max-width: 80%;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .photo-group h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 935px) {
+    #menu {
+        gap: 70px
+    }
+
+    .contact2-group img {
+        width: 90%;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: -50%;
+    }
+
+    .slick-prev {
+        left: -10px;
+        top: 30%;
+    }
 
 
+    .slick-next {
+        right: -10px;
+        top: 30%;
+    }
+
+    .slick-dots {
+        top: 100%;
+    }
+
+
+
+}
+
+
+@media (max-width: 895px) {
+
+    #welcome2 {
+        background-size: 120px;
+    }
+
+    #menu {
+        gap: 50px;
+    }
+
+    .photo-group h2 {
+        font-size: 35px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: -50%;
+    }
+
+    .slick-prev {
+        left: -10px;
+        top: 30%;
+    }
+
+
+    .slick-next {
+        right: -10px;
+        top: 30%;
+    }
+
+    .slick-dots {
+        top: 100%;
+    }
+
+}
+
+
+@media (max-width: 815px) {
+    #menu {
+        font-size: 22px;
+    }
+
+    .layer-photo1 img {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .layer-photo1 img {
+        width: 70%;
+    }
+
+    .contact2-group img {
+        width: 80%;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: -50%;
+    }
+
+    .slick-prev {
+        left: -10px;
+        top: 30%;
+    }
+
+
+    .slick-next {
+        right: -10px;
+        top: 30%;
+    }
+
+    .slick-dots {
+        top: 100%;
+    }
+
+}
+
+
+/* footer */
+@media (max-width: 799px) {
+
+    .contact-card1,
+    .contact-card2 {
+        width: 270px;
+    }
+}
+
+
+@media (max-width: 772px) {
+    #menu {
+        font-size: 20px;
+    }
+
+    .main-photo h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width: 751px) {
+    .contact2-group {
+        gap: 0;
+    }
+
+
+    .contact2-group img {
+        width: 70%;
+    }
+
+    #welcome4 {
+        background-size: 170px;
+    }
+
+    #welcome5 {
+        padding: 50px;
+        background-size: 170px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: -50%;
+    }
+
+    .slick-prev {
+        left: -10px;
+        top: 30%;
+    }
+
+
+    .slick-next {
+        right: -10px;
+        top: 30%;
+    }
+
+    .slick-dots {
+        top: 100%;
+    }
+
+}
+
+
+/* footer */
+@media (max-width: 739px) {
+
+    .contact-card1,
+    .contact-card2 {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 730px) {
+    #menu {
+        gap: 40px;
+    }
+
+}
+
+
+@media (max-width: 690px) {
+    #menu {
+        font-size: 18px;
+    }
+
+    #feedback-layer2 {
+        background: #6b51b1;
+        padding: 30px;
+        text-align: center;
+        margin: 0;
+        padding-top: 5%;
+    }
+
+}
+
+
+
+
+
+
+/* 
 @media (max-width: 1100px) {
 
     .contact2-group {
@@ -468,21 +696,7 @@ p {
 }
 
 
-@media (max-width: 895px) {
 
-    #menu {
-        gap: 50px;
-    }
-
-    .backtotop {
-        left: 90%;
-    }
-
-    .layer-photo2 img {
-        width: 80%;
-        padding-left: 78px;
-    }
-}
 
 @media (max-width: 815px) {
     #menu {
@@ -560,103 +774,105 @@ p {
     }
 
     /* Show Mobile  */
-    .navbar-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-    }
 
-
-    .menu-toggle-checkbox {
-        display: none;
-    }
-
-    /* show menu */
-    .menu-toggle-checkbox:checked~.menu-mobile {
-        display: flex;
-        flex-direction: column;
-        background: pink;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        padding-top: 5rem;
-        padding-left: 50px;
-        z-index: 1000;
-        gap: 30px;
-        align-items: flex-start;
-        font-family: "Cherry Bomb One", cursive;
-    }
-
-    .close-btn {
-        font-size: 50px;
-        color: #6b51b1;
-        position: absolute;
-        top: 10px;
-        left: 40px;
-        cursor: pointer;
-        font-family: poppins;
-    }
-
-    .menu-item-mobile {
-        color: #6b51b1;
-        font-size: 32px;
-        margin: 20px 0;
-        padding: 0px 13px 0px 0px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .menu-item-mobile:hover {
-        color: white;
-        text-decoration: underline;
-        text-underline-offset: 7px;
-    }
-
-
-    .submenu-mobile {
-        display: none;
-        flex-direction: column;
-    }
-
-    .submenu-mobile a {
-        color: #f96d4a;
-        font-size: 20px;
-        padding: 8px 0;
-        text-decoration: none;
-    }
-
-    .submenu-toggle {
-        display: none;
-    }
-
-    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
-        display: flex;
-        gap: 50px;
-        flex-direction: row;
-        font-family: Poppins, sans-serif;
-        margin-top: -40px;
-        font-weight: 600;
-    }
-
-
-    .menu-toggle-btn {
-        font-size: 45px;
-        color: #6B51B1;
-        cursor: pointer;
-    }
-
-    .search-btn {
-        font-size: 30px;
-        color: #6B51B1;
-        cursor: pointer;
-    }
+/* .navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-@media (max-width: 639px) {
+
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* show menu */
+/* .menu-toggle-checkbox:checked~.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    background: pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    padding-top: 5rem;
+    padding-left: 50px;
+    z-index: 1000;
+    gap: 30px;
+    align-items: flex-start;
+    font-family: "Cherry Bomb One", cursive;
+}
+
+.close-btn {
+    font-size: 50px;
+    color: #6b51b1;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    cursor: pointer;
+    font-family: poppins;
+}
+
+.menu-item-mobile {
+    color: #6b51b1;
+    font-size: 32px;
+    margin: 20px 0;
+    padding: 0px 13px 0px 0px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-item-mobile:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+
+.submenu-mobile {
+    display: none;
+    flex-direction: column;
+}
+
+.submenu-mobile a {
+    color: #f96d4a;
+    font-size: 20px;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+.submenu-toggle {
+    display: none;
+}
+
+.submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    font-family: Poppins, sans-serif;
+    margin-top: -40px;
+    font-weight: 600;
+}
+
+
+.menu-toggle-btn {
+    font-size: 45px;
+    color: #6B51B1;
+    cursor: pointer;
+}
+
+.search-btn {
+    font-size: 30px;
+    color: #6B51B1;
+    cursor: pointer;
+} */
+
+
+/* @media (max-width: 639px) {
+
     .menu-toggle-checkbox:checked~.menu-mobile {
         padding-left: 30px;
         width: 60%;
@@ -690,166 +906,166 @@ p {
 }
 
 /*mobile*/
-@media (max-width: 440px) {
+
+/* @media (max-width: 440px) {
     .nav {
         display: none;
     }
 
     /* Show Mobile  */
-    .navbar-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
-
-    .menu-toggle-checkbox {
-        display: none;
-    }
-
-    /* show menu */
-    .menu-toggle-checkbox:checked~.menu-mobile {
-        display: flex;
-        flex-direction: column;
-        background: pink;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        padding-top: 5rem;
-        padding-left: 50px;
-        z-index: 1000;
-        gap: 30px;
-        align-items: flex-start;
-        font-family: "Cherry Bomb One", cursive;
-    }
-
-    .close-btn {
-        font-size: 50px;
-        color: #6b51b1;
-        position: absolute;
-        top: 10px;
-        left: 40px;
-        cursor: pointer;
-        font-family: poppins;
-    }
-
-    .menu-item-mobile {
-        color: #6b51b1;
-        font-size: 32px;
-        margin: 20px 0;
-        padding: 0px 13px 0px 0px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .menu-item-mobile:hover {
-        color: white;
-        text-decoration: underline;
-        text-underline-offset: 7px;
-    }
-
-
-    .submenu-mobile {
-        display: none;
-        flex-direction: column;
-    }
-
-    .submenu-mobile a {
-        color: #f96d4a;
-        font-size: 20px;
-        padding: 8px 0;
-        text-decoration: none;
-    }
-
-    .submenu-toggle {
-        display: none;
-    }
-
-    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
-        display: flex;
-        gap: 50px;
-        flex-direction: row;
-        font-family: Poppins, sans-serif;
-        margin-top: -40px;
-        font-weight: 600;
-    }
-
-
-    .menu-toggle-btn {
-        font-size: 45px;
-        color: #6B51B1;
-        cursor: pointer;
-    }
-
-    .search-btn {
-        font-size: 30px;
-        color: #6B51B1;
-        cursor: pointer;
-    }
-
-    .main-photo {
-        padding: 0px 30px 20px;
-    }
-
-    .main-photo h1 {
-        font-size: 30px;
-        margin: 0px;
-        padding: 10px 0px 20px;
-    }
-
-
-    #layer1 {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    #layer2 {
-        text-align: center;
-        padding: 40px 20px;
-        justify-content: center;
-        flex-direction: column-reverse;
-
-    }
-
-    .layer-photo {
-        justify-content: center;
-        flex: none;
-        width: 100%;
-    }
-
-    .layer-photo img {
-        width: 100%;
-        max-width: 400px;
-        /* 限制最大宽度 */
-        height: auto;
-        border-radius: 20px;
-    }
-
-    .layer-text {
-        padding: 0;
-        max-width: 100%;
-    }
-
-    button.learnmore {
-        align-self: center;
-        margin-top: 20px;
-    }
-
-
-    .backtotop {
-        left: 86%;
-        width: 60px;
-    }
-
+/* .navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 
-@media (max-width: 375px) {
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* show menu */
+/* .menu-toggle-checkbox:checked~.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    background: pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    padding-top: 5rem;
+    padding-left: 50px;
+    z-index: 1000;
+    gap: 30px;
+    align-items: flex-start;
+    font-family: "Cherry Bomb One", cursive;
+}
+
+.close-btn {
+    font-size: 50px;
+    color: #6b51b1;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    cursor: pointer;
+    font-family: poppins;
+}
+
+.menu-item-mobile {
+    color: #6b51b1;
+    font-size: 32px;
+    margin: 20px 0;
+    padding: 0px 13px 0px 0px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-item-mobile:hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+
+.submenu-mobile {
+    display: none;
+    flex-direction: column;
+}
+
+.submenu-mobile a {
+    color: #f96d4a;
+    font-size: 20px;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+.submenu-toggle {
+    display: none;
+}
+
+.submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    font-family: Poppins, sans-serif;
+    margin-top: -40px;
+    font-weight: 600;
+}
+
+
+.menu-toggle-btn {
+    font-size: 45px;
+    color: #6B51B1;
+    cursor: pointer;
+}
+
+.search-btn {
+    font-size: 30px;
+    color: #6B51B1;
+    cursor: pointer;
+}
+
+.main-photo {
+    padding: 0px 30px 20px;
+}
+
+.main-photo h1 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 10px 0px 20px;
+}
+
+
+#layer1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#layer2 {
+    text-align: center;
+    padding: 40px 20px;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+}
+
+.layer-photo {
+    justify-content: center;
+    flex: none;
+    width: 100%;
+}
+
+.layer-photo img {
+    width: 100%;
+    max-width: 400px;
+    /* 限制最大宽度 */
+/* height: auto;
+    border-radius: 20px;
+}
+
+.layer-text {
+    padding: 0;
+    max-width: 100%;
+}
+
+button.learnmore {
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+.backtotop {
+    left: 86%;
+    width: 60px;
+}  */
+
+
+
+/* @media (max-width: 375px) {
 
     #menu {
         font-size: 12px;
@@ -944,7 +1160,4 @@ p {
     .submenu-mobile a {
         font-size: 12px;
         padding: 0px;
-    }
-
-
-}
+    } */
