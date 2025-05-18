@@ -12,21 +12,33 @@
 
 
 .mission-text {
-    position: absolute;
-    top: 430px;
-    left: 80px;
     font-size: 35px;
     color: #fff04c;
     font-family: "Cherry Bomb One", cursive;
     text-shadow: 2px 5px #00000033;
 }
 
+
 .doctor-section {
     background-color: #6B51B1;
     display: flex;
-    justify-content: center;
-    padding-bottom: 80px;
+    padding-left: 70px;
+    justify-content: flex-start;
+    padding-bottom: 20px;
 }
+
+.mission-image {
+    display: flex;
+    background-color: #6B51B1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 20px;
+}
+
+
 
 .doctor-image-wrapper {
     position: relative;
@@ -73,16 +85,19 @@
 
 
 
+
+
 .triangle-section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: #6B51B1;
+    padding-top: 10%;
+    padding-left: 70px;
 }
 
 
 .philosophy-text1 {
-    position: absolute;
-    top: 950px;
-    left: 80px;
+
     font-size: 35px;
     color: #fff04c;
     font-family: "Cherry Bomb One", cursive;
@@ -93,9 +108,8 @@
     display: flex;
     align-items: center;
     background-color: #6B51B1;
-    padding: 40px;
+    padding: 0px 30px 50px;
     gap: 40px;
-    width: 100%;
 }
 
 .triangle-image img {
@@ -272,6 +286,7 @@
     margin-bottom: 40px;
     font-family: "Cherry Bomb One", cursive;
     text-shadow: 2px 5px #00000033;
+    padding-left: 70px;
 }
 
 .team-card {
@@ -386,8 +401,9 @@
     }
 }
 
+
 /*laptopL*/
-@media (max-width: 1221px) {
+@media (max-width: 1224px) {
 
     .nav {
         display: flex;
@@ -428,10 +444,6 @@
         margin-bottom: -40px;
     }
 
-    .philosophy-text1 {
-        top: 138%;
-        left: 14%;
-    }
 
 
     h4 {
@@ -442,55 +454,12 @@
         font-size: 14px;
     }
 
-    .mission-text {
-        top: 550px;
-        left: 14%;
-    }
+
 
 
     .doctor-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
-        padding-bottom: 90px;
+        padding-bottom: 0;
     }
-
-    .doctor-image-wrapper {
-        width: 600px;
-        height: auto;
-        border-radius: 20px;
-        overflow: hidden;
-        background-color: white;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        position: relative;
-    }
-
-    .doctor-image {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
-    }
-
-    .doctor-text-box {
-        position: relative;
-        width: 60%;
-        padding: 25px 20px;
-        border-radius: 0 0 20px 20px;
-        background-color: white;
-        text-align: center;
-        margin-left: 125px;
-    }
-
-    .doctor-text-box p {
-        font-size: 14px;
-        color: #333;
-        line-height: 1.6;
-        margin-bottom: 15px;
-    }
-
-
 
 
 
@@ -580,9 +549,7 @@
         padding-bottom: 50px;
     }
 
-    .philosophy-text1 {
-        top: 137%;
-    }
+
 
     .section-title {
         padding-left: 40px;
@@ -593,6 +560,20 @@
 }
 
 
+@media (max-width: 1130px) {
+    .doctor-text-box p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 935px) {
     #menu {
@@ -600,10 +581,7 @@
         gap: 75px
     }
 
-    .mission-text {
-        top: 540px;
-        left: 14%;
-    }
+
 }
 
 
@@ -642,6 +620,11 @@
 
 }
 
+@media (max-width: 889px) {
+    .doctor-text-box p {
+        font-size: 11px;
+    }
+}
 
 
 @media (max-width: 830px) {
@@ -709,13 +692,7 @@
         font-size: 13px;
     }
 
-    .mission-text {
-        top: 530px;
-    }
 
-    .philosophy-text1 {
-        top: 135%;
-    }
 }
 
 
@@ -752,10 +729,6 @@
 
     .block p {
         font-size: 13px;
-    }
-
-    .philosophy-text {
-        width: 80%;
     }
 
 }
@@ -895,10 +868,7 @@
         z-index: 1;
     }
 
-    .mission-text {
-        top: 350px;
-        left: 8%;
-    }
+
 
     .doctor-image-wrapper {
         width: 500px;
@@ -911,139 +881,10 @@
     }
 
 
-    .philosophy-text1 {
-        top: 110%;
-        left: 8%;
-    }
-}
-
-@media (max-width: 688px) {
 
 
-    .menu-item-mobile {
-        font-size: 20px;
-    }
-
-    .menu-toggle-checkbox:checked~.menu-mobile {
-        gap: 10px;
-    }
-
-    .close-btn {
-        font-size: 40px;
-        top: 20px;
-    }
-
-    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-
-        margin-top: -20px;
-    }
-
-    .submenu-mobile a {
-        font-size: 12px;
-        padding: 0px;
-    }
-}
-
-@media (max-width: 630px) {
-    .title-line1 {
-        font-size: 35px;
-    }
-
-    .title-line2 {
-        font-size: 35px;
-    }
-}
 
 
-@media (max-width: 565px) {
-    .team-img {
-        margin: 0 0 -30px 0;
-        width: 250px;
-    }
-
-    .team-info {
-        width: 80%;
-    }
-
-    .doctor-image-wrapper {
-        width: 400px;
-    }
-
-    .doctor-text-box {
-        width: 90%;
-        margin-left: 20px;
-    }
-
-    .doctor-text-box p {
-        font-size: 12px;
-    }
-
-    .philosophy-text1 {
-        top: 96%;
-    }
-}
-
-
-@media (max-width: 530px) {
-    .philosophy-text {
-        width: 90%;
-    }
-
-    .title-line1 {
-        font-size: 30px;
-    }
-
-    .title-line2 {
-        font-size: 30px;
-    }
-
-}
-
-@media (max-width: 558px) {
-    .stickerboy {
-        background-size: 110px;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .title-line1 {
-        font-size: 25px;
-        padding-bottom: 10px;
-    }
-
-    .title-line2 {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 460px) {
-    .mission-text {
-        font-size: 26px;
-        top: 370px;
-    }
-
-    .doctor-image-wrapper {
-        width: 350px;
-    }
-
-    .doctor-text-box {
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    .philosophy-text1 {
-        font-size: 26px;
-    }
-
-
-}
-
-
-@media (max-width: 390px) {
     .doctor-image-wrapper {
         width: 300px;
     }
@@ -1058,15 +899,7 @@
         font-size: 30px;
     }
 
-    .philosophy-text1 {
-        top: 97%;
-    }
 
-    .backtotop {
-        left: 82%;
-        width: 70px;
-        z-index: 5;
-    }
 
     .menu-item-mobile {
         font-size: 20px;
@@ -1119,19 +952,236 @@
 
 @media (max-width: 320px) {
 
-    .mission-text {
-        font-size: 21px;
-        top: 460px;
-    }
+
 
     .doctor-text-box p {
         font-size: 10px;
     }
 
 
-    .philosophy-text1 {
-        font-size: 21px;
-        top: 89%;
+
+
+}
+
+@media (max-width: 440px) {
+
+    .stickerboy {
+        background-size: 100px;
+        padding: 60px;
     }
 
+    .doctor-section {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .mission-text {
+        font-size: 26px;
+    }
+
+    .triangle-section {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .philosophy-text1 {
+        font-size: 26px;
+    }
+
+    .philosophy-section {
+        padding: 0px 20px;
+    }
+
+    .title-line1 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .title-line2 {
+        font-size: 25px;
+    }
+
+    .doctor-image-wrapper {
+        width: 400px;
+    }
+
+
+    .doctor-image {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .doctor-text-box {
+        width: 100%;
+        margin-left: 30px;
+        padding: 20px;
+    }
+
+
+    .team-img {
+        margin: 0 0 -30px 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+
+    /* Show Mobile  */
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+
+    .menu-toggle-checkbox {
+        display: none;
+    }
+
+    /* show menu */
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        display: flex;
+        flex-direction: column;
+        background: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-left: 50px;
+        z-index: 1000;
+        gap: 0;
+        align-items: flex-start;
+        font-family: "Cherry Bomb One", cursive;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        color: #6b51b1;
+        position: absolute;
+        top: 21px;
+        left: 40px;
+        cursor: pointer;
+        font-family: poppins;
+    }
+
+    .menu-item-mobile {
+        color: #6b51b1;
+        font-size: 20px;
+        margin: 20px 0;
+        padding: 0px 13px 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item-mobile:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+
+    .submenu-mobile {
+        display: none;
+        flex-direction: column;
+    }
+
+    .submenu-mobile a {
+        color: #f96d4a;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .submenu-toggle {
+        display: none;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 12px;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-weight: 500;
+        flex-direction: column;
+    }
+
+    .navbar-mobile img {
+        width: 50px;
+    }
+
+
+
+    .menu-toggle-btn {
+        font-size: 30px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .search-btn {
+        font-size: 20px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    /*foteer*/
+    .contact h6 {
+        font-size: 40px;
+    }
+
+    .contact p {
+        margin-bottom: 10px;
+    }
+
+    .contact-card1,
+    .contact-card2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-card1 p img {
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .contact-card2 p img {
+        width: 80%;
+        margin-top: 0;
+    }
+
+
+    .footer {
+        padding: 20px 20px 10px;
+    }
+
+    .footer-logo {
+        width: 50px;
+    }
+
+    .footer-nav a {
+        font-size: 25px;
+    }
+
+    .footer p {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 399px) {
+    .contact-card-group {
+        gap: 30px;
+    }
 }

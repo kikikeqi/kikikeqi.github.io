@@ -541,46 +541,186 @@ p.section-title {
 }
 
 
-@media (max-width: 375px) {
-    h1 {
-        font-size: 30px;
+@media (max-width: 440px) {
+    .nav {
+        display: none;
     }
 
-    .backtotop {
-        left: 82%;
-        width: 70px;
-        z-index: 5;
+
+    /* Show Mobile  */
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
     }
 
-    .menu-item-mobile {
-        font-size: 20px;
+
+    .menu-toggle-checkbox {
+        display: none;
     }
 
+    /* show menu */
     .menu-toggle-checkbox:checked~.menu-mobile {
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        background: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-left: 50px;
+        z-index: 1000;
+        gap: 0;
+        align-items: flex-start;
+        font-family: "Cherry Bomb One", cursive;
     }
 
     .close-btn {
         font-size: 40px;
-        top: 20px;
+        color: #6b51b1;
+        position: absolute;
+        top: 21px;
+        left: 40px;
+        cursor: pointer;
+        font-family: poppins;
+    }
+
+    .menu-item-mobile {
+        color: #6b51b1;
+        font-size: 20px;
+        margin: 20px 0;
+        padding: 0px 13px 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item-mobile:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+
+    .submenu-mobile {
+        display: none;
+        flex-direction: column;
+    }
+
+    .submenu-mobile a {
+        color: #f96d4a;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .submenu-toggle {
+        display: none;
     }
 
     .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
         display: flex;
-        gap: 10px;
+        gap: 12px;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-weight: 500;
         flex-direction: column;
-
-        margin-top: -20px;
     }
 
-    .submenu-mobile a {
-        font-size: 12px;
-        padding: 0px;
+    .navbar-mobile img {
+        width: 50px;
     }
-}
 
 
-@media (max-width: 320px) {
+
+    .menu-toggle-btn {
+        font-size: 30px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .search-btn {
+        font-size: 20px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    /*foteer*/
+    .contact h6 {
+        font-size: 40px;
+    }
+
+    .contact p {
+        margin-bottom: 10px;
+    }
+
+    .contact-card1,
+    .contact-card2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-card1 p img {
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .contact-card2 p img {
+        width: 80%;
+        margin-top: 0;
+    }
+
+
+    .footer {
+        padding: 20px 20px 10px;
+    }
+
+    .footer-logo {
+        width: 50px;
+    }
+
+    .footer-nav a {
+        font-size: 25px;
+    }
+
+    .footer p {
+        padding-bottom: 0;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+    .form-left form {
+        width: 300px;
+    }
+
+
+    #calendar-box-background {
+        background-color: #6B51B1;
+        display: flex;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .form-left form {
         width: 200px;
         gap: 15px;
@@ -615,7 +755,7 @@ p.section-title {
     }
 
     .calendar-card {
-        width: 40%;
+        width: 70%;
         justify-content: center;
     }
 
@@ -644,7 +784,33 @@ p.section-title {
     }
 
     .sticker2-toothpaste {
+        background-size: 70px;
+        top: 295%;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 390px) {
+    h1 {
+        font-size: 30px;
+    }
+
+
+    .sticker2-toothpaste {
         top: 290%;
         background-size: 50px;
     }
+
+
+
+
+    .contact-card-group {
+        gap: 30px;
+    }
+
+
 }
