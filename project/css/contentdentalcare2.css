@@ -618,6 +618,169 @@ h3 {
 }
 
 
+
+@media (max-width: 440px) {
+    .nav {
+        display: none;
+    }
+
+
+    /* Show Mobile  */
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+
+    .menu-toggle-checkbox {
+        display: none;
+    }
+
+    /* show menu */
+    .menu-toggle-checkbox:checked~.menu-mobile {
+        display: flex;
+        flex-direction: column;
+        background: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 5rem;
+        padding-left: 50px;
+        z-index: 1000;
+        gap: 0;
+        align-items: flex-start;
+        font-family: "Cherry Bomb One", cursive;
+    }
+
+    .close-btn {
+        font-size: 40px;
+        color: #6b51b1;
+        position: absolute;
+        top: 21px;
+        left: 40px;
+        cursor: pointer;
+        font-family: poppins;
+    }
+
+    .menu-item-mobile {
+        color: #6b51b1;
+        font-size: 20px;
+        margin: 20px 0;
+        padding: 0px 13px 0px 0px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item-mobile:hover {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+
+    .submenu-mobile {
+        display: none;
+        flex-direction: column;
+    }
+
+    .submenu-mobile a {
+        color: #f96d4a;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .submenu-toggle {
+        display: none;
+    }
+
+    .submenu-toggle:checked+.menu-item-mobile+.submenu-mobile {
+        display: flex;
+        gap: 12px;
+        flex-direction: row;
+        font-family: Poppins, sans-serif;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-weight: 500;
+        flex-direction: column;
+    }
+
+    .navbar-mobile img {
+        width: 50px;
+    }
+
+
+
+    .menu-toggle-btn {
+        font-size: 30px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    .search-btn {
+        font-size: 20px;
+        color: #6B51B1;
+        cursor: pointer;
+    }
+
+    /*foteer*/
+    .contact h6 {
+        font-size: 40px;
+    }
+
+    .contact p {
+        margin-bottom: 10px;
+    }
+
+    .contact-card1,
+    .contact-card2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-card1 p img {
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .contact-card2 p img {
+        width: 80%;
+        margin-top: 0;
+    }
+
+
+    .footer {
+        padding: 20px 20px 10px;
+    }
+
+    .footer-logo {
+        width: 50px;
+    }
+
+    .footer-nav a {
+        font-size: 25px;
+    }
+
+    .footer p {
+        padding-bottom: 0;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+    .sticker-brush {
+        background-size: 90px;
+        padding: 50px;
+        right: 20px;
+    }
+}
+
 @media (max-width: 320px) {
 
     .card img {
