@@ -597,6 +597,13 @@ p {
 }
 
 
+
+
+
+
+
+
+
 /*mobile*/
 @media (max-width: 440px) {
     .nav {
@@ -861,5 +868,13 @@ p {
 
     .footer p {
         padding-bottom: 0;
+    }
+}
+
+
+
+@media (max-width: 399px) {
+    .contact-card-group {
+        gap: 30px;
     }
 }
