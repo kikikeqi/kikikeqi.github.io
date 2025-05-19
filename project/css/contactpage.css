@@ -514,7 +514,74 @@ input[type=button]:hover {
 
 
 @media (max-width: 440px) {
+    .contact-card-group {
+        gap: 30px;
+    }
 
+    .sticker1-girl {
+        right: 10px;
+        margin-top: 10px;
+        background-size: 60px;
+    }
+
+    .form-topic {
+        padding: 50px 20px 40px 10px;
+    }
+
+    .form-topic h2 {
+        font-size: 26px;
+    }
+
+    .form-container-information {
+        padding: 20px 30px;
+    }
+
+    .container-customer-information {
+        gap: 10px;
+    }
+
+
+    .seminar-container-photo img {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .book-collaboration-photo .photo-public-talk h1,
+    h2 {
+        font-size: 16px;
+    }
+
+    .book-collaboration-photo .photo-public-talk p {
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .seminar-container-topic {
+        padding: 10px 0px 30px;
+    }
+
+    .seminar-container-topic h1 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .seminar-container-topic p {
+        font-size: 11px;
+        max-width: 100%;
+    }
+
+    .sticker2-teacher {
+        background-size: 70px;
+        left: 20px;
+        top: 192%;
+    }
+
+    #form-container-startconversation {
+        padding: 20px 20px 10px;
+    }
 
     .seminar-container-topic p {
         font-size: 12px;
@@ -711,74 +778,7 @@ input[type=button]:hover {
 }
 
 @media (max-width: 399px) {
-    .contact-card-group {
-        gap: 30px;
-    }
 
-    .sticker1-girl {
-        right: 10px;
-        margin-top: 10px;
-        background-size: 60px;
-    }
-
-    .form-topic {
-        padding: 50px 20px 40px 10px;
-    }
-
-    .form-topic h2 {
-        font-size: 26px;
-    }
-
-    .form-container-information {
-        padding: 20px 30px;
-    }
-
-    .container-customer-information {
-        gap: 10px;
-    }
-
-
-    .seminar-container-photo img {
-        width: 80%;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    .book-collaboration-photo .photo-public-talk h1,
-    h2 {
-        font-size: 16px;
-    }
-
-    .book-collaboration-photo .photo-public-talk p {
-        margin-bottom: 20px;
-        font-size: 10px;
-    }
-
-    .seminar-container-topic {
-        padding: 10px 0px 30px;
-    }
-
-    .seminar-container-topic h1 {
-        font-size: 30px;
-        padding-top: 30px;
-    }
-
-    .seminar-container-topic p {
-        font-size: 11px;
-        max-width: 100%;
-    }
-
-    .sticker2-teacher {
-        background-size: 70px;
-        left: 20px;
-        top: 192%;
-    }
-
-    #form-container-startconversation {
-        padding: 20px 20px 10px;
-    }
 
 
 
