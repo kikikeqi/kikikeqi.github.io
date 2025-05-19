@@ -515,9 +515,6 @@ input[type=button]:hover {
 
 @media (max-width: 440px) {
 
-    .slick-prev {
-        left: 10px !important;
-    }
 
     .seminar-container-topic p {
         font-size: 12px;
@@ -527,10 +524,7 @@ input[type=button]:hover {
         width: 80%;
     }
 
-    .slick-next {
-        left: 0;
-        right: -10px !important;
-    }
+
 
     .sticker3-skiing {
         background-size: 70px;
@@ -720,9 +714,7 @@ input[type=button]:hover {
     .contact-card-group {
         gap: 30px;
     }
-}
 
-@media (max-width: 375px) {
     .sticker1-girl {
         right: 10px;
         margin-top: 10px;
@@ -789,11 +781,13 @@ input[type=button]:hover {
     }
 
 
-    .backtotop {
-        left: 82%;
-        width: 70px;
-        z-index: 5;
-    }
+
+
+
+
+
+
+
 
     .menu-item-mobile {
         font-size: 20px;
@@ -821,6 +815,8 @@ input[type=button]:hover {
         padding: 0px;
     }
 }
+
+
 
 
 
